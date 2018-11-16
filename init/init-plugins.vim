@@ -2,8 +2,8 @@
 "
 " init-plugins.vim - 
 "
-" Created by skywind on 2018/05/31
-" Last Modified: 2018/06/10 23:11
+" Created by xjy on 2018/11/15
+" Last Modified: 2018/11/15 21:50
 "
 "======================================================================
 " vim: set ts=4 sw=4 tw=78 noet :
@@ -13,10 +13,11 @@
 "----------------------------------------------------------------------
 " 默认情况下的分组，可以再前面覆盖之
 "----------------------------------------------------------------------
-if !exists('g:bundle_group')
-	let g:bundle_group = ['basic', 'tags', 'enhanced', 'filetypes', 'textobj']
-	let g:bundle_group += ['tags', 'airline', 'nerdtree', 'ale', 'echodoc']
-	let g:bundle_group += ['leaderf']
+if !exists('g:plugin_group')
+	let g:plugin_group =  ['basic', 'tags', 'enhanced', 'filetypes', 'textobj']
+	let g:plugin_group += ['tags', 'airline', 'nerdtree', 'ale', 'echodoc']
+	let g:plugin_group += ['leaderf']
+	let g:plugin_group += ['YouCompleteMe']
 endif
 
 
@@ -32,9 +33,9 @@ endfunc
 
 
 "----------------------------------------------------------------------
-" 在 ~/.vim/bundles 下安装插件
+" 在 ~/.vim/plugins 下安装插件
 "----------------------------------------------------------------------
-call plug#begin(get(g:, 'bundle_home', '~/.vim/bundles'))
+call plug#begin(get(g:, 'plugin_home', '~/.vim/plugins'))
 
 
 "----------------------------------------------------------------------
@@ -89,7 +90,7 @@ augroup END
 "----------------------------------------------------------------------
 " 基础插件
 "----------------------------------------------------------------------
-if index(g:bundle_group, 'basic') >= 0
+if index(g:plugin_group, 'basic') >= 0
 
 	" 展示开始画面，显示最近编辑过的文件
 	Plug 'mhinz/vim-startify'
@@ -147,7 +148,7 @@ endif
 "----------------------------------------------------------------------
 " 增强插件
 "----------------------------------------------------------------------
-if index(g:bundle_group, 'enhanced') >= 0
+if index(g:plugin_group, 'enhanced') >= 0
 
 	" 用 v 选中一个区域后，ALT_+/- 按分隔符扩大/缩小选区
 	Plug 'terryma/vim-expand-region'
@@ -181,7 +182,7 @@ endif
 " 不在 git/svn 内的项目，需要在项目根目录 touch 一个空的 .root 文件
 " 详细用法见：https://zhuanlan.zhihu.com/p/36279445
 "----------------------------------------------------------------------
-if index(g:bundle_group, 'tags') >= 0
+if index(g:plugin_group, 'tags') >= 0
 
 	" 提供 ctags/gtags 后台数据库自动更新功能
 	Plug 'ludovicchabant/vim-gutentags'
@@ -227,7 +228,7 @@ endif
 "----------------------------------------------------------------------
 " 文本对象：textobj 全家桶
 "----------------------------------------------------------------------
-if index(g:bundle_group, 'textobj')
+if index(g:plugin_group, 'textobj')
 	
 	" 基础插件：提供让用户方便的自定义文本对象的接口
 	Plug 'kana/vim-textobj-user'
@@ -255,7 +256,7 @@ endif
 "----------------------------------------------------------------------
 " 文件类型扩展
 "----------------------------------------------------------------------
-if index(g:bundle_group, 'filetypes') >= 0
+if index(g:plugin_group, 'filetypes') >= 0
 
 	" powershell 脚本文件的语法高亮
 	Plug 'pprovost/vim-ps1', { 'for': 'ps1' }
@@ -283,7 +284,7 @@ endif
 "----------------------------------------------------------------------
 " airline
 "----------------------------------------------------------------------
-if index(g:bundle_group, 'airline') >= 0
+if index(g:plugin_group, 'airline') >= 0
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 	let g:airline_left_sep = ''
@@ -305,7 +306,7 @@ endif
 "----------------------------------------------------------------------
 " NERDTree
 "----------------------------------------------------------------------
-if index(g:bundle_group, 'nerdtree') >= 0
+if index(g:plugin_group, 'nerdtree') >= 0
 	Plug 'scrooloose/nerdtree', {'on': ['NERDTree', 'NERDTreeFocus', 'NERDTreeToggle', 'NERDTreeCWD', 'NERDTreeFind'] }
 	Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 	let g:NERDTreeMinimalUI = 1
@@ -321,7 +322,7 @@ endif
 "----------------------------------------------------------------------
 " LanguageTool 语法检查
 "----------------------------------------------------------------------
-if index(g:bundle_group, 'grammer') >= 0
+if index(g:plugin_group, 'grammer') >= 0
 	Plug 'rhysd/vim-grammarous'
 	noremap <space>rg :GrammarousCheck --lang=en-US --no-move-to-first-error --no-preview<cr>
 	map <space>rr <Plug>(grammarous-open-info-window)
@@ -338,7 +339,7 @@ endif
 "----------------------------------------------------------------------
 " ale：动态语法检查
 "----------------------------------------------------------------------
-if index(g:bundle_group, 'ale') >= 0
+if index(g:plugin_group, 'ale') >= 0
 	Plug 'w0rp/ale'
 
 	" 设定延迟和提示信息
@@ -405,7 +406,7 @@ endif
 "----------------------------------------------------------------------
 " echodoc：搭配 YCM/deoplete 在底部显示函数参数
 "----------------------------------------------------------------------
-if index(g:bundle_group, 'echodoc') >= 0
+if index(g:plugin_group, 'echodoc') >= 0
 	Plug 'Shougo/echodoc.vim'
 	set noshowmode
 	let g:echodoc#enable_at_startup = 1
@@ -415,7 +416,7 @@ endif
 "----------------------------------------------------------------------
 " LeaderF：CtrlP / FZF 的超级代替者，文件模糊匹配，tags/函数名 选择
 "----------------------------------------------------------------------
-if index(g:bundle_group, 'leaderf') >= 0
+if index(g:plugin_group, 'leaderf') >= 0
 	" 如果 vim 支持 python 则启用  Leaderf
 	if has('python') || has('python3')
 		Plug 'Yggdroot/LeaderF'
@@ -519,93 +520,104 @@ endif
 
 
 "----------------------------------------------------------------------
+" LeaderF：CtrlP / FZF 的超级代替者，文件模糊匹配，tags/函数名 选择
+"----------------------------------------------------------------------
+if index(g:plugin_group, 'YouCompleteMe') >= 0
+	" =========================YouCompleteMe====================================
+    function! BuildYCM(info)
+    " info is a dictionary with 3 fields
+    " - name:   name of the plugin
+    " - status: 'installed', 'updated', or 'unchanged'
+    " - force:  set on PlugInstall! or PlugUpdate!
+    	if a:info.status == 'installed' || a:info.force
+    		!python install.py --clang-completer --js-completer
+    	endif
+    endfunction
+	Plug 'Valloric/YouCompleteMe', {'do' : function('BuildYCM'), 'for' : ['c', 'cpp', 'h', 'hpp', 'python', 'javascript']}
+	
+
+    " 禁用预览功能：扰乱视听
+    let g:ycm_add_preview_to_completeopt = 0
+    
+    " 禁用诊断功能：我们用前面更好用的 ALE 代替
+    let g:ycm_show_diagnostics_ui = 0
+    let g:ycm_server_log_level = 'info'
+    let g:ycm_min_num_identifier_candidate_chars = 2
+    let g:ycm_collect_identifiers_from_comments_and_strings = 1
+    let g:ycm_complete_in_strings=1
+    let g:ycm_key_invoke_completion = '<c-z>'
+    set completeopt=menu,menuone
+    
+    " noremap <c-z> <NOP>
+    
+    " 两个字符自动触发语义补全
+    let g:ycm_semantic_triggers =  {
+    			\ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
+    			\ 'cs,lua,javascript': ['re!\w{2}'],
+    			\ }
+    
+    
+    "----------------------------------------------------------------------
+    " Ycm 白名单（非名单内文件不启用 YCM），避免打开个 1MB 的 txt 分析半天
+    "----------------------------------------------------------------------
+    let g:ycm_filetype_whitelist = { 
+    			\ "c":1,
+    			\ "cpp":1, 
+    			\ "objc":1,
+    			\ "objcpp":1,
+    			\ "python":1,
+    			\ "java":1,
+    			\ "javascript":1,
+    			\ "coffee":1,
+    			\ "vim":1, 
+    			\ "go":1,
+    			\ "cs":1,
+    			\ "lua":1,
+    			\ "perl":1,
+    			\ "perl6":1,
+    			\ "php":1,
+    			\ "ruby":1,
+    			\ "rust":1,
+    			\ "erlang":1,
+    			\ "asm":1,
+    			\ "nasm":1,
+    			\ "masm":1,
+    			\ "tasm":1,
+    			\ "asm68k":1,
+    			\ "asmh8300":1,
+    			\ "asciidoc":1,
+    			\ "basic":1,
+    			\ "vb":1,
+    			\ "make":1,
+    			\ "cmake":1,
+    			\ "html":1,
+    			\ "css":1,
+    			\ "less":1,
+    			\ "json":1,
+    			\ "cson":1,
+    			\ "typedscript":1,
+    			\ "haskell":1,
+    			\ "lhaskell":1,
+    			\ "lisp":1,
+    			\ "scheme":1,
+    			\ "sdl":1,
+    			\ "sh":1,
+    			\ "zsh":1,
+    			\ "bash":1,
+    			\ "man":1,
+    			\ "markdown":1,
+    			\ "matlab":1,
+    			\ "maxima":1,
+    			\ "dosini":1,
+    			\ "conf":1,
+    			\ "config":1,
+    			\ "zimbu":1,
+    			\ "ps1":1,
+    			\ }
+endif
+
+"----------------------------------------------------------------------
 " 结束插件安装
 "----------------------------------------------------------------------
 call plug#end()
-
-
-
-"----------------------------------------------------------------------
-" YouCompleteMe 默认设置：YCM 需要你另外手动编译安装
-"----------------------------------------------------------------------
-
-" 禁用预览功能：扰乱视听
-let g:ycm_add_preview_to_completeopt = 0
-
-" 禁用诊断功能：我们用前面更好用的 ALE 代替
-let g:ycm_show_diagnostics_ui = 0
-let g:ycm_server_log_level = 'info'
-let g:ycm_min_num_identifier_candidate_chars = 2
-let g:ycm_collect_identifiers_from_comments_and_strings = 1
-let g:ycm_complete_in_strings=1
-let g:ycm_key_invoke_completion = '<c-z>'
-set completeopt=menu,menuone
-
-" noremap <c-z> <NOP>
-
-" 两个字符自动触发语义补全
-let g:ycm_semantic_triggers =  {
-			\ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
-			\ 'cs,lua,javascript': ['re!\w{2}'],
-			\ }
-
-
-"----------------------------------------------------------------------
-" Ycm 白名单（非名单内文件不启用 YCM），避免打开个 1MB 的 txt 分析半天
-"----------------------------------------------------------------------
-let g:ycm_filetype_whitelist = { 
-			\ "c":1,
-			\ "cpp":1, 
-			\ "objc":1,
-			\ "objcpp":1,
-			\ "python":1,
-			\ "java":1,
-			\ "javascript":1,
-			\ "coffee":1,
-			\ "vim":1, 
-			\ "go":1,
-			\ "cs":1,
-			\ "lua":1,
-			\ "perl":1,
-			\ "perl6":1,
-			\ "php":1,
-			\ "ruby":1,
-			\ "rust":1,
-			\ "erlang":1,
-			\ "asm":1,
-			\ "nasm":1,
-			\ "masm":1,
-			\ "tasm":1,
-			\ "asm68k":1,
-			\ "asmh8300":1,
-			\ "asciidoc":1,
-			\ "basic":1,
-			\ "vb":1,
-			\ "make":1,
-			\ "cmake":1,
-			\ "html":1,
-			\ "css":1,
-			\ "less":1,
-			\ "json":1,
-			\ "cson":1,
-			\ "typedscript":1,
-			\ "haskell":1,
-			\ "lhaskell":1,
-			\ "lisp":1,
-			\ "scheme":1,
-			\ "sdl":1,
-			\ "sh":1,
-			\ "zsh":1,
-			\ "bash":1,
-			\ "man":1,
-			\ "markdown":1,
-			\ "matlab":1,
-			\ "maxima":1,
-			\ "dosini":1,
-			\ "conf":1,
-			\ "config":1,
-			\ "zimbu":1,
-			\ "ps1":1,
-			\ }
-
 

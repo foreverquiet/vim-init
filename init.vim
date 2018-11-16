@@ -2,8 +2,8 @@
 "
 " init.vim - initialize config
 "
-" Created by skywind on 2018/05/30
-" Last Modified: 2018/05/30 18:26:34
+" Created by xjy on 2018/11/15
+" Last Modified: 2018/11/15 21:30:00
 "
 "======================================================================
 
@@ -26,6 +26,16 @@ exec 'set rtp+='.s:home
 " 将 ~/.vim 目录加入 runtimepath (有时候 vim 不会自动帮你加入）
 set rtp+=~/.vim
 
+let g:mapleader = ' '
+
+nmap <leader>rc :tabedit ~/.vim/vim-init/init.vim<CR>
+
+autocmd! bufwritepost init/init-basic.vim source ~/.vimrc
+autocmd! bufwritepost init/init-config.vim source ~/.vimrc
+autocmd! bufwritepost init/init-tabsize.vim source ~/.vimrc
+autocmd! bufwritepost init/init-plugins.vim source ~/.vimrc
+autocmd! bufwritepost init/init-style.vim source ~/.vimrc
+autocmd! bufwritepost init/init-keymaps.vim source ~/.vimrc
 
 "----------------------------------------------------------------------
 " 模块加载

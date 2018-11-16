@@ -4,8 +4,8 @@
 "
 " 所有人都能接受的配置，不掺渣任何 keymap, 和偏好设置
 "
-" Created by skywind on 2018/05/30
-" Last Modified: 2018/05/30 16:53:18
+" Created by xjy on 2018/11/15
+" Last Modified: 2018/11/15 21:17:00
 "
 "======================================================================
 " vim: set ts=4 sw=4 tw=78 noet :
@@ -70,7 +70,7 @@ if has('multi_byte')
 	set fileencoding=utf-8
 
 	" 打开文件时自动尝试下面顺序的编码
-	set fileencodings=ucs-bom,utf-8,gbk,gb18030,big5,euc-jp,latin1
+	set fileencodings=ucs-bom,utf-8,gbk,gb18030,big5,cp936,latin1
 endif
 
 

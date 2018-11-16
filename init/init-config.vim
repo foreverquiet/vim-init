@@ -2,8 +2,8 @@
 "
 " init-config.vim - 正常模式下的配置，在 init-basic.vim 后调用
 "
-" Created by skywind on 2018/05/30
-" Last Modified: 2018/05/30 19:20:46
+" Created by xjy on 2018/11/15
+" Last Modified: 2018/11/15 21:21:46
 "
 "======================================================================
 " vim: set ts=4 sw=4 tw=78 noet :
@@ -97,7 +97,7 @@ set backup
 set writebackup
 
 " 备份文件地址，统一管理
-set backupdir=~/.vim/tmp
+set backupdir=~/.vim/vimbak
 
 " 备份文件扩展名
 set backupext=.bak
@@ -109,7 +109,7 @@ set noswapfile
 set noundofile
 
 " 创建目录，并且忽略可能出现的警告
-silent! call mkdir(expand('~/.vim/tmp'), "p", 0755)
+silent! call mkdir(expand('~/.vim/vimbak'), "p", 0755)
 
 
 "----------------------------------------------------------------------
