@@ -97,7 +97,12 @@ set backup
 set writebackup
 
 " 备份文件地址，统一管理
-set backupdir=~/.vim/vimbak
+if has('win32')
+	set backupdir=~/.vim/vimbak
+else
+	set backupdir=e:/vim/vimbak
+endif
+	
 
 " 备份文件扩展名
 set backupext=.bak
@@ -109,7 +114,11 @@ set noswapfile
 set noundofile
 
 " 创建目录，并且忽略可能出现的警告
-silent! call mkdir(expand('~/.vim/vimbak'), "p", 0755)
+if has('win32')
+	silent! call mkdir(expand('E:/vim/vimbak'), "p", 0755)
+else
+	silent! call mkdir(expand('~/.vim/vimbak'), "p", 0755)
+endif
 
 
 "----------------------------------------------------------------------

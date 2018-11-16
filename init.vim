@@ -28,14 +28,27 @@ set rtp+=~/.vim
 
 let g:mapleader = ' '
 
-nmap <leader>rc :tabedit ~/.vim/vim-init/init.vim<CR>
+if has('win32')
+	nmap <leader>rc :tabedit e:/vim/vim-init/init.vim<CR>
+else
+	nmap <leader>rc :tabedit ~/.vim/vim-init/init.vim<CR>
+endif
 
-autocmd! bufwritepost init/init-basic.vim source ~/.vimrc
-autocmd! bufwritepost init/init-config.vim source ~/.vimrc
-autocmd! bufwritepost init/init-tabsize.vim source ~/.vimrc
-autocmd! bufwritepost init/init-plugins.vim source ~/.vimrc
-autocmd! bufwritepost init/init-style.vim source ~/.vimrc
-autocmd! bufwritepost init/init-keymaps.vim source ~/.vimrc
+if has('win32')
+	autocmd! bufwritepost init-basic.vim   source $VIM/vim-init/init/init-basic.vim
+	autocmd! bufwritepost init-config.vim  source $VIM/vim-init/init/init-config.vim
+	autocmd! bufwritepost init-tabsize.vim source $VIM/vim-init/init/init-tabsize.vim
+	autocmd! bufwritepost init-plugins.vim source $VIM/vim-init/init/init-plugins.vim
+	autocmd! bufwritepost init-style.vim   source $VIM/vim-init/init/init-style.vim
+	autocmd! bufwritepost init-keymaps.vim source $VIM/vim-init/init/init-keymaps.vim
+else
+	autocmd! bufwritepost init-basic.vim   source ~/.vim/vim-init/init/init-basic.vim
+	autocmd! bufwritepost init-config.vim  source ~/.vim/vim-init/init/init-config.vim
+	autocmd! bufwritepost init-tabsize.vim source ~/.vim/vim-init/init/init-tabsize.vim
+	autocmd! bufwritepost init-plugins.vim source ~/.vim/vim-init/init/init-plugins.vim
+	autocmd! bufwritepost init-style.vim   source ~/.vim/vim-init/init/init-style.vim
+	autocmd! bufwritepost init-keymaps.vim source ~/.vim/vim-init/init/init-keymaps.vim
+endif
 
 "----------------------------------------------------------------------
 " 模块加载
@@ -58,6 +71,4 @@ LoadScript init/init-style.vim
 
 " 自定义按键
 LoadScript init/init-keymaps.vim
-
-
 

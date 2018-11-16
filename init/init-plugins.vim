@@ -35,7 +35,11 @@ endfunc
 "----------------------------------------------------------------------
 " 在 ~/.vim/plugins 下安装插件
 "----------------------------------------------------------------------
-call plug#begin(get(g:, 'plugin_home', '~/.vim/plugins'))
+if has('win32')
+	call plug#begin(get(g:, 'plugin_home', 'e:/vim/plugins'))
+else
+	call plug#begin(get(g:, 'plugin_home', '~/.vim/plugins'))
+endif
 
 
 "----------------------------------------------------------------------
@@ -196,7 +200,11 @@ if index(g:plugin_group, 'tags') >= 0
 	let g:gutentags_ctags_tagfile = '.tags'
 
 	" 默认生成的数据文件集中到 ~/.cache/tags 避免污染项目目录，好清理
-	let g:gutentags_cache_dir = expand('~/.cache/tags')
+	if has('win32')
+		let g:gutentags_cache_dir = expand('E:/vim/cache/tags')
+	elseif
+		let g:gutentags_cache_dir = expand('~/.cache/tags')
+	endif
 
 	" 默认禁用自动生成
 	let g:gutentags_modules = [] 
@@ -377,7 +385,11 @@ if index(g:plugin_group, 'ale') >= 0
 	function s:lintcfg(name)
 		let conf = s:path('tools/conf/')
 		let path1 = conf . a:name
-		let path2 = expand('~/.vim/linter/'. a:name)
+		if has('win32')
+			let path2 = expand('E:/vim/linter/'. a:name)
+		else
+			let path2 = expand('~/.vim/linter/'. a:name)
+		endif
 		if filereadable(path2)
 			return path2
 		endif

@@ -23,7 +23,7 @@ set number
 set signcolumn=yes
 
 " 总是显示标签栏  原位2 修改为0 
-set showtabline=0
+set showtabline=2
 
 " 设置显示制表符等隐藏字符
 set list
@@ -41,7 +41,8 @@ set splitright
 "----------------------------------------------------------------------
 " 菜单栏设置：去除菜单
 "----------------------------------------------------------------------
-"set go = b,h
+"set guioptions-=TrlRL
+set go=
 "set guifont=Monaco:12
 
 "----------------------------------------------------------------------
@@ -49,14 +50,19 @@ set splitright
 "----------------------------------------------------------------------
 
 " 设置黑色背景
-" set background=dark
+set background=dark
 
 " 允许 256 色
 set t_Co=256
 
 " 设置颜色主题，会在所有 runtimepaths 的 colors 目录寻找同名配置
-" color desert256
+"color desert256
 color molokai
+
+" 设置字体
+if has('win32')
+	set guifont=Consolas:h13
+endif
 
 
 "----------------------------------------------------------------------
