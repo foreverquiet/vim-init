@@ -15,9 +15,10 @@
 "----------------------------------------------------------------------
 if !exists('g:plugin_group')
 	let g:plugin_group =  ['basic', 'tags', 'enhanced', 'filetypes', 'textobj']
-	let g:plugin_group += ['tags', 'airline', 'nerdtree', 'ale', 'echodoc']
+	let g:plugin_group += ['tags', 'airline', 'nerdtree', 'ale', 'echodoc', 'tagbar']
 	let g:plugin_group += ['leaderf']
 	let g:plugin_group += ['YouCompleteMe']
+	let g:plugin_group += ['vimwiki']
 endif
 
 
@@ -128,7 +129,7 @@ if index(g:plugin_group, 'basic') >= 0
 	nmap <m-e> <Plug>(choosewin)
 
 	" 默认不显示 startify
-	let g:startify_disable_at_vimenter = 1
+	" let g:startify_disable_at_vimenter = 1
 	let g:startify_session_dir = '~/.vim/session'
 
 	" 使用 <space>ha 清除 errormarker 标注的错误
@@ -146,6 +147,13 @@ if index(g:plugin_group, 'basic') >= 0
 	let g:signify_vcs_cmds = {
 			\ 'git': 'git diff --no-color --diff-algorithm=histogram --no-ext-diff -U0 -- %f',
 			\}
+
+	" vim-preview 映射p键，可以在quickfix界面中快速查看选中行，界面始终保持在右侧
+	autocmd FileType qf nnoremap <silent><buffer> p :PreviewQuickfix<cr>
+    autocmd FileType qf nnoremap <silent><buffer> P :PreviewClose<cr>
+    noremap <Leader>u :PreviewScroll -1<cr> " 往上滚动预览窗口
+    noremap <leader>d :PreviewScroll +1<cr> "  往下滚动预览窗口
+
 endif
 
 
@@ -157,8 +165,8 @@ if index(g:plugin_group, 'enhanced') >= 0
 	" 用 v 选中一个区域后，ALT_+/- 按分隔符扩大/缩小选区
 	Plug 'terryma/vim-expand-region'
 
-	" 快速文件搜索
-	Plug 'junegunn/fzf'
+	" 快速文件搜索 目前使用LeaderF替代，如需查找内容，配合Ag，再加回来
+	" Plug 'junegunn/fzf'
 
 	" 给不同语言提供字典补全，插入模式下 c-x c-k 触发
 	Plug 'asins/vim-dict'
@@ -195,6 +203,9 @@ if index(g:plugin_group, 'tags') >= 0
 	" 支持光标移动到符号名上：<leader>cg 查看定义，<leader>cs 查看引用
 	Plug 'skywind3000/gutentags_plus'
 
+    let $GTAGSLABEL = 'native-pygments'
+    let $GTAGSCONF =  '/usr/local/share/gtags/gtags.conf'
+
 	" 设定项目目录标志：除了 .git/.svn 外，还有 .root 文件
 	let g:gutentags_project_root = ['.root']
 	let g:gutentags_ctags_tagfile = '.tags'
@@ -202,8 +213,8 @@ if index(g:plugin_group, 'tags') >= 0
 	" 默认生成的数据文件集中到 ~/.cache/tags 避免污染项目目录，好清理
 	if has('win32')
 		let g:gutentags_cache_dir = expand('E:/vim/cache/tags')
-	elseif
-		let g:gutentags_cache_dir = expand('~/.cache/tags')
+	else
+		let g:gutentags_cache_dir = expand('~/.vim/.cache/tags')
 	endif
 
 	" 默认禁用自动生成
@@ -230,6 +241,7 @@ if index(g:plugin_group, 'tags') >= 0
 
 	" 禁止 gutentags 自动链接 gtags 数据库
 	let g:gutentags_auto_add_gtags_cscope = 0
+
 endif
 
 
@@ -394,7 +406,7 @@ if index(g:plugin_group, 'ale') >= 0
 			return path2
 		endif
 		return shellescape(filereadable(path2)? path2 : path1)
-	endfunc
+	endfunction
 
 	" 设置 flake8/pylint 的参数
 	let g:ale_python_flake8_options = '--conf='.s:lintcfg('flake8.conf')
@@ -424,6 +436,12 @@ if index(g:plugin_group, 'echodoc') >= 0
 	let g:echodoc#enable_at_startup = 1
 endif
 
+"----------------------------------------------------------------------
+" tagbar：右边显示tag 列表
+"----------------------------------------------------------------------
+if index(g:plugin_group, 'tagbar') >= 0
+	Plug 'majutsushi/tagbar'
+endif
 
 "----------------------------------------------------------------------
 " LeaderF：CtrlP / FZF 的超级代替者，文件模糊匹配，tags/函数名 选择
@@ -532,7 +550,7 @@ endif
 
 
 "----------------------------------------------------------------------
-" LeaderF：CtrlP / FZF 的超级代替者，文件模糊匹配，tags/函数名 选择
+"  YouCompleteMe 最强大的自动补全引擎 
 "----------------------------------------------------------------------
 if index(g:plugin_group, 'YouCompleteMe') >= 0
 	" =========================YouCompleteMe====================================
@@ -562,6 +580,12 @@ if index(g:plugin_group, 'YouCompleteMe') >= 0
     
     " noremap <c-z> <NOP>
     
+	" 跳转到声明处
+	nnoremap <leader>gd :YcmCompleter GoToDeclaration<CR>
+	" 跳转到定义处
+	nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>            
+	nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
     " 两个字符自动触发语义补全
     let g:ycm_semantic_triggers =  {
     			\ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
@@ -626,6 +650,15 @@ if index(g:plugin_group, 'YouCompleteMe') >= 0
     			\ "zimbu":1,
     			\ "ps1":1,
     			\ }
+endif
+
+"----------------------------------------------------------------------
+" tagbar：右边显示tag 列表
+"----------------------------------------------------------------------
+if index(g:plugin_group, 'vimwiki') >= 0
+	Plug 'vimwiki/vimwiki'
+
+	let g:vimwiki_list = [{'path' : '~/wiki/', 'path_html' : '~/wiki/html/'}]
 endif
 
 "----------------------------------------------------------------------

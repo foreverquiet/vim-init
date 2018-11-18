@@ -35,6 +35,7 @@ else
 endif
 
 if has('win32')
+	autocmd! bufwritepost init.vim         source $VIM/vim-init/init.vim
 	autocmd! bufwritepost init-basic.vim   source $VIM/vim-init/init/init-basic.vim
 	autocmd! bufwritepost init-config.vim  source $VIM/vim-init/init/init-config.vim
 	autocmd! bufwritepost init-tabsize.vim source $VIM/vim-init/init/init-tabsize.vim
@@ -42,6 +43,7 @@ if has('win32')
 	autocmd! bufwritepost init-style.vim   source $VIM/vim-init/init/init-style.vim
 	autocmd! bufwritepost init-keymaps.vim source $VIM/vim-init/init/init-keymaps.vim
 else
+	autocmd! bufwritepost init.vim         source ~/.vim/vim-init/init.vim
 	autocmd! bufwritepost init-basic.vim   source ~/.vim/vim-init/init/init-basic.vim
 	autocmd! bufwritepost init-config.vim  source ~/.vim/vim-init/init/init-config.vim
 	autocmd! bufwritepost init-tabsize.vim source ~/.vim/vim-init/init/init-tabsize.vim

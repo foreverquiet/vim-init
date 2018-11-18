@@ -1,0 +1,1368 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+%	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	noremap <buffer> % :e %$/;"	kind:m	line:85
+%	init/init-plugins.vim	/^	noremap <buffer> % :e %$/;"	m
+0	autoload/quickmenu.vim	/^	noremap <silent> <buffer> 0 :call <SID>quickmenu_close()<cr>$/;"	m
+<C-h>	init/init-keymaps.vim	/^inoremap <C-h> <left>$/;"	m
+<C-h>	init/init-keymaps.vim	/^noremap <C-h> <left>$/;"	m
+<C-j>	init/init-keymaps.vim	/^inoremap <C-j> <down>$/;"	m
+<C-j>	init/init-keymaps.vim	/^noremap <C-j> <down>$/;"	m
+<C-k>	init/init-keymaps.vim	/^inoremap <C-k> <up>$/;"	m
+<C-k>	init/init-keymaps.vim	/^noremap <C-k> <up>$/;"	m
+<C-l>	init/init-keymaps.vim	/^inoremap <C-l> <right>$/;"	m
+<C-l>	init/init-keymaps.vim	/^noremap <C-l> <right>$/;"	m
+<CR>	autoload/quickmenu.vim	/^	noremap <silent> <buffer> <CR> :call <SID>quickmenu_enter()<cr>$/;"	m
+<F10>	init/init-keymaps.vim	/^nnoremap <F10> :call asyncrun#quickfix_toggle(6)<cr>$/;"	m
+<F11>	autoload/quickmenu.vim	/^	imap <expr> <F11> quickmenu#bottom(0)$/;"	m
+<F2>	init/init-keymaps.vim	/^	noremap <silent><F2> :AsyncRun! -cwd=<root> findstr \/n \/s \/C:"<C-R><C-W>" $/;"	m
+<F2>	init/init-keymaps.vim	/^	noremap <silent><F2> :AsyncRun! -cwd=<root> grep -n -s -R <C-R><C-W> $/;"	m
+<F2>	init/init-keymaps.vim	/^	noremap <silent><F2> :AsyncRun! -cwd=<root> rg -n --no-heading $/;"	m
+<F4>	init/init-keymaps.vim	/^nnoremap <silent> <F4> :AsyncRun -cwd=<root> cmake . <cr>$/;"	m
+<F5>	init/init-keymaps.vim	/^nnoremap <silent> <F5> :call ExecuteFile()<cr>$/;"	m
+<F6>	init/init-keymaps.vim	/^nnoremap <silent> <F6> :AsyncRun -cwd=<root> -raw make test <cr>$/;"	m
+<F7>	init/init-keymaps.vim	/^nnoremap <silent> <F7> :AsyncRun -cwd=<root> make <cr>$/;"	m
+<F8>	init/init-keymaps.vim	/^	nnoremap <silent> <F8> :AsyncRun -cwd=<root> -mode=4 make run <cr>$/;"	m
+<F8>	init/init-keymaps.vim	/^nnoremap <silent> <F8> :AsyncRun -cwd=<root> -raw make run <cr>$/;"	m
+<F9>	init/init-keymaps.vim	/^nnoremap <silent> <F9> :AsyncRun gcc -Wall -O2 "$(VIM_FILEPATH)" -o "$(VIM_FILEDIR)\/$(VIM_FILEN/;"	m
+<Plug>(argtextobjA)	plugin/argtextobj.vim	/^onoremap <silent> <Plug>(argtextobjA) :<C-U>call <SID>MotionArgument(0, 0)<CR>$/;"	m
+<Plug>(argtextobjA)	plugin/argtextobj.vim	/^vnoremap <silent> <Plug>(argtextobjA) :<C-U>call <SID>MotionArgument(0, 1)<CR>$/;"	m
+<Plug>(argtextobjI)	plugin/argtextobj.vim	/^onoremap <silent> <Plug>(argtextobjI) :<C-U>call <SID>MotionArgument(1, 0)<CR>$/;"	m
+<Plug>(argtextobjI)	plugin/argtextobj.vim	/^vnoremap <silent> <Plug>(argtextobjI) :<C-U>call <SID>MotionArgument(1, 1)<CR>$/;"	m
+<Plug>ChangeCommentary	plugin/commentary.vim	/^nnoremap <silent> <Plug>ChangeCommentary c:<C-U>call <SID>textobject(1)<CR>$/;"	m
+<Plug>Commentary	plugin/commentary.vim	/^nnoremap <expr>   <Plug>Commentary     <SID>go()$/;"	m
+<Plug>Commentary	plugin/commentary.vim	/^onoremap <silent> <Plug>Commentary        :<C-U>call <SID>textobject(0)<CR>$/;"	m
+<Plug>Commentary	plugin/commentary.vim	/^xnoremap <expr>   <Plug>Commentary     <SID>go()$/;"	m
+<Plug>CommentaryLine	plugin/commentary.vim	/^nnoremap <expr>   <Plug>CommentaryLine <SID>go() . '_'$/;"	m
+<Plug>CommentaryUndo	plugin/commentary.vim	/^nmap <silent> <Plug>CommentaryUndo :echoerr "Change your <Plug>CommentaryUndo map to <Plug>Comme/;"	m
+<Plug>unimpairedBlankDown	plugin/unimpaired.vim	/^nnoremap <silent> <Plug>unimpairedBlankDown :<C-U>call <SID>BlankDown(v:count1)<CR>$/;"	m
+<Plug>unimpairedBlankUp	plugin/unimpaired.vim	/^nnoremap <silent> <Plug>unimpairedBlankUp   :<C-U>call <SID>BlankUp(v:count1)<CR>$/;"	m
+<Plug>unimpairedContextNext	plugin/unimpaired.vim	/^nnoremap <silent> <Plug>unimpairedContextNext     :call <SID>Context(0)<CR>$/;"	m
+<Plug>unimpairedContextNext	plugin/unimpaired.vim	/^onoremap <silent> <Plug>unimpairedContextNext     :call <SID>ContextMotion(0)<CR>$/;"	m
+<Plug>unimpairedContextPrevious	plugin/unimpaired.vim	/^nnoremap <silent> <Plug>unimpairedContextPrevious :call <SID>Context(1)<CR>$/;"	m
+<Plug>unimpairedContextPrevious	plugin/unimpaired.vim	/^onoremap <silent> <Plug>unimpairedContextPrevious :call <SID>ContextMotion(1)<CR>$/;"	m
+<Plug>unimpairedDirectoryNext	plugin/unimpaired.vim	/^nnoremap <silent> <Plug>unimpairedDirectoryNext     :<C-U>edit <C-R>=<SID>fnameescape(fnamemodif/;"	m
+<Plug>unimpairedDirectoryPrevious	plugin/unimpaired.vim	/^nnoremap <silent> <Plug>unimpairedDirectoryPrevious :<C-U>edit <C-R>=<SID>fnameescape(fnamemodif/;"	m
+<Plug>unimpairedMoveDown	plugin/unimpaired.vim	/^nnoremap <silent> <Plug>unimpairedMoveDown          :<C-U>call <SID>Move('+',v:count1,'Down')<CR/;"	m
+<Plug>unimpairedMoveSelectionDown	plugin/unimpaired.vim	/^noremap  <silent> <Plug>unimpairedMoveSelectionDown :<C-U>call <SID>MoveSelectionDown(v:count1)</;"	m
+<Plug>unimpairedMoveSelectionUp	plugin/unimpaired.vim	/^noremap  <silent> <Plug>unimpairedMoveSelectionUp   :<C-U>call <SID>MoveSelectionUp(v:count1)<CR/;"	m
+<Plug>unimpairedMoveUp	plugin/unimpaired.vim	/^nnoremap <silent> <Plug>unimpairedMoveUp            :<C-U>call <SID>Move('--',v:count1,'Up')<CR>$/;"	m
+<Plug>unimpairedPaste	plugin/unimpaired.vim	/^nnoremap <silent> <Plug>unimpairedPaste :call <SID>setup_paste()<CR>$/;"	m
+<Plug>unimpairedPutAbove	plugin/unimpaired.vim	/^nnoremap <silent> <Plug>unimpairedPutAbove :call <SID>putline('[p', 'Above')<CR>$/;"	m
+<Plug>unimpairedPutBelow	plugin/unimpaired.vim	/^nnoremap <silent> <Plug>unimpairedPutBelow :call <SID>putline(']p', 'Below')<CR>$/;"	m
+<c-_>	init/init-keymaps.vim	/^cnoremap <c-_> <c-k>$/;"	m
+<c-_>	init/init-keymaps.vim	/^inoremap <c-_> <c-k>$/;"	m
+<c-a>	init/init-keymaps.vim	/^cnoremap <c-a> <home>$/;"	m
+<c-a>	init/init-keymaps.vim	/^inoremap <c-a> <home>$/;"	m
+<c-b>	init/init-keymaps.vim	/^cnoremap <c-b> <left>$/;"	m
+<c-d>	init/init-keymaps.vim	/^cnoremap <c-d> <del>$/;"	m
+<c-d>	init/init-keymaps.vim	/^inoremap <c-d> <del>$/;"	m
+<c-e>	init/init-keymaps.vim	/^cnoremap <c-e> <end>$/;"	m
+<c-e>	init/init-keymaps.vim	/^inoremap <c-e> <end>$/;"	m
+<c-f>	init/init-keymaps.vim	/^cnoremap <c-f> <c-d>$/;"	m
+<c-h>	init/init-keymaps.vim	/^cnoremap <c-h> <left>$/;"	m
+<c-j>	init/init-keymaps.vim	/^cnoremap <c-j> <down>$/;"	m
+<c-k>	init/init-keymaps.vim	/^cnoremap <c-k> <up>$/;"	m
+<c-l>	init/init-keymaps.vim	/^cnoremap <c-l> <right>$/;"	m
+<c-n>	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		noremap <c-n> :CtrlPMRUFiles<cr>$/;"	kind:m	line:523
+<c-n>	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		noremap <c-n> :LeaderfMru<cr>$/;"	kind:m	line:443
+<c-n>	init/init-plugins.vim	/^		noremap <c-n> :CtrlPMRUFiles<cr>$/;"	m
+<c-n>	init/init-plugins.vim	/^		noremap <c-n> :LeaderfMru<cr>$/;"	m
+<c-p>	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		noremap <c-p> :CtrlP<cr>$/;"	kind:m	line:520
+<c-p>	init/init-plugins.vim	/^		noremap <c-p> :CtrlP<cr>$/;"	m
+<cr>	autoload/plug.vim	/^      nmap <buffer> <cr> <plug>(plug-preview)$/;"	m
+<d-0>	init/init-keymaps.vim	/^	inoremap <silent><d-0> <ESC>:tabn 10<cr>$/;"	m
+<d-0>	init/init-keymaps.vim	/^	noremap <silent><d-0> :tabn 10<cr>$/;"	m
+<d-1>	init/init-keymaps.vim	/^	inoremap <silent><d-1> <ESC>:tabn 1<cr>$/;"	m
+<d-1>	init/init-keymaps.vim	/^	noremap <silent><d-1> :tabn 1<cr>$/;"	m
+<d-2>	init/init-keymaps.vim	/^	inoremap <silent><d-2> <ESC>:tabn 2<cr>$/;"	m
+<d-2>	init/init-keymaps.vim	/^	noremap <silent><d-2> :tabn 2<cr>$/;"	m
+<d-3>	init/init-keymaps.vim	/^	inoremap <silent><d-3> <ESC>:tabn 3<cr>$/;"	m
+<d-3>	init/init-keymaps.vim	/^	noremap <silent><d-3> :tabn 3<cr>$/;"	m
+<d-4>	init/init-keymaps.vim	/^	inoremap <silent><d-4> <ESC>:tabn 4<cr>$/;"	m
+<d-4>	init/init-keymaps.vim	/^	noremap <silent><d-4> :tabn 4<cr>$/;"	m
+<d-5>	init/init-keymaps.vim	/^	inoremap <silent><d-5> <ESC>:tabn 5<cr>$/;"	m
+<d-5>	init/init-keymaps.vim	/^	noremap <silent><d-5> :tabn 5<cr>$/;"	m
+<d-6>	init/init-keymaps.vim	/^	inoremap <silent><d-6> <ESC>:tabn 6<cr>$/;"	m
+<d-6>	init/init-keymaps.vim	/^	noremap <silent><d-6> :tabn 6<cr>$/;"	m
+<d-7>	init/init-keymaps.vim	/^	inoremap <silent><d-7> <ESC>:tabn 7<cr>$/;"	m
+<d-7>	init/init-keymaps.vim	/^	noremap <silent><d-7> :tabn 7<cr>$/;"	m
+<d-8>	init/init-keymaps.vim	/^	inoremap <silent><d-8> <ESC>:tabn 8<cr>$/;"	m
+<d-8>	init/init-keymaps.vim	/^	noremap <silent><d-8> :tabn 8<cr>$/;"	m
+<d-9>	init/init-keymaps.vim	/^	inoremap <silent><d-9> <ESC>:tabn 9<cr>$/;"	m
+<d-9>	init/init-keymaps.vim	/^	noremap <silent><d-9> :tabn 9<cr>$/;"	m
+<leader>0	init/init-keymaps.vim	/^noremap <silent><leader>0 10gt<cr>$/;"	m
+<leader>1	init/init-keymaps.vim	/^noremap <silent><leader>1 1gt<cr>$/;"	m
+<leader>2	init/init-keymaps.vim	/^noremap <silent><leader>2 2gt<cr>$/;"	m
+<leader>3	init/init-keymaps.vim	/^noremap <silent><leader>3 3gt<cr>$/;"	m
+<leader>4	init/init-keymaps.vim	/^noremap <silent><leader>4 4gt<cr>$/;"	m
+<leader>5	init/init-keymaps.vim	/^noremap <silent><leader>5 5gt<cr>$/;"	m
+<leader>6	init/init-keymaps.vim	/^noremap <silent><leader>6 6gt<cr>$/;"	m
+<leader>7	init/init-keymaps.vim	/^noremap <silent><leader>7 7gt<cr>$/;"	m
+<leader>8	init/init-keymaps.vim	/^noremap <silent><leader>8 8gt<cr>$/;"	m
+<leader>9	init/init-keymaps.vim	/^noremap <silent><leader>9 9gt<cr>$/;"	m
+<leader>bn	init/init-keymaps.vim	/^noremap <silent> <leader>bn :bn<cr>$/;"	m
+<leader>bp	init/init-keymaps.vim	/^noremap <silent> <leader>bp :bp<cr>$/;"	m
+<leader>rc	init.vim	/^	nmap <leader>rc :tabedit e:\/vim\/vim-init\/init.vim<CR>$/;"	m
+<leader>rc	init.vim	/^	nmap <leader>rc :tabedit ~\/.vim\/vim-init\/init.vim<CR>$/;"	m
+<leader>tc	init/init-keymaps.vim	/^noremap <silent> <leader>tc :tabnew<cr>$/;"	m
+<leader>tl	init/init-keymaps.vim	/^noremap <silent><leader>tl :call Tab_MoveLeft()<cr>$/;"	m
+<leader>tn	init/init-keymaps.vim	/^noremap <silent> <leader>tn :tabnext<cr>$/;"	m
+<leader>tp	init/init-keymaps.vim	/^noremap <silent> <leader>tp :tabprev<cr>$/;"	m
+<leader>tq	init/init-keymaps.vim	/^noremap <silent> <leader>tq :tabclose<cr>$/;"	m
+<leader>tr	init/init-keymaps.vim	/^noremap <silent><leader>tr :call Tab_MoveRight()<cr>$/;"	m
+<m-->	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	map <m--> <Plug>(expand_region_shrink)$/;"	kind:m	line:180
+<m-->	init/init-plugins.vim	/^	map <m--> <Plug>(expand_region_shrink)$/;"	m
+<m-0>	init/init-keymaps.vim	/^inoremap <silent><m-0> <ESC>:tabn 10<cr>$/;"	m
+<m-0>	init/init-keymaps.vim	/^noremap <silent><m-0> :tabn 10<cr>$/;"	m
+<m-1>	init/init-keymaps.vim	/^inoremap <silent><m-1> <ESC>:tabn 1<cr>$/;"	m
+<m-1>	init/init-keymaps.vim	/^noremap <silent><m-1> :tabn 1<cr>$/;"	m
+<m-2>	init/init-keymaps.vim	/^inoremap <silent><m-2> <ESC>:tabn 2<cr>$/;"	m
+<m-2>	init/init-keymaps.vim	/^noremap <silent><m-2> :tabn 2<cr>$/;"	m
+<m-3>	init/init-keymaps.vim	/^inoremap <silent><m-3> <ESC>:tabn 3<cr>$/;"	m
+<m-3>	init/init-keymaps.vim	/^noremap <silent><m-3> :tabn 3<cr>$/;"	m
+<m-4>	init/init-keymaps.vim	/^inoremap <silent><m-4> <ESC>:tabn 4<cr>$/;"	m
+<m-4>	init/init-keymaps.vim	/^noremap <silent><m-4> :tabn 4<cr>$/;"	m
+<m-5>	init/init-keymaps.vim	/^inoremap <silent><m-5> <ESC>:tabn 5<cr>$/;"	m
+<m-5>	init/init-keymaps.vim	/^noremap <silent><m-5> :tabn 5<cr>$/;"	m
+<m-6>	init/init-keymaps.vim	/^inoremap <silent><m-6> <ESC>:tabn 6<cr>$/;"	m
+<m-6>	init/init-keymaps.vim	/^noremap <silent><m-6> :tabn 6<cr>$/;"	m
+<m-7>	init/init-keymaps.vim	/^inoremap <silent><m-7> <ESC>:tabn 7<cr>$/;"	m
+<m-7>	init/init-keymaps.vim	/^noremap <silent><m-7> :tabn 7<cr>$/;"	m
+<m-8>	init/init-keymaps.vim	/^inoremap <silent><m-8> <ESC>:tabn 8<cr>$/;"	m
+<m-8>	init/init-keymaps.vim	/^noremap <silent><m-8> :tabn 8<cr>$/;"	m
+<m-9>	init/init-keymaps.vim	/^inoremap <silent><m-9> <ESC>:tabn 9<cr>$/;"	m
+<m-9>	init/init-keymaps.vim	/^noremap <silent><m-9> :tabn 9<cr>$/;"	m
+<m-=>	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	map <m-=> <Plug>(expand_region_expand)$/;"	kind:m	line:179
+<m-=>	init/init-plugins.vim	/^	map <m-=> <Plug>(expand_region_expand)$/;"	m
+<m-H>	init/init-keymaps.vim	/^inoremap <m-H> <esc><c-w>h$/;"	m
+<m-H>	init/init-keymaps.vim	/^noremap <m-H> <c-w>h$/;"	m
+<m-J>	init/init-keymaps.vim	/^inoremap <m-J> <esc><c-w>j$/;"	m
+<m-J>	init/init-keymaps.vim	/^noremap <m-J> <c-w>j$/;"	m
+<m-K>	init/init-keymaps.vim	/^inoremap <m-K> <esc><c-w>k$/;"	m
+<m-K>	init/init-keymaps.vim	/^noremap <m-K> <c-w>k$/;"	m
+<m-L>	init/init-keymaps.vim	/^inoremap <m-L> <esc><c-w>l$/;"	m
+<m-L>	init/init-keymaps.vim	/^noremap <m-L> <c-w>l$/;"	m
+<m-P>	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		noremap <m-P> :LeaderfBufTag!<cr>$/;"	kind:m	line:449
+<m-P>	init/init-plugins.vim	/^		noremap <m-P> :LeaderfBufTag!<cr>$/;"	m
+<m-e>	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	nmap <m-e> <Plug>(choosewin)$/;"	kind:m	line:128
+<m-e>	init/init-plugins.vim	/^	nmap <m-e> <Plug>(choosewin)$/;"	m
+<m-h>	init/init-keymaps.vim	/^cnoremap <m-h> <c-left>$/;"	m
+<m-h>	init/init-keymaps.vim	/^inoremap <m-h> <c-left>$/;"	m
+<m-h>	init/init-keymaps.vim	/^noremap <m-h> b$/;"	m
+<m-j>	init/init-keymaps.vim	/^inoremap <m-j> <c-\\><c-o>gj$/;"	m
+<m-j>	init/init-keymaps.vim	/^noremap <m-j> gj$/;"	m
+<m-k>	init/init-keymaps.vim	/^inoremap <m-k> <c-\\><c-o>gk$/;"	m
+<m-k>	init/init-keymaps.vim	/^noremap <m-k> gk$/;"	m
+<m-l>	init/init-keymaps.vim	/^cnoremap <m-l> <c-right>$/;"	m
+<m-l>	init/init-keymaps.vim	/^inoremap <m-l> <c-right>$/;"	m
+<m-l>	init/init-keymaps.vim	/^noremap <m-l> w$/;"	m
+<m-left>	init/init-keymaps.vim	/^noremap <silent><m-left> :call Tab_MoveLeft()<cr>$/;"	m
+<m-m>	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		noremap <m-m> :LeaderfTag<cr>$/;"	kind:m	line:455
+<m-m>	init/init-plugins.vim	/^		noremap <m-m> :LeaderfTag<cr>$/;"	m
+<m-n>	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		noremap <m-n> :CtrlPBuffer<cr>$/;"	kind:m	line:529
+<m-n>	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		noremap <m-n> :LeaderfBuffer<cr>$/;"	kind:m	line:452
+<m-n>	init/init-plugins.vim	/^		noremap <m-n> :CtrlPBuffer<cr>$/;"	m
+<m-n>	init/init-plugins.vim	/^		noremap <m-n> :LeaderfBuffer<cr>$/;"	m
+<m-p>	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		noremap <m-p> :CtrlPFunky<cr>$/;"	kind:m	line:526
+<m-p>	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		noremap <m-p> :LeaderfFunction!<cr>$/;"	kind:m	line:446
+<m-p>	init/init-plugins.vim	/^		noremap <m-p> :CtrlPFunky<cr>$/;"	m
+<m-p>	init/init-plugins.vim	/^		noremap <m-p> :LeaderfFunction!<cr>$/;"	m
+<m-right>	init/init-keymaps.vim	/^noremap <silent><m-right> :call Tab_MoveRight()<cr>$/;"	m
+<m-y>	init/init-keymaps.vim	/^inoremap <m-y> <c-\\><c-o>d\$$/;"	m
+<m-y>	init/init-keymaps.vim	/^noremap <m-y> d\$$/;"	m
+<plug>(plug-preview)	autoload/plug.vim	/^    nnoremap <silent> <buffer> <plug>(plug-preview) :silent! call <SID>preview_commit()<cr>$/;"	m
+<space>ha	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	noremap <silent><space>ha :RemoveErrorMarkers<cr>$/;"	kind:m	line:135
+<space>ha	init/init-plugins.vim	/^	noremap <silent><space>ha :RemoveErrorMarkers<cr>$/;"	m
+<space>nm	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	noremap <space>nm :NERDTreeMirror<cr>$/;"	kind:m	line:325
+<space>nm	init/init-plugins.vim	/^	noremap <space>nm :NERDTreeMirror<cr>$/;"	m
+<space>nn	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	noremap <space>nn :NERDTree<cr>$/;"	kind:m	line:323
+<space>nn	init/init-plugins.vim	/^	noremap <space>nn :NERDTree<cr>$/;"	m
+<space>no	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	noremap <space>no :NERDTreeFocus<cr>$/;"	kind:m	line:324
+<space>no	init/init-plugins.vim	/^	noremap <space>no :NERDTreeFocus<cr>$/;"	m
+<space>nt	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	noremap <space>nt :NERDTreeToggle<cr>$/;"	kind:m	line:326
+<space>nt	init/init-plugins.vim	/^	noremap <space>nt :NERDTreeToggle<cr>$/;"	m
+<space>rd	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	map <space>rd <Plug>(grammarous-disable-rule)$/;"	kind:m	line:341
+<space>rd	init/init-plugins.vim	/^	map <space>rd <Plug>(grammarous-disable-rule)$/;"	m
+<space>rg	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	noremap <space>rg :GrammarousCheck --lang=en-US --no-move-to-first-error --no-preview<cr>$/;"	kind:m	line:335
+<space>rg	init/init-plugins.vim	/^	noremap <space>rg :GrammarousCheck --lang=en-US --no-move-to-first-error --no-preview<cr>$/;"	m
+<space>rm	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	map <space>rm <Plug>(grammarous-remove-error)$/;"	kind:m	line:340
+<space>rm	init/init-plugins.vim	/^	map <space>rm <Plug>(grammarous-remove-error)$/;"	m
+<space>rn	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	map <space>rn <Plug>(grammarous-move-to-next-error)$/;"	kind:m	line:342
+<space>rn	init/init-plugins.vim	/^	map <space>rn <Plug>(grammarous-move-to-next-error)$/;"	m
+<space>rp	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	map <space>rp <Plug>(grammarous-move-to-previous-error)$/;"	kind:m	line:343
+<space>rp	init/init-plugins.vim	/^	map <space>rp <Plug>(grammarous-move-to-previous-error)$/;"	m
+<space>rr	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	map <space>rr <Plug>(grammarous-open-info-window)$/;"	kind:m	line:336
+<space>rr	init/init-plugins.vim	/^	map <space>rr <Plug>(grammarous-open-info-window)$/;"	m
+<space>rs	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	map <space>rs <Plug>(grammarous-reset)$/;"	kind:m	line:338
+<space>rs	init/init-plugins.vim	/^	map <space>rs <Plug>(grammarous-reset)$/;"	m
+<space>rv	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	map <space>rv <Plug>(grammarous-move-to-info-window)$/;"	kind:m	line:337
+<space>rv	init/init-plugins.vim	/^	map <space>rv <Plug>(grammarous-move-to-info-window)$/;"	m
+<space>rx	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	map <space>rx <Plug>(grammarous-close-info-window)$/;"	kind:m	line:339
+<space>rx	init/init-plugins.vim	/^	map <space>rx <Plug>(grammarous-close-info-window)$/;"	m
+=o	plugin/unimpaired.vim	/^  nmap <silent><expr> =o <SID>legacy_option_map(nr2char(getchar()))$/;"	m
+AsyncRun	plugin/asyncrun.vim	/^command! -bang -nargs=+ -range=0 -complete=file AsyncRun $/;"	c
+AsyncRun_Job_OnTimer	plugin/asyncrun.vim	/^function! g:AsyncRun_Job_OnTimer(id)$/;"	f
+AsyncStop	plugin/asyncrun.vim	/^command! -bar -bang -nargs=0 AsyncStop call asyncrun#stop('<bang>')$/;"	c
+BASIC	tools/conf/pylint.conf	/^[BASIC]$/;"	s
+BuildYCM	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^    function! BuildYCM(info)$/;"	kind:f	line:539
+BuildYCM	init/init-plugins.vim	/^    function! BuildYCM(info)$/;"	f
+CLASSES	tools/conf/pylint.conf	/^[CLASSES]$/;"	s
+Commentary	plugin/commentary.vim	/^command! -range -bar Commentary call s:go(<line1>,<line2>)$/;"	c
+D	autoload/plug.vim	/^  nnoremap <silent> <buffer> D  :PlugDiff<cr>$/;"	m
+DESIGN	tools/conf/pylint.conf	/^[DESIGN]$/;"	s
+DiffOrig	init/init-config.vim	/^  command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis$/;"	c
+ELIF	tools/conf/pylint.conf	/^[ELIF]$/;"	s
+EXCEPTIONS	tools/conf/pylint.conf	/^[EXCEPTIONS]$/;"	s
+ExecuteFile	init/init-keymaps.vim	/^function! ExecuteFile()$/;"	f
+FORMAT	tools/conf/pylint.conf	/^[FORMAT]$/;"	s
+GruvboxHlsHideCursor	colors/gruvbox.vim	/^function! GruvboxHlsHideCursor()$/;"	f
+GruvboxHlsShowCursor	colors/gruvbox.vim	/^function! GruvboxHlsShowCursor()$/;"	f
+HandleTextObjectMapping	plugin/indent-object.vim	/^function! <Sid>HandleTextObjectMapping(inner, incbelow, vis, range)$/;"	f
+HiLink	plugin/txt.vim	/^    command -nargs=+ HiLink hi def link <args>$/;"	c
+HiLink	plugin/txt.vim	/^    command -nargs=+ HiLink hi link <args>$/;"	c
+HighLink	syntax/quickmenu.vim	/^command! -nargs=* HighLink call s:hllink(<f-args>)$/;"	c
+IMPORTS	tools/conf/pylint.conf	/^[IMPORTS]$/;"	s
+InitFileTypesGroup	init/init-config.vim	/^augroup InitFileTypesGroup$/;"	a
+L	autoload/plug.vim	/^    nnoremap <silent> <buffer> L :call <SID>status_load(line('.'))<cr>$/;"	m
+L	autoload/plug.vim	/^    xnoremap <silent> <buffer> L :call <SID>status_load(line('.'))<cr>$/;"	m
+LOGGING	tools/conf/pylint.conf	/^[LOGGING]$/;"	s
+LoadScript	init.vim	/^command! -nargs=1 LoadScript exec 'so '.s:home.'\/'.'<args>'$/;"	c
+MASTER	tools/conf/pylint.conf	/^[MASTER]$/;"	s
+MESSAGES CONTROL	tools/conf/pylint.conf	/^[MESSAGES CONTROL]$/;"	s
+MISCELLANEOUS	tools/conf/pylint.conf	/^[MISCELLANEOUS]$/;"	s
+MyPluginSetup	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^augroup MyPluginSetup$/;"	kind:a	line:88
+MyPluginSetup	init/init-plugins.vim	/^augroup MyPluginSetup$/;"	a
+PaperColor	colors/papercol.vim	/^command! -nargs=0 PaperColor :call g:PaperColor()$/;"	c
+PaperColor	colors/papercol.vim	/^fun! g:PaperColor()$/;"	f
+Plug	autoload/plug.vim	/^  command! -nargs=+ -bar Plug call plug#(<args>)$/;"	c
+PlugClean	autoload/plug.vim	/^  command! -nargs=0 -bar -bang PlugClean call s:clean(<bang>0)$/;"	c
+PlugDiff	autoload/plug.vim	/^  command! -nargs=0 -bar PlugDiff    call s:diff()$/;"	c
+PlugInstall	autoload/plug.vim	/^  command! -nargs=* -bar -bang -complete=customlist,s:names PlugInstall call s:install(<bang>0, /;"	c
+PlugLOD	autoload/plug.vim	/^    augroup PlugLOD$/;"	a
+PlugSnapshot	autoload/plug.vim	/^  command! -nargs=? -bar -bang -complete=file PlugSnapshot call s:snapshot(<bang>0, <f-args>)$/;"	c
+PlugStatus	autoload/plug.vim	/^  command! -nargs=0 -bar PlugStatus  call s:status()$/;"	c
+PlugUpdate	autoload/plug.vim	/^  command! -nargs=* -bar -bang -complete=customlist,s:names PlugUpdate  call s:update(<bang>0, [/;"	c
+PlugUpgrade	autoload/plug.vim	/^  command! -nargs=0 -bar PlugUpgrade if s:upgrade() | execute 'source' s:esc(s:me) | endif$/;"	c
+PythonTab	init/init-tabsize.vim	/^augroup PythonTab$/;"	a
+R	autoload/plug.vim	/^  nnoremap <silent> <buffer> R  :call <SID>retry()<cr>$/;"	m
+REPORTS	tools/conf/pylint.conf	/^[REPORTS]$/;"	s
+S	autoload/plug.vim	/^  nnoremap <silent> <buffer> S  :PlugStatus<cr>$/;"	m
+SIMILARITIES	tools/conf/pylint.conf	/^[SIMILARITIES]$/;"	s
+SPELLING	tools/conf/pylint.conf	/^[SPELLING]$/;"	s
+SolarizedHiTrail	colors/solarized.vim	/^augroup SolarizedHiTrail$/;"	a
+SolarizedMenu	colors/solarized.vim	/^function! SolarizedMenu()$/;"	f
+SolarizedOptions	colors/solarized.vim	/^    command SolarizedOptions :call s:SolarizedOptions()$/;"	c
+SublimeMonokaiHighlight	colors/sublime.vim	/^fun! g:SublimeMonokaiHighlight(group, style)$/;"	f
+TYPECHECK	tools/conf/pylint.conf	/^[TYPECHECK]$/;"	s
+Tab_MoveLeft	init/init-keymaps.vim	/^function! Tab_MoveLeft()$/;"	f
+Tab_MoveRight	init/init-keymaps.vim	/^function! Tab_MoveRight()$/;"	f
+TextObject	plugin/indent-object.vim	/^function! <Sid>TextObject(inner, incbelow, vis, range, count)$/;"	f
+U	autoload/plug.vim	/^  nnoremap <silent> <buffer> U  :call <SID>status_update()<cr>$/;"	m
+U	autoload/plug.vim	/^  xnoremap <silent> <buffer> U  :call <SID>status_update()<cr>$/;"	m
+UnimpairedMapTransform	plugin/unimpaired.vim	/^function! UnimpairedMapTransform(algorithm, key) abort$/;"	f
+VARIABLES	tools/conf/pylint.conf	/^[VARIABLES]$/;"	s
+VimInitStyle	init/init-style.vim	/^augroup VimInitStyle$/;"	a
+VimUnixTerminalGroup	init/init-style.vim	/^		augroup VimUnixTerminalGroup$/;"	a
+Vim_NeatBuffer	init/init-style.vim	/^function! Vim_NeatBuffer(bufnr, fullname)$/;"	f
+Vim_NeatGuiTabLabel	init/init-style.vim	/^function! Vim_NeatGuiTabLabel()$/;"	f
+Vim_NeatGuiTabTip	init/init-style.vim	/^function! Vim_NeatGuiTabTip()$/;"	f
+Vim_NeatTabLabel	init/init-style.vim	/^function! Vim_NeatTabLabel(n)$/;"	f
+Vim_NeatTabLine	init/init-style.vim	/^function! Vim_NeatTabLine()$/;"	f
+X	autoload/plug.vim	/^    nnoremap <silent> <buffer> X :call <SID>revert()<cr>$/;"	m
+X	colors/desert256.vim	/^    fun <SID>X(group, fg, bg, attr)$/;"	f
+[[	autoload/plug.vim	/^  nnoremap <silent> <buffer> [[ :silent! call <SID>section('b')<cr>$/;"	m
+]]	autoload/plug.vim	/^  nnoremap <silent> <buffer> ]] :silent! call <SID>section('')<cr>$/;"	m
+aI	plugin/indent-object.vim	/^onoremap <silent>aI :<C-u>cal <Sid>HandleTextObjectMapping(0, 1, 0, [line("."), line("."), col("/;"	m
+aI	plugin/indent-object.vim	/^vnoremap <silent>aI :<C-u>cal <Sid>HandleTextObjectMapping(0, 1, 1, [line("'<"), line("'>"), col/;"	m
+aa	plugin/argtextobj.vim	/^  omap aa <Plug>(argtextobjA)$/;"	m
+aa	plugin/argtextobj.vim	/^  xmap aa <Plug>(argtextobjA)$/;"	m
+ai	plugin/indent-object.vim	/^onoremap <silent>ai :<C-u>cal <Sid>HandleTextObjectMapping(0, 0, 0, [line("."), line("."), col("/;"	m
+ai	plugin/indent-object.vim	/^vnoremap <silent>ai :<C-u>cal <Sid>HandleTextObjectMapping(0, 0, 1, [line("'<"), line("'>"), col/;"	m
+arg	tools/conf/pylint.conf	/^valid-classmethod-first-arg=cls$/;"	k	section:CLASSES
+arg	tools/conf/pylint.conf	/^valid-metaclass-classmethod-first-arg=mcs$/;"	k	section:CLASSES
+args	tools/conf/pylint.conf	/^max-args=5$/;"	k	section:DESIGN
+ast	tools/conf/pylint.conf	/^optimize-ast=no$/;"	k	section:MASTER
+asyncrun#execute	plugin/asyncrun.vim	/^function! asyncrun#execute(mode, cwd, save)$/;"	f
+asyncrun#fullname	plugin/asyncrun.vim	/^function! asyncrun#fullname(f)$/;"	f
+asyncrun#get_root	plugin/asyncrun.vim	/^function! asyncrun#get_root(path, ...)$/;"	f
+asyncrun#path_join	plugin/asyncrun.vim	/^function! asyncrun#path_join(home, name)$/;"	f
+asyncrun#quickfix_toggle	plugin/asyncrun.vim	/^function! asyncrun#quickfix_toggle(size, ...)$/;"	f
+asyncrun#run	plugin/asyncrun.vim	/^function! asyncrun#run(bang, opts, args, ...)$/;"	f
+asyncrun#status	plugin/asyncrun.vim	/^function! asyncrun#status()$/;"	f
+asyncrun#stop	plugin/asyncrun.vim	/^function! asyncrun#stop(bang)$/;"	f
+asyncrun#version	plugin/asyncrun.vim	/^function! asyncrun#version()$/;"	f
+asyncrun_augroup	plugin/asyncrun.vim	/^	augroup asyncrun_augroup$/;"	a
+attributes	tools/conf/pylint.conf	/^max-attributes=7$/;"	k	section:DESIGN
+b:current_syntax	plugin/txt.vim	/^let b:current_syntax = "txt"$/;"	v
+blocks	tools/conf/pylint.conf	/^analyse-fallback-blocks=no$/;"	k	section:IMPORTS
+blocks	tools/conf/pylint.conf	/^max-nested-blocks=5$/;"	k	section:ELIF
+branches	tools/conf/pylint.conf	/^max-branches=12$/;"	k	section:DESIGN
+builtins	tools/conf/pylint.conf	/^additional-builtins=$/;"	k	section:VARIABLES
+callbacks	tools/conf/pylint.conf	/^callbacks=cb_,_cb$/;"	k	section:VARIABLES
+cgc	plugin/commentary.vim	/^    nmap cgc <Plug>ChangeCommentary$/;"	m
+check	tools/conf/pylint.conf	/^no-space-check=trailing-comma,dict-separator$/;"	k	section:FORMAT
+classes	tools/conf/pylint.conf	/^ignored-classes=optparse.Values,thread._local,_thread._local$/;"	k	section:TYPECHECK
+classes	tools/conf/pylint.conf	/^property-classes=abc.abstractproperty$/;"	k	section:BASIC
+co	plugin/unimpaired.vim	/^  nmap <silent><expr> co <SID>legacy_option_map(nr2char(getchar()))$/;"	m
+color	colors/desert256.vim	/^    fun <SID>color(r, g, b)$/;"	f
+colors_name	colors/paradox.vim	/^let colors_name = "paradox"$/;"	v
+colors_name	colors/solarized.vim	/^let colors_name = "solarized"$/;"	v
+colors_name	colors/sublime.vim	/^let colors_name = 'monokai'$/;"	v
+comments	tools/conf/pylint.conf	/^ignore-comments=yes$/;"	k	section:SIMILARITIES
+confidence	tools/conf/pylint.conf	/^confidence=$/;"	k	section:MESSAGES CONTROL
+d	autoload/plug.vim	/^      nnoremap <silent> <buffer> d :set opfunc=<sid>delete_op<cr>g@$/;"	m
+d	autoload/plug.vim	/^      xnoremap <silent> <buffer> d :<c-u>call <sid>delete_op(visualmode(), 1)<cr>$/;"	m
+dd	autoload/plug.vim	/^      nmap     <silent> <buffer> dd d_$/;"	m
+decorators	tools/conf/pylint.conf	/^contextmanager-decorators=contextlib.contextmanager$/;"	k	section:TYPECHECK
+dict	tools/conf/pylint.conf	/^spelling-dict=$/;"	k	section:SPELLING
+disable	tools/conf/pylint.conf	/^disable=W0302,C0303,C0326,C0330,C0302,C0305,C0111,C0410,R0914,C0410,C0321,R0912,R0915,C0103,R090/;"	k	section:MESSAGES CONTROL
+docstrings	tools/conf/pylint.conf	/^ignore-docstrings=yes$/;"	k	section:SIMILARITIES
+evaluation	tools/conf/pylint.conf	/^evaluation=10.0 - ((float(5 * error + warning + refactor + convention) \/ statement) * 10)$/;"	k	section:REPORTS
+exceptions	tools/conf/pylint.conf	/^overgeneral-exceptions=Exception$/;"	k	section:EXCEPTIONS
+expr	tools/conf/pylint.conf	/^max-bool-expr=5$/;"	k	section:DESIGN
+extension	tools/conf/pylint.conf	/^unsafe-load-any-extension=no$/;"	k	section:MASTER
+file	tools/conf/pylint.conf	/^spelling-private-dict-file=$/;"	k	section:SPELLING
+filetypedetect	autoload/plug.vim	/^        augroup filetypedetect$/;"	a
+flake8	tools/conf/flake8.conf	/^[flake8]$/;"	s
+format	tools/conf/pylint.conf	/^expected-line-ending-format=$/;"	k	section:FORMAT
+format	tools/conf/pylint.conf	/^output-format=parseable$/;"	k	section:REPORTS
+g:Lf_CacheDirectory	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:Lf_CacheDirectory = expand('~\/.vim\/cache')$/;"	kind:v	line:467
+g:Lf_CacheDirectory	init/init-plugins.vim	/^		let g:Lf_CacheDirectory = expand('~\/.vim\/cache')$/;"	v
+g:Lf_HideHelp	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:Lf_HideHelp = 1$/;"	kind:v	line:473
+g:Lf_HideHelp	init/init-plugins.vim	/^		let g:Lf_HideHelp = 1$/;"	v
+g:Lf_MruFileExclude	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:Lf_MruFileExclude = ['*.so', '*.exe', '*.py[co]', '*.sw?', '~$*', '*.bak', '*.tmp', '*.d/;"	kind:v	line:482
+g:Lf_MruFileExclude	init/init-plugins.vim	/^		let g:Lf_MruFileExclude = ['*.so', '*.exe', '*.py[co]', '*.sw?', '~$*', '*.bak', '*.tmp', '*.d/;"	v
+g:Lf_MruMaxFiles	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:Lf_MruMaxFiles = 2048$/;"	kind:v	line:458
+g:Lf_MruMaxFiles	init/init-plugins.vim	/^		let g:Lf_MruMaxFiles = 2048$/;"	v
+g:Lf_NormalMap	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:Lf_NormalMap = {$/;"	kind:v	line:489
+g:Lf_NormalMap	init/init-plugins.vim	/^		let g:Lf_NormalMap = {$/;"	v
+g:Lf_PreviewResult	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:Lf_PreviewResult = {'Function':0, 'BufTag':0}$/;"	kind:v	line:486
+g:Lf_PreviewResult	init/init-plugins.vim	/^		let g:Lf_PreviewResult = {'Function':0, 'BufTag':0}$/;"	v
+g:Lf_RootMarkers	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:Lf_RootMarkers = ['.project', '.root', '.svn', '.git']$/;"	kind:v	line:464
+g:Lf_RootMarkers	init/init-plugins.vim	/^		let g:Lf_RootMarkers = ['.project', '.root', '.svn', '.git']$/;"	v
+g:Lf_ShortcutB	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:Lf_ShortcutB = '<m-n>'$/;"	kind:v	line:440
+g:Lf_ShortcutB	init/init-plugins.vim	/^		let g:Lf_ShortcutB = '<m-n>'$/;"	v
+g:Lf_ShortcutF	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:Lf_ShortcutF = '<c-p>'$/;"	kind:v	line:437
+g:Lf_ShortcutF	init/init-plugins.vim	/^		let g:Lf_ShortcutF = '<c-p>'$/;"	v
+g:Lf_ShowRelativePath	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:Lf_ShowRelativePath = 0$/;"	kind:v	line:470
+g:Lf_ShowRelativePath	init/init-plugins.vim	/^		let g:Lf_ShowRelativePath = 0$/;"	v
+g:Lf_StlColorscheme	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:Lf_StlColorscheme = 'powerline'$/;"	kind:v	line:483
+g:Lf_StlColorscheme	init/init-plugins.vim	/^		let g:Lf_StlColorscheme = 'powerline'$/;"	v
+g:Lf_StlSeparator	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font': '' }$/;"	kind:v	line:461
+g:Lf_StlSeparator	init/init-plugins.vim	/^		let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font': '' }$/;"	v
+g:Lf_WildIgnore	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:Lf_WildIgnore = {$/;"	kind:v	line:476
+g:Lf_WildIgnore	init/init-plugins.vim	/^		let g:Lf_WildIgnore = {$/;"	v
+g:Lf_WindowHeight	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:Lf_WindowHeight = 0.30$/;"	kind:v	line:466
+g:Lf_WindowHeight	init/init-plugins.vim	/^		let g:Lf_WindowHeight = 0.30$/;"	v
+g:Lf_WorkingDirectoryMode	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:Lf_WorkingDirectoryMode = 'Ac'$/;"	kind:v	line:465
+g:Lf_WorkingDirectoryMode	init/init-plugins.vim	/^		let g:Lf_WorkingDirectoryMode = 'Ac'$/;"	v
+g:NERDTreeDirArrows	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:NERDTreeDirArrows = 1$/;"	kind:v	line:321
+g:NERDTreeDirArrows	init/init-plugins.vim	/^	let g:NERDTreeDirArrows = 1$/;"	v
+g:NERDTreeHijackNetrw	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:NERDTreeHijackNetrw = 0$/;"	kind:v	line:322
+g:NERDTreeHijackNetrw	init/init-plugins.vim	/^	let g:NERDTreeHijackNetrw = 0$/;"	v
+g:NERDTreeMinimalUI	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:NERDTreeMinimalUI = 1$/;"	kind:v	line:320
+g:NERDTreeMinimalUI	init/init-plugins.vim	/^	let g:NERDTreeMinimalUI = 1$/;"	v
+g:_plug_bang	autoload/plug.vim	/^    let g:_plug_bang = (s:is_win && has('gui_running') ? 'silent ' : '').'!'.escape(cmd, '#!%')$/;"	v
+g:airline#extensions#ale#enabled	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:airline#extensions#ale#enabled = 1$/;"	kind:v	line:370
+g:airline#extensions#ale#enabled	init/init-plugins.vim	/^	let g:airline#extensions#ale#enabled = 1$/;"	v
+g:airline#extensions#branch#enabled	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:airline#extensions#branch#enabled = 0$/;"	kind:v	line:306
+g:airline#extensions#branch#enabled	init/init-plugins.vim	/^	let g:airline#extensions#branch#enabled = 0$/;"	v
+g:airline#extensions#csv#enabled	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:airline#extensions#csv#enabled = 0$/;"	kind:v	line:309
+g:airline#extensions#csv#enabled	init/init-plugins.vim	/^	let g:airline#extensions#csv#enabled = 0$/;"	v
+g:airline#extensions#fugitiveline#enabled	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:airline#extensions#fugitiveline#enabled = 0$/;"	kind:v	line:308
+g:airline#extensions#fugitiveline#enabled	init/init-plugins.vim	/^	let g:airline#extensions#fugitiveline#enabled = 0$/;"	v
+g:airline#extensions#syntastic#enabled	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:airline#extensions#syntastic#enabled = 0$/;"	kind:v	line:307
+g:airline#extensions#syntastic#enabled	init/init-plugins.vim	/^	let g:airline#extensions#syntastic#enabled = 0$/;"	v
+g:airline#extensions#vimagit#enabled	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:airline#extensions#vimagit#enabled = 0$/;"	kind:v	line:310
+g:airline#extensions#vimagit#enabled	init/init-plugins.vim	/^	let g:airline#extensions#vimagit#enabled = 0$/;"	v
+g:airline_exclude_preview	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:airline_exclude_preview = 1$/;"	kind:v	line:303
+g:airline_exclude_preview	init/init-plugins.vim	/^	let g:airline_exclude_preview = 1$/;"	v
+g:airline_left_alt_sep	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:airline_left_alt_sep = ''$/;"	kind:v	line:299
+g:airline_left_alt_sep	init/init-plugins.vim	/^	let g:airline_left_alt_sep = ''$/;"	v
+g:airline_left_sep	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:airline_left_sep = ''$/;"	kind:v	line:298
+g:airline_left_sep	init/init-plugins.vim	/^	let g:airline_left_sep = ''$/;"	v
+g:airline_powerline_fonts	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:airline_powerline_fonts = 0$/;"	kind:v	line:302
+g:airline_powerline_fonts	init/init-plugins.vim	/^	let g:airline_powerline_fonts = 0$/;"	v
+g:airline_right_alt_sep	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:airline_right_alt_sep = ''$/;"	kind:v	line:301
+g:airline_right_alt_sep	init/init-plugins.vim	/^	let g:airline_right_alt_sep = ''$/;"	v
+g:airline_right_sep	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:airline_right_sep = ''$/;"	kind:v	line:300
+g:airline_right_sep	init/init-plugins.vim	/^	let g:airline_right_sep = ''$/;"	v
+g:airline_section_b	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:airline_section_b = '%n'$/;"	kind:v	line:304
+g:airline_section_b	init/init-plugins.vim	/^	let g:airline_section_b = '%n'$/;"	v
+g:airline_theme	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:airline_theme='deus'$/;"	kind:v	line:305
+g:airline_theme	init/init-plugins.vim	/^	let g:airline_theme='deus'$/;"	v
+g:ale_c_cppcheck_options	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:ale_c_cppcheck_options = ''$/;"	kind:v	line:405
+g:ale_c_cppcheck_options	init/init-plugins.vim	/^	let g:ale_c_cppcheck_options = ''$/;"	v
+g:ale_c_gcc_options	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:ale_c_gcc_options = '-Wall -O2 -std=c99'$/;"	kind:v	line:403
+g:ale_c_gcc_options	init/init-plugins.vim	/^	let g:ale_c_gcc_options = '-Wall -O2 -std=c99'$/;"	v
+g:ale_command_wrapper	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:ale_command_wrapper = 'nice -n5'$/;"	kind:v	line:366
+g:ale_command_wrapper	init/init-plugins.vim	/^		let g:ale_command_wrapper = 'nice -n5'$/;"	v
+g:ale_completion_delay	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:ale_completion_delay = 500$/;"	kind:v	line:354
+g:ale_completion_delay	init/init-plugins.vim	/^	let g:ale_completion_delay = 500$/;"	v
+g:ale_cpp_cppcheck_options	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:ale_cpp_cppcheck_options = ''$/;"	kind:v	line:406
+g:ale_cpp_cppcheck_options	init/init-plugins.vim	/^	let g:ale_cpp_cppcheck_options = ''$/;"	v
+g:ale_cpp_gcc_options	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:ale_cpp_gcc_options = '-Wall -O2 -std=c++14'$/;"	kind:v	line:404
+g:ale_cpp_gcc_options	init/init-plugins.vim	/^	let g:ale_cpp_gcc_options = '-Wall -O2 -std=c++14'$/;"	v
+g:ale_echo_delay	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:ale_echo_delay = 20$/;"	kind:v	line:355
+g:ale_echo_delay	init/init-plugins.vim	/^	let g:ale_echo_delay = 20$/;"	v
+g:ale_echo_msg_format	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:ale_echo_msg_format = '[%linter%] %code: %%s'$/;"	kind:v	line:357
+g:ale_echo_msg_format	init/init-plugins.vim	/^	let g:ale_echo_msg_format = '[%linter%] %code: %%s'$/;"	v
+g:ale_lint_delay	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:ale_lint_delay = 500$/;"	kind:v	line:356
+g:ale_lint_delay	init/init-plugins.vim	/^	let g:ale_lint_delay = 500$/;"	v
+g:ale_lint_on_insert_leave	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:ale_lint_on_insert_leave = 1$/;"	kind:v	line:362
+g:ale_lint_on_insert_leave	init/init-plugins.vim	/^	let g:ale_lint_on_insert_leave = 1$/;"	v
+g:ale_lint_on_text_changed	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:ale_lint_on_text_changed = 'normal'$/;"	kind:v	line:361
+g:ale_lint_on_text_changed	init/init-plugins.vim	/^	let g:ale_lint_on_text_changed = 'normal'$/;"	v
+g:ale_linters	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:ale_linters.c += ['clang']$/;"	kind:v	line:412
+g:ale_linters	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:ale_linters.cpp += ['clang']$/;"	kind:v	line:413
+g:ale_linters	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:ale_linters = {$/;"	kind:v	line:373
+g:ale_linters	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:ale_linters.text = ['textlint', 'write-good', 'languagetool']$/;"	kind:v	line:408
+g:ale_linters	init/init-plugins.vim	/^		let g:ale_linters.c += ['clang']$/;"	v
+g:ale_linters	init/init-plugins.vim	/^		let g:ale_linters.cpp += ['clang']$/;"	v
+g:ale_linters	init/init-plugins.vim	/^	let g:ale_linters = {$/;"	v
+g:ale_linters	init/init-plugins.vim	/^	let g:ale_linters.text = ['textlint', 'write-good', 'languagetool']$/;"	v
+g:ale_python_flake8_options	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:ale_python_flake8_options = '--conf='.s:lintcfg('flake8.conf')$/;"	kind:v	line:400
+g:ale_python_flake8_options	init/init-plugins.vim	/^	let g:ale_python_flake8_options = '--conf='.s:lintcfg('flake8.conf')$/;"	v
+g:ale_python_pylint_options	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:ale_python_pylint_options .= ' --disable=W'$/;"	kind:v	line:402
+g:ale_python_pylint_options	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:ale_python_pylint_options = '--rcfile='.s:lintcfg('pylint.conf')$/;"	kind:v	line:401
+g:ale_python_pylint_options	init/init-plugins.vim	/^	let g:ale_python_pylint_options .= ' --disable=W'$/;"	v
+g:ale_python_pylint_options	init/init-plugins.vim	/^	let g:ale_python_pylint_options = '--rcfile='.s:lintcfg('pylint.conf')$/;"	v
+g:argumentobject_force_toplevel	plugin/argtextobj.vim	/^let g:argumentobject_force_toplevel =$/;"	v
+g:asyncrun_auto	plugin/asyncrun.vim	/^	let g:asyncrun_auto = ''$/;"	v
+g:asyncrun_bell	init/init-keymaps.vim	/^let g:asyncrun_bell = 1$/;"	v
+g:asyncrun_bell	plugin/asyncrun.vim	/^	let g:asyncrun_bell = 0$/;"	v
+g:asyncrun_code	plugin/asyncrun.vim	/^	let g:asyncrun_code = ''$/;"	v
+g:asyncrun_code	plugin/asyncrun.vim	/^	let g:asyncrun_code = s:async_code$/;"	v
+g:asyncrun_encs	plugin/asyncrun.vim	/^	let g:asyncrun_encs = ''$/;"	v
+g:asyncrun_exit	plugin/asyncrun.vim	/^	let g:asyncrun_exit = ''$/;"	v
+g:asyncrun_ftrun	plugin/asyncrun.vim	/^	let g:asyncrun_ftrun = {}$/;"	v
+g:asyncrun_hook	plugin/asyncrun.vim	/^	let g:asyncrun_hook = ''$/;"	v
+g:asyncrun_info	plugin/asyncrun.vim	/^	let g:asyncrun_info = ''$/;"	v
+g:asyncrun_info	plugin/asyncrun.vim	/^	let g:asyncrun_info = a:args$/;"	v
+g:asyncrun_last	plugin/asyncrun.vim	/^	let g:asyncrun_last = 0$/;"	v
+g:asyncrun_local	plugin/asyncrun.vim	/^	let g:asyncrun_local = 1$/;"	v
+g:asyncrun_mode	plugin/asyncrun.vim	/^	let g:asyncrun_mode = 0$/;"	v
+g:asyncrun_open	init/init-keymaps.vim	/^let g:asyncrun_open = 6$/;"	v
+g:asyncrun_save	plugin/asyncrun.vim	/^	let g:asyncrun_save = 0$/;"	v
+g:asyncrun_shell	plugin/asyncrun.vim	/^	let g:asyncrun_shell = ''$/;"	v
+g:asyncrun_shell_error	plugin/asyncrun.vim	/^				let g:asyncrun_shell_error = py3eval('c')$/;"	v
+g:asyncrun_shell_error	plugin/asyncrun.vim	/^				let g:asyncrun_shell_error = pyeval('c')$/;"	v
+g:asyncrun_shell_error	plugin/asyncrun.vim	/^			let g:asyncrun_shell_error = v:shell_error$/;"	v
+g:asyncrun_shellflag	plugin/asyncrun.vim	/^	let g:asyncrun_shellflag = ''$/;"	v
+g:asyncrun_silent	plugin/asyncrun.vim	/^	let g:asyncrun_silent = 1$/;"	v
+g:asyncrun_skip	plugin/asyncrun.vim	/^	let g:asyncrun_skip = 0$/;"	v
+g:asyncrun_status	plugin/asyncrun.vim	/^		let g:asyncrun_status = "failure"$/;"	v
+g:asyncrun_status	plugin/asyncrun.vim	/^		let g:asyncrun_status = "running"$/;"	v
+g:asyncrun_status	plugin/asyncrun.vim	/^		let g:asyncrun_status = "success"$/;"	v
+g:asyncrun_status	plugin/asyncrun.vim	/^	let g:asyncrun_status = ''$/;"	v
+g:asyncrun_stop	plugin/asyncrun.vim	/^	let g:asyncrun_stop = ''$/;"	v
+g:asyncrun_support	plugin/asyncrun.vim	/^		let g:asyncrun_support = 1$/;"	v
+g:asyncrun_support	plugin/asyncrun.vim	/^	let g:asyncrun_support = 1$/;"	v
+g:asyncrun_support	plugin/asyncrun.vim	/^let g:asyncrun_support = 0$/;"	v
+g:asyncrun_text	plugin/asyncrun.vim	/^		let g:asyncrun_text = opts.text$/;"	v
+g:asyncrun_text	plugin/asyncrun.vim	/^	let g:asyncrun_text = ''$/;"	v
+g:asyncrun_text	plugin/asyncrun.vim	/^	let g:asyncrun_text = s:async_info.text$/;"	v
+g:asyncrun_timer	plugin/asyncrun.vim	/^	let g:asyncrun_timer = 25$/;"	v
+g:asyncrun_trim	plugin/asyncrun.vim	/^	let g:asyncrun_trim = 0$/;"	v
+g:asyncrun_windows	plugin/asyncrun.vim	/^	let g:asyncrun_windows = 1$/;"	v
+g:asyncrun_windows	plugin/asyncrun.vim	/^let g:asyncrun_windows = 0$/;"	v
+g:colors_name	colors/desert.vim	/^let g:colors_name="desert"$/;"	v
+g:colors_name	colors/desert256.vim	/^let g:colors_name="desert256"$/;"	v
+g:colors_name	colors/dracula.vim	/^let g:colors_name = "dracula"$/;"	v
+g:colors_name	colors/eclipse2.vim	/^let g:colors_name = "eclipse"$/;"	v
+g:colors_name	colors/gruvbox.vim	/^let g:colors_name='gruvbox'$/;"	v
+g:colors_name	colors/monokai.vim	/^let g:colors_name = "monokai"$/;"	v
+g:colors_name	colors/oceanblack256.vim	/^let g:colors_name = "oceanblack256"$/;"	v
+g:colors_name	colors/papercol.vim	/^let g:colors_name = "papercol"$/;"	v
+g:colors_name	colors/seoul256-light.vim	/^    let g:colors_name = &background == 'dark' ? 'seoul256' : 'seoul256-light'$/;"	v
+g:colors_name	colors/seoul256-light.vim	/^    let g:colors_name = 'seoul256'$/;"	v
+g:colors_name	colors/seoul256.vim	/^let g:colors_name = 'seoul256'$/;"	v
+g:config_vim_tab_style	init/init-style.vim	/^	let g:config_vim_tab_style = 3$/;"	v
+g:ctrlp_custom_ignore	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:ctrlp_custom_ignore = {$/;"	kind:v	line:509
+g:ctrlp_custom_ignore	init/init-plugins.vim	/^		let g:ctrlp_custom_ignore = {$/;"	v
+g:ctrlp_map	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:ctrlp_map = ''$/;"	kind:v	line:506
+g:ctrlp_map	init/init-plugins.vim	/^		let g:ctrlp_map = ''$/;"	v
+g:ctrlp_root_markers	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:ctrlp_root_markers = ['.project', '.root', '.svn', '.git']$/;"	kind:v	line:516
+g:ctrlp_root_markers	init/init-plugins.vim	/^		let g:ctrlp_root_markers = ['.project', '.root', '.svn', '.git']$/;"	v
+g:ctrlp_working_path	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:ctrlp_working_path = 0$/;"	kind:v	line:517
+g:ctrlp_working_path	init/init-plugins.vim	/^		let g:ctrlp_working_path = 0$/;"	v
+g:echodoc#enable_at_startup	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:echodoc#enable_at_startup = 1$/;"	kind:v	line:424
+g:echodoc#enable_at_startup	init/init-plugins.vim	/^	let g:echodoc#enable_at_startup = 1$/;"	v
+g:gitgutter_override_sign_column_highlight	colors/gruvbox.vim	/^  let g:gitgutter_override_sign_column_highlight = 0$/;"	v
+g:gruvbox_bold	colors/gruvbox.vim	/^  let g:gruvbox_bold=1$/;"	v
+g:gruvbox_contrast_dark	colors/gruvbox.vim	/^  let g:gruvbox_contrast_dark='medium'$/;"	v
+g:gruvbox_contrast_light	colors/gruvbox.vim	/^  let g:gruvbox_contrast_light='medium'$/;"	v
+g:gruvbox_guisp_fallback	colors/gruvbox.vim	/^  let g:gruvbox_guisp_fallback='NONE'$/;"	v
+g:gruvbox_improved_strings	colors/gruvbox.vim	/^  let g:gruvbox_improved_strings=0$/;"	v
+g:gruvbox_improved_warnings	colors/gruvbox.vim	/^  let g:gruvbox_improved_warnings=0$/;"	v
+g:gruvbox_inverse	colors/gruvbox.vim	/^  let g:gruvbox_inverse=1$/;"	v
+g:gruvbox_invert_indent_guides	colors/gruvbox.vim	/^  let g:gruvbox_invert_indent_guides=0$/;"	v
+g:gruvbox_italic	colors/gruvbox.vim	/^    let g:gruvbox_italic=0$/;"	v
+g:gruvbox_italic	colors/gruvbox.vim	/^    let g:gruvbox_italic=1$/;"	v
+g:gruvbox_termcolors	colors/gruvbox.vim	/^  let g:gruvbox_termcolors=256$/;"	v
+g:gruvbox_undercurl	colors/gruvbox.vim	/^  let g:gruvbox_undercurl=1$/;"	v
+g:gruvbox_underline	colors/gruvbox.vim	/^  let g:gruvbox_underline=1$/;"	v
+g:gutentags_auto_add_gtags_cscope	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:gutentags_auto_add_gtags_cscope = 0$/;"	kind:v	line:232
+g:gutentags_auto_add_gtags_cscope	init/init-plugins.vim	/^	let g:gutentags_auto_add_gtags_cscope = 0$/;"	v
+g:gutentags_cache_dir	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:gutentags_cache_dir = expand('E:\/vim\/cache\/tags')$/;"	kind:v	line:204
+g:gutentags_cache_dir	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:gutentags_cache_dir = expand('~\/.vim\/.cache\/tags')$/;"	kind:v	line:206
+g:gutentags_cache_dir	init/init-plugins.vim	/^		let g:gutentags_cache_dir = expand('E:\/vim\/cache\/tags')$/;"	v
+g:gutentags_cache_dir	init/init-plugins.vim	/^		let g:gutentags_cache_dir = expand('~\/.vim\/.cache\/tags')$/;"	v
+g:gutentags_ctags_extra_args	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']$/;"	kind:v	line:225
+g:gutentags_ctags_extra_args	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:gutentags_ctags_extra_args += ['--c-kinds=+px']$/;"	kind:v	line:226
+g:gutentags_ctags_extra_args	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']$/;"	kind:v	line:224
+g:gutentags_ctags_extra_args	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:gutentags_ctags_extra_args = []$/;"	kind:v	line:223
+g:gutentags_ctags_extra_args	init/init-plugins.vim	/^	let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']$/;"	v
+g:gutentags_ctags_extra_args	init/init-plugins.vim	/^	let g:gutentags_ctags_extra_args += ['--c-kinds=+px']$/;"	v
+g:gutentags_ctags_extra_args	init/init-plugins.vim	/^	let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']$/;"	v
+g:gutentags_ctags_extra_args	init/init-plugins.vim	/^	let g:gutentags_ctags_extra_args = []$/;"	v
+g:gutentags_ctags_tagfile	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:gutentags_ctags_tagfile = '.tags'$/;"	kind:v	line:200
+g:gutentags_ctags_tagfile	init/init-plugins.vim	/^	let g:gutentags_ctags_tagfile = '.tags'$/;"	v
+g:gutentags_modules	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:gutentags_modules += ['ctags']$/;"	kind:v	line:214
+g:gutentags_modules	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^		let g:gutentags_modules += ['gtags_cscope']$/;"	kind:v	line:219
+g:gutentags_modules	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:gutentags_modules = [] $/;"	kind:v	line:210
+g:gutentags_modules	init/init-plugins.vim	/^		let g:gutentags_modules += ['ctags']$/;"	v
+g:gutentags_modules	init/init-plugins.vim	/^		let g:gutentags_modules += ['gtags_cscope']$/;"	v
+g:gutentags_modules	init/init-plugins.vim	/^	let g:gutentags_modules = [] $/;"	v
+g:gutentags_project_root	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:gutentags_project_root = ['.root']$/;"	kind:v	line:199
+g:gutentags_project_root	init/init-plugins.vim	/^	let g:gutentags_project_root = ['.root']$/;"	v
+g:indentLine_color_gui	colors/gruvbox.vim	/^  let g:indentLine_color_gui = s:bg2[0]$/;"	v
+g:indentLine_color_term	colors/gruvbox.vim	/^  let g:indentLine_color_term = s:bg2[1]$/;"	v
+g:indent_guides_auto_colors	colors/gruvbox.vim	/^  let g:indent_guides_auto_colors = 0$/;"	v
+g:indent_guides_auto_colors	colors/seoul256.vim	/^let g:indent_guides_auto_colors = 0$/;"	v
+g:indent_object_except_first_level	plugin/indent-object.vim	/^	let g:indent_object_except_first_level = 1$/;"	v
+g:loaded_commentary	plugin/commentary.vim	/^let g:loaded_commentary = 1$/;"	v
+g:loaded_plug	autoload/plug.vim	/^let g:loaded_plug = 1$/;"	v
+g:loaded_solarized_menu	colors/solarized.vim	/^    let g:loaded_solarized_menu = 1$/;"	v
+g:loaded_unimpaired	plugin/unimpaired.vim	/^let g:loaded_unimpaired = 1$/;"	v
+g:mapleader	init.vim	/^let g:mapleader = ' '$/;"	v
+g:monokai_gui_italic	colors/sublime.vim	/^    let g:monokai_gui_italic = 1$/;"	v
+g:monokai_term_italic	colors/sublime.vim	/^    let g:monokai_term_italic = 0$/;"	v
+g:monokai_termcolors	colors/sublime.vim	/^let g:monokai_termcolors = 256 " does not support 16 color term right now.$/;"	v
+g:niji_dark_colours	colors/gruvbox.vim	/^let g:niji_dark_colours = g:rbpt_colorpairs$/;"	v
+g:niji_light_colours	colors/gruvbox.vim	/^let g:niji_light_colours = g:rbpt_colorpairs$/;"	v
+g:plug_home	autoload/plug.vim	/^  let g:plug_home = home$/;"	v
+g:plugin_group	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:plugin_group += ['YouCompleteMe']$/;"	kind:v	line:20
+g:plugin_group	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:plugin_group += ['leaderf']$/;"	kind:v	line:19
+g:plugin_group	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:plugin_group += ['tags', 'airline', 'nerdtree', 'ale', 'echodoc']$/;"	kind:v	line:18
+g:plugin_group	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:plugin_group =  ['basic', 'tags', 'enhanced', 'filetypes', 'textobj']$/;"	kind:v	line:17
+g:plugin_group	init/init-plugins.vim	/^	let g:plugin_group += ['YouCompleteMe']$/;"	v
+g:plugin_group	init/init-plugins.vim	/^	let g:plugin_group += ['leaderf']$/;"	v
+g:plugin_group	init/init-plugins.vim	/^	let g:plugin_group += ['tags', 'airline', 'nerdtree', 'ale', 'echodoc']$/;"	v
+g:plugin_group	init/init-plugins.vim	/^	let g:plugin_group =  ['basic', 'tags', 'enhanced', 'filetypes', 'textobj']$/;"	v
+g:plugs	autoload/plug.vim	/^    let g:plugs[name] = spec$/;"	v
+g:plugs	autoload/plug.vim	/^  let g:plugs = {}$/;"	v
+g:plugs_order	autoload/plug.vim	/^  let g:plugs_order = []$/;"	v
+g:plugs_order	autoload/plug.vim	/^  let g:plugs_order = get(g:, 'plugs_order', keys(g:plugs))$/;"	v
+g:quickmenu_disable_nofile	autoload/quickmenu.vim	/^	let g:quickmenu_disable_nofile = 1$/;"	v
+g:quickmenu_ft_blacklist	autoload/quickmenu.vim	/^	let g:quickmenu_ft_blacklist = ['netrw', 'nerdtree', 'startify']$/;"	v
+g:quickmenu_max_width	autoload/quickmenu.vim	/^	let g:quickmenu_max_width = 40$/;"	v
+g:quickmenu_options	autoload/quickmenu.vim	/^	let g:quickmenu_options = ''$/;"	v
+g:quickmenu_padding_left	autoload/quickmenu.vim	/^	let g:quickmenu_padding_left = 3$/;"	v
+g:quickmenu_padding_right	autoload/quickmenu.vim	/^	let g:quickmenu_padding_right = 3$/;"	v
+g:rainbow_conf	colors/gruvbox.vim	/^   let g:rainbow_conf = {}$/;"	v
+g:rainbow_conf	colors/gruvbox.vim	/^   let g:rainbow_conf['ctermfgs'] = g:rainbow_ctermfgs$/;"	v
+g:rainbow_conf	colors/gruvbox.vim	/^   let g:rainbow_conf['guifgs'] = g:rainbow_guifgs$/;"	v
+g:rainbow_ctermfgs	colors/gruvbox.vim	/^let g:rainbow_ctermfgs = [ '166', 'red', 'magenta', 'blue' ]$/;"	v
+g:rainbow_guifgs	colors/gruvbox.vim	/^let g:rainbow_guifgs = [ '#d65d0e', '#cc241d', '#b16286', '#458588' ]$/;"	v
+g:rbpt_colorpairs	colors/gruvbox.vim	/^  let g:rbpt_colorpairs =$/;"	v
+g:seoul256_background	colors/seoul256-light.vim	/^      let g:seoul256_background = s:backup$/;"	v
+g:seoul256_background	colors/seoul256-light.vim	/^      let g:seoul256_background = s:custom_bg$/;"	v
+g:seoul256_current_bg	colors/seoul256.vim	/^let g:seoul256_current_bg = [s:dark_bg, s:light_bg][s:style_idx]$/;"	v
+g:seoul256_current_fg	colors/seoul256.vim	/^let g:seoul256_current_fg = [s:dark_fg, s:light_fg][s:style_idx]$/;"	v
+g:signify_sign_add	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:signify_sign_add               = '+'$/;"	kind:v	line:139
+g:signify_sign_add	init/init-plugins.vim	/^	let g:signify_sign_add               = '+'$/;"	v
+g:signify_sign_change	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:signify_sign_change            = '~'$/;"	kind:v	line:142
+g:signify_sign_change	init/init-plugins.vim	/^	let g:signify_sign_change            = '~'$/;"	v
+g:signify_sign_changedelete	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:signify_sign_changedelete      = g:signify_sign_change$/;"	kind:v	line:143
+g:signify_sign_changedelete	init/init-plugins.vim	/^	let g:signify_sign_changedelete      = g:signify_sign_change$/;"	v
+g:signify_sign_delete	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:signify_sign_delete            = '_'$/;"	kind:v	line:140
+g:signify_sign_delete	init/init-plugins.vim	/^	let g:signify_sign_delete            = '_'$/;"	v
+g:signify_sign_delete_first_line	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:signify_sign_delete_first_line = '‾'$/;"	kind:v	line:141
+g:signify_sign_delete_first_line	init/init-plugins.vim	/^	let g:signify_sign_delete_first_line = '‾'$/;"	v
+g:signify_vcs_cmds	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:signify_vcs_cmds = {$/;"	kind:v	line:146
+g:signify_vcs_cmds	init/init-plugins.vim	/^	let g:signify_vcs_cmds = {$/;"	v
+g:signify_vcs_list	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:signify_vcs_list = ['git', 'svn']$/;"	kind:v	line:138
+g:signify_vcs_list	init/init-plugins.vim	/^	let g:signify_vcs_list = ['git', 'svn']$/;"	v
+g:startify_disable_at_vimenter	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:startify_disable_at_vimenter = 1$/;"	kind:v	line:131
+g:startify_disable_at_vimenter	init/init-plugins.vim	/^	let g:startify_disable_at_vimenter = 1$/;"	v
+g:startify_session_dir	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	let g:startify_session_dir = '~\/.vim\/session'$/;"	kind:v	line:132
+g:startify_session_dir	init/init-plugins.vim	/^	let g:startify_session_dir = '~\/.vim\/session'$/;"	v
+g:termcap_guicursor	init/init-config.vim	/^	let g:termcap_guicursor = &guicursor$/;"	v
+g:termcap_t_RS	init/init-config.vim	/^	let g:termcap_t_RS = &t_RS$/;"	v
+g:termcap_t_SH	init/init-config.vim	/^	let g:termcap_t_SH = &t_SH$/;"	v
+g:terminal_color_0	colors/papercol.vim	/^  let g:terminal_color_0  = color00[0]$/;"	v
+g:terminal_color_1	colors/papercol.vim	/^  let g:terminal_color_1  = color01[0]$/;"	v
+g:terminal_color_10	colors/papercol.vim	/^  let g:terminal_color_10 = color10[0]$/;"	v
+g:terminal_color_11	colors/papercol.vim	/^  let g:terminal_color_11 = color11[0]$/;"	v
+g:terminal_color_12	colors/papercol.vim	/^  let g:terminal_color_12 = color12[0]$/;"	v
+g:terminal_color_13	colors/papercol.vim	/^  let g:terminal_color_13 = color13[0]$/;"	v
+g:terminal_color_14	colors/papercol.vim	/^  let g:terminal_color_14 = color14[0]$/;"	v
+g:terminal_color_15	colors/papercol.vim	/^  let g:terminal_color_15 = color15[0]$/;"	v
+g:terminal_color_2	colors/papercol.vim	/^  let g:terminal_color_2  = color02[0]$/;"	v
+g:terminal_color_3	colors/papercol.vim	/^  let g:terminal_color_3  = color03[0]$/;"	v
+g:terminal_color_4	colors/papercol.vim	/^  let g:terminal_color_4  = color04[0]$/;"	v
+g:terminal_color_5	colors/papercol.vim	/^  let g:terminal_color_5  = color05[0]$/;"	v
+g:terminal_color_6	colors/papercol.vim	/^  let g:terminal_color_6  = color06[0]$/;"	v
+g:terminal_color_7	colors/papercol.vim	/^  let g:terminal_color_7  = color07[0]$/;"	v
+g:terminal_color_8	colors/papercol.vim	/^  let g:terminal_color_8  = color08[0]$/;"	v
+g:terminal_color_9	colors/papercol.vim	/^  let g:terminal_color_9  = color09[0]$/;"	v
+g:unimpaired_html_entities	plugin/unimpaired.vim	/^let g:unimpaired_html_entities = {$/;"	v
+g:vimshell_escape_colors	colors/gruvbox.vim	/^let g:vimshell_escape_colors = [$/;"	v
+g:ycm_add_preview_to_completeopt	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^    let g:ycm_add_preview_to_completeopt = 0$/;"	kind:v	line:552
+g:ycm_add_preview_to_completeopt	init/init-plugins.vim	/^    let g:ycm_add_preview_to_completeopt = 0$/;"	v
+g:ycm_collect_identifiers_from_comments_and_strings	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^    let g:ycm_collect_identifiers_from_comments_and_strings = 1$/;"	kind:v	line:558
+g:ycm_collect_identifiers_from_comments_and_strings	init/init-plugins.vim	/^    let g:ycm_collect_identifiers_from_comments_and_strings = 1$/;"	v
+g:ycm_complete_in_strings	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^    let g:ycm_complete_in_strings=1$/;"	kind:v	line:559
+g:ycm_complete_in_strings	init/init-plugins.vim	/^    let g:ycm_complete_in_strings=1$/;"	v
+g:ycm_filetype_whitelist	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^    let g:ycm_filetype_whitelist = { $/;"	kind:v	line:575
+g:ycm_filetype_whitelist	init/init-plugins.vim	/^    let g:ycm_filetype_whitelist = { $/;"	v
+g:ycm_key_invoke_completion	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^    let g:ycm_key_invoke_completion = '<c-z>'$/;"	kind:v	line:560
+g:ycm_key_invoke_completion	init/init-plugins.vim	/^    let g:ycm_key_invoke_completion = '<c-z>'$/;"	v
+g:ycm_min_num_identifier_candidate_chars	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^    let g:ycm_min_num_identifier_candidate_chars = 2$/;"	kind:v	line:557
+g:ycm_min_num_identifier_candidate_chars	init/init-plugins.vim	/^    let g:ycm_min_num_identifier_candidate_chars = 2$/;"	v
+g:ycm_semantic_triggers	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^    let g:ycm_semantic_triggers =  {$/;"	kind:v	line:566
+g:ycm_semantic_triggers	init/init-plugins.vim	/^    let g:ycm_semantic_triggers =  {$/;"	v
+g:ycm_server_log_level	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^    let g:ycm_server_log_level = 'info'$/;"	kind:v	line:556
+g:ycm_server_log_level	init/init-plugins.vim	/^    let g:ycm_server_log_level = 'info'$/;"	v
+g:ycm_show_diagnostics_ui	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^    let g:ycm_show_diagnostics_ui = 0$/;"	kind:v	line:555
+g:ycm_show_diagnostics_ui	init/init-plugins.vim	/^    let g:ycm_show_diagnostics_ui = 0$/;"	v
+gc	plugin/commentary.vim	/^  nmap gc  <Plug>Commentary$/;"	m
+gc	plugin/commentary.vim	/^  omap gc  <Plug>Commentary$/;"	m
+gc	plugin/commentary.vim	/^  xmap gc  <Plug>Commentary$/;"	m
+gcc	plugin/commentary.vim	/^  nmap gcc <Plug>CommentaryLine$/;"	m
+gcu	plugin/commentary.vim	/^  nmap gcu <Plug>Commentary<Plug>Commentary$/;"	m
+graph	tools/conf/pylint.conf	/^ext-import-graph=$/;"	k	section:IMPORTS
+graph	tools/conf/pylint.conf	/^import-graph=$/;"	k	section:IMPORTS
+graph	tools/conf/pylint.conf	/^int-import-graph=$/;"	k	section:IMPORTS
+grey_color	colors/desert256.vim	/^    fun <SID>grey_color(n)$/;"	f
+grey_level	colors/desert256.vim	/^    fun <SID>grey_level(n)$/;"	f
+grey_number	colors/desert256.vim	/^    fun <SID>grey_number(x)$/;"	f
+group	tools/conf/pylint.conf	/^name-group=$/;"	k	section:BASIC
+hint	tools/conf/pylint.conf	/^argument-name-hint=[a-z_][a-z0-9_]{2,30}\$$/;"	k	section:BASIC
+hint	tools/conf/pylint.conf	/^attr-name-hint=[a-z_][a-z0-9_]{2,30}\$$/;"	k	section:BASIC
+hint	tools/conf/pylint.conf	/^class-attribute-name-hint=([A-Za-z_][A-Za-z0-9_]{2,30}|(__.*__))\$$/;"	k	section:BASIC
+hint	tools/conf/pylint.conf	/^class-name-hint=[A-Z_][a-zA-Z0-9]+\$$/;"	k	section:BASIC
+hint	tools/conf/pylint.conf	/^const-name-hint=(([A-Z_][A-Z0-9_]*)|(__.*__))\$$/;"	k	section:BASIC
+hint	tools/conf/pylint.conf	/^function-name-hint=[a-z_][a-z0-9_]{2,30}\$$/;"	k	section:BASIC
+hint	tools/conf/pylint.conf	/^include-naming-hint=no$/;"	k	section:BASIC
+hint	tools/conf/pylint.conf	/^inlinevar-name-hint=[A-Za-z_][A-Za-z0-9_]*\$$/;"	k	section:BASIC
+hint	tools/conf/pylint.conf	/^method-name-hint=[a-z_][a-z0-9_]{2,30}\$$/;"	k	section:BASIC
+hint	tools/conf/pylint.conf	/^module-name-hint=(([a-z_][a-z0-9_]*)|([A-Z][a-zA-Z0-9]+))\$$/;"	k	section:BASIC
+hint	tools/conf/pylint.conf	/^variable-name-hint=[a-z_][a-z0-9_]{2,30}\$$/;"	k	section:BASIC
+hs_highlight_boolean	colors/solarized.vim	/^let hs_highlight_boolean=1$/;"	v
+hs_highlight_delimiters	colors/solarized.vim	/^let hs_highlight_delimiters=1$/;"	v
+iI	plugin/indent-object.vim	/^onoremap <silent>iI :<C-u>cal <Sid>HandleTextObjectMapping(1, 1, 0, [line("."), line("."), col("/;"	m
+iI	plugin/indent-object.vim	/^vnoremap <silent>iI :<C-u>cal <Sid>HandleTextObjectMapping(1, 1, 1, [line("'<"), line("'>"), col/;"	m
+ia	plugin/argtextobj.vim	/^  omap ia <Plug>(argtextobjI)$/;"	m
+ia	plugin/argtextobj.vim	/^  xmap ia <Plug>(argtextobjI)$/;"	m
+ignore	tools/conf/flake8.conf	/^ignore = W191,E265,W291,E211,E251,E401,E201,E701,W391,E302,E303,E228,E202,E231,E128,E301,E722,E3/;"	k	section:flake8
+ignore	tools/conf/pylint.conf	/^ignore=CVS$/;"	k	section:MASTER
+ii	plugin/indent-object.vim	/^onoremap <silent>ii :<C-u>cal <Sid>HandleTextObjectMapping(1, 0, 0, [line("."), line("."), col("/;"	m
+ii	plugin/indent-object.vim	/^vnoremap <silent>ii :<C-u>cal <Sid>HandleTextObjectMapping(1, 0, 1, [line("'<"), line("'>"), col/;"	m
+import	tools/conf/pylint.conf	/^init-import=no$/;"	k	section:VARIABLES
+imports	tools/conf/pylint.conf	/^ignore-imports=no$/;"	k	section:SIMILARITIES
+jobs	tools/conf/pylint.conf	/^jobs=1$/;"	k	section:MASTER
+length	tools/conf/flake8.conf	/^max-line-length = 160$/;"	k	section:flake8
+length	tools/conf/pylint.conf	/^docstring-min-length=-1$/;"	k	section:BASIC
+length	tools/conf/pylint.conf	/^max-line-length=100$/;"	k	section:FORMAT
+library	tools/conf/pylint.conf	/^known-standard-library=$/;"	k	section:IMPORTS
+lines	tools/conf/pylint.conf	/^ignore-long-lines=^\\s*(# )?<?https?:\/\/\\S+>?\$$/;"	k	section:FORMAT
+lines	tools/conf/pylint.conf	/^max-module-lines=1000$/;"	k	section:FORMAT
+lines	tools/conf/pylint.conf	/^min-similarity-lines=4$/;"	k	section:SIMILARITIES
+locals	tools/conf/pylint.conf	/^max-locals=15$/;"	k	section:DESIGN
+members	tools/conf/pylint.conf	/^generated-members=$/;"	k	section:TYPECHECK
+members	tools/conf/pylint.conf	/^ignore-mixin-members=yes$/;"	k	section:TYPECHECK
+methods	tools/conf/pylint.conf	/^defining-attr-methods=__init__,__new__,setUp$/;"	k	section:CLASSES
+methods	tools/conf/pylint.conf	/^max-public-methods=20$/;"	k	section:DESIGN
+methods	tools/conf/pylint.conf	/^min-public-methods=2$/;"	k	section:DESIGN
+modules	tools/conf/pylint.conf	/^deprecated-modules=regsub,TERMIOS,Bastion,rexec$/;"	k	section:IMPORTS
+modules	tools/conf/pylint.conf	/^ignored-modules=$/;"	k	section:TYPECHECK
+modules	tools/conf/pylint.conf	/^logging-modules=logging$/;"	k	section:LOGGING
+modules	tools/conf/pylint.conf	/^redefining-builtins-modules=six.moves,future.builtins$/;"	k	section:VARIABLES
+names	tools/conf/pylint.conf	/^bad-names=foo,bar,baz,toto,tutu,tata$/;"	k	section:BASIC
+names	tools/conf/pylint.conf	/^good-names=i,j,k,ex,Run,_$/;"	k	section:BASIC
+names	tools/conf/pylint.conf	/^ignored-argument-names=_.*$/;"	k	section:DESIGN
+notes	tools/conf/pylint.conf	/^notes=FIXME,XXX,TODO$/;"	k	section:MISCELLANEOUS
+o	autoload/plug.vim	/^      nmap <buffer> o <plug>(plug-preview)$/;"	m
+output	tools/conf/pylint.conf	/^files-output=no$/;"	k	section:REPORTS
+paren	tools/conf/pylint.conf	/^indent-after-paren=4$/;"	k	section:FORMAT
+parents	tools/conf/pylint.conf	/^max-parents=7$/;"	k	section:DESIGN
+party	tools/conf/pylint.conf	/^known-third-party=enchant$/;"	k	section:IMPORTS
+patterns	tools/conf/pylint.conf	/^ignore-patterns=$/;"	k	section:MASTER
+persistent	tools/conf/pylint.conf	/^persistent=yes$/;"	k	section:MASTER
+plug#	autoload/plug.vim	/^function! plug#(repo, ...)$/;"	f
+plug#begin	autoload/plug.vim	/^function! plug#begin(...)$/;"	f
+plug#end	autoload/plug.vim	/^function! plug#end()$/;"	f
+plug#helptags	autoload/plug.vim	/^function! plug#helptags()$/;"	f
+plug#load	autoload/plug.vim	/^function! plug#load(...)$/;"	f
+plugins	tools/conf/pylint.conf	/^load-plugins=$/;"	k	section:MASTER
+protected	tools/conf/pylint.conf	/^exclude-protected=_asdict,_fields,_replace,_source,_make$/;"	k	section:CLASSES
+q	autoload/plug.vim	/^  nnoremap <silent> <buffer> q  :if b:plug_preview==1<bar>pc<bar>endif<bar>bd<cr>$/;"	m
+q	autoload/plug.vim	/^  nnoremap <silent> <buffer> q :q<cr>$/;"	m
+q	autoload/quickmenu.vim	/^	noremap <silent> <buffer> q :call <SID>quickmenu_close()<cr>$/;"	m
+quickmenu	autoload/quickmenu.vim	/^	augroup quickmenu$/;"	a
+quickmenu#append	autoload/quickmenu.vim	/^function! quickmenu#append(text, event, ...)$/;"	f
+quickmenu#bottom	autoload/quickmenu.vim	/^function! quickmenu#bottom(mid)$/;"	f
+quickmenu#current	autoload/quickmenu.vim	/^function! quickmenu#current(mid)$/;"	f
+quickmenu#header	autoload/quickmenu.vim	/^function! quickmenu#header(header)$/;"	f
+quickmenu#list	autoload/quickmenu.vim	/^function! quickmenu#list()$/;"	f
+quickmenu#reset	autoload/quickmenu.vim	/^function! quickmenu#reset()$/;"	f
+quickmenu#toggle	autoload/quickmenu.vim	/^function! quickmenu#toggle(mid) abort$/;"	f
+quickmenu_close	autoload/quickmenu.vim	/^function! <SID>quickmenu_close()$/;"	f
+quickmenu_enter	autoload/quickmenu.vim	/^function! <SID>quickmenu_enter() abort$/;"	f
+quickmenu_execute	autoload/quickmenu.vim	/^function! <SID>quickmenu_execute(index) abort$/;"	f
+reports	tools/conf/pylint.conf	/^reports=yes$/;"	k	section:REPORTS
+returns	tools/conf/pylint.conf	/^max-returns=6$/;"	k	section:DESIGN
+rgb	colors/desert256.vim	/^    fun <SID>rgb(rgb)$/;"	f
+rgb_color	colors/desert256.vim	/^    fun <SID>rgb_color(x, y, z)$/;"	f
+rgb_level	colors/desert256.vim	/^    fun <SID>rgb_level(n)$/;"	f
+rgb_number	colors/desert256.vim	/^    fun <SID>rgb_number(x)$/;"	f
+rgx	tools/conf/pylint.conf	/^argument-rgx=[a-z_][a-z0-9_]{2,30}\$$/;"	k	section:BASIC
+rgx	tools/conf/pylint.conf	/^attr-rgx=[a-z_][a-z0-9_]{2,30}\$$/;"	k	section:BASIC
+rgx	tools/conf/pylint.conf	/^class-attribute-rgx=([A-Za-z_][A-Za-z0-9_]{2,30}|(__.*__))\$$/;"	k	section:BASIC
+rgx	tools/conf/pylint.conf	/^class-rgx=[A-Z_][a-zA-Z0-9]+\$$/;"	k	section:BASIC
+rgx	tools/conf/pylint.conf	/^const-rgx=(([A-Z_][A-Z0-9_]*)|(__.*__))\$$/;"	k	section:BASIC
+rgx	tools/conf/pylint.conf	/^dummy-variables-rgx=(_+[a-zA-Z0-9]*?$)|dummy$/;"	k	section:VARIABLES
+rgx	tools/conf/pylint.conf	/^function-rgx=[a-z_][a-z0-9_]{2,30}\$$/;"	k	section:BASIC
+rgx	tools/conf/pylint.conf	/^inlinevar-rgx=[A-Za-z_][A-Za-z0-9_]*\$$/;"	k	section:BASIC
+rgx	tools/conf/pylint.conf	/^method-rgx=[a-z_][a-z0-9_]{2,30}\$$/;"	k	section:BASIC
+rgx	tools/conf/pylint.conf	/^module-rgx=(([a-z_][a-z0-9_]*)|([A-Z][a-zA-Z0-9]+))\$$/;"	k	section:BASIC
+rgx	tools/conf/pylint.conf	/^no-docstring-rgx=^_$/;"	k	section:BASIC
+rgx	tools/conf/pylint.conf	/^variable-rgx=[a-z_][a-z0-9_]{2,30}\$$/;"	k	section:BASIC
+ruby_operators	colors/seoul256.vim	/^let ruby_operators = 1$/;"	v
+s:AsyncRun_Job_AutoCmd	plugin/asyncrun.vim	/^function! s:AsyncRun_Job_AutoCmd(mode, auto)$/;"	f
+s:AsyncRun_Job_AutoScroll	plugin/asyncrun.vim	/^function! s:AsyncRun_Job_AutoScroll()$/;"	f
+s:AsyncRun_Job_CheckScroll	plugin/asyncrun.vim	/^function! s:AsyncRun_Job_CheckScroll()$/;"	f
+s:AsyncRun_Job_Cursor	plugin/asyncrun.vim	/^function! s:AsyncRun_Job_Cursor()$/;"	f
+s:AsyncRun_Job_NeoVim	plugin/asyncrun.vim	/^function! s:AsyncRun_Job_NeoVim(job_id, data, event)$/;"	f
+s:AsyncRun_Job_OnCallback	plugin/asyncrun.vim	/^function! s:AsyncRun_Job_OnCallback(channel, text)$/;"	f
+s:AsyncRun_Job_OnClose	plugin/asyncrun.vim	/^function! s:AsyncRun_Job_OnClose(channel)$/;"	f
+s:AsyncRun_Job_OnExit	plugin/asyncrun.vim	/^function! s:AsyncRun_Job_OnExit(job, message)$/;"	f
+s:AsyncRun_Job_OnFinish	plugin/asyncrun.vim	/^function! s:AsyncRun_Job_OnFinish()$/;"	f
+s:AsyncRun_Job_Start	plugin/asyncrun.vim	/^function! s:AsyncRun_Job_Start(cmd)$/;"	f
+s:AsyncRun_Job_Status	plugin/asyncrun.vim	/^function! s:AsyncRun_Job_Status()$/;"	f
+s:AsyncRun_Job_Stop	plugin/asyncrun.vim	/^function! s:AsyncRun_Job_Stop(how)$/;"	f
+s:AsyncRun_Job_Update	plugin/asyncrun.vim	/^function! s:AsyncRun_Job_Update(count)$/;"	f
+s:AutoCmd	plugin/asyncrun.vim	/^function! s:AutoCmd(name)$/;"	f
+s:BlankDown	plugin/unimpaired.vim	/^function! s:BlankDown(count) abort$/;"	f
+s:BlankUp	plugin/unimpaired.vim	/^function! s:BlankUp(count) abort$/;"	f
+s:Context	plugin/unimpaired.vim	/^function! s:Context(reverse) abort$/;"	f
+s:ContextMotion	plugin/unimpaired.vim	/^function! s:ContextMotion(reverse) abort$/;"	f
+s:ErrorMsg	plugin/asyncrun.vim	/^function! s:ErrorMsg(msg)$/;"	f
+s:ExecMove	plugin/unimpaired.vim	/^function! s:ExecMove(cmd) abort$/;"	f
+s:ExtractOpt	plugin/asyncrun.vim	/^function! s:ExtractOpt(command) $/;"	f
+s:FileByOffset	plugin/unimpaired.vim	/^function! s:FileByOffset(num) abort$/;"	f
+s:GetInnerText	plugin/argtextobj.vim	/^function! s:GetInnerText(r1, r2)$/;"	f
+s:GetNextCommaOrEndArgs	plugin/argtextobj.vim	/^function! s:GetNextCommaOrEndArgs(arglist, offset, count)$/;"	f
+s:GetOutOfDoubleQuote	plugin/argtextobj.vim	/^function! s:GetOutOfDoubleQuote()$/;"	f
+s:GetOuterFunctionParenthesis	plugin/argtextobj.vim	/^function! s:GetOuterFunctionParenthesis()$/;"	f
+s:GetPair	plugin/argtextobj.vim	/^function! s:GetPair(pos)$/;"	f
+s:GetPrevCommaOrBeginArgs	plugin/argtextobj.vim	/^function! s:GetPrevCommaOrBeginArgs(arglist, offset)$/;"	f
+s:GetValue	colors/paradox.vim	/^function s:GetValue(var, ...)$/;"	f
+s:HL	colors/gruvbox.vim	/^function! s:HL(group, fg, ...)$/;"	f
+s:MapNextFamily	plugin/unimpaired.vim	/^function! s:MapNextFamily(map,cmd) abort$/;"	f
+s:MotionArgument	plugin/argtextobj.vim	/^function! s:MotionArgument(inner, visual)$/;"	f
+s:Move	plugin/unimpaired.vim	/^function! s:Move(cmd, count, map) abort$/;"	f
+s:MoveLeft	plugin/argtextobj.vim	/^function! s:MoveLeft(num)$/;"	f
+s:MoveRight	plugin/argtextobj.vim	/^function! s:MoveRight(num)$/;"	f
+s:MoveSelectionDown	plugin/unimpaired.vim	/^function! s:MoveSelectionDown(count) abort$/;"	f
+s:MoveSelectionUp	plugin/unimpaired.vim	/^function! s:MoveSelectionUp(count) abort$/;"	f
+s:MoveToNextNonSpace	plugin/argtextobj.vim	/^function! s:MoveToNextNonSpace()$/;"	f
+s:MultiHi	colors/paradox.vim	/^  function s:MultiHi(option, ...)$/;"	f
+s:NotSupport	plugin/asyncrun.vim	/^function! s:NotSupport()$/;"	f
+s:Repeat	plugin/argtextobj.vim	/^function! s:Repeat(cnt, inner, visual, operator)$/;"	f
+s:ScriptWrite	plugin/asyncrun.vim	/^function! s:ScriptWrite(command, pause)$/;"	f
+s:SetOption	colors/solarized.vim	/^function! s:SetOption(name,default)$/;"	f
+s:SolarizedHiTrail	colors/solarized.vim	/^function! s:SolarizedHiTrail()$/;"	f
+s:SolarizedOptions	colors/solarized.vim	/^function! s:SolarizedOptions()$/;"	f
+s:StringReplace	plugin/asyncrun.vim	/^function! s:StringReplace(text, old, new)$/;"	f
+s:StringStrip	plugin/asyncrun.vim	/^function! s:StringStrip(text)$/;"	f
+s:TYPE	autoload/plug.vim	/^let s:TYPE = {$/;"	v
+s:Transform	plugin/unimpaired.vim	/^function! s:Transform(algorithm,type) abort$/;"	f
+s:TransformOpfunc	plugin/unimpaired.vim	/^function! s:TransformOpfunc(type) abort$/;"	f
+s:TransformSetup	plugin/unimpaired.vim	/^function! s:TransformSetup(algorithm) abort$/;"	f
+s:WindowCheck	plugin/asyncrun.vim	/^	function! s:WindowCheck(mode)$/;"	f
+s:acquire_theme_data	colors/papercol.vim	/^fun! s:acquire_theme_data()$/;"	f
+s:append_ul	autoload/plug.vim	/^function! s:append_ul(lnum, text)$/;"	f
+s:apply_syntax_highlightings	colors/papercol.vim	/^fun! s:apply_syntax_highlightings()$/;"	f
+s:aqua	colors/gruvbox.vim	/^  let s:aqua   = s:gb.bright_aqua$/;"	v
+s:aqua	colors/gruvbox.vim	/^  let s:aqua   = s:gb.faded_aqua$/;"	v
+s:aqua	colors/gruvbox.vim	/^  let s:aqua[1]   = 14$/;"	v
+s:ask	autoload/plug.vim	/^function! s:ask(message, ...)$/;"	f
+s:ask_no_interrupt	autoload/plug.vim	/^function! s:ask_no_interrupt(...)$/;"	f
+s:assign_name	autoload/plug.vim	/^function! s:assign_name()$/;"	f
+s:assoc	autoload/plug.vim	/^function! s:assoc(dict, key, val)$/;"	f
+s:async_code	plugin/asyncrun.vim	/^let s:async_code = 0$/;"	v
+s:async_congest	plugin/asyncrun.vim	/^	let s:async_congest = 0$/;"	v
+s:async_congest	plugin/asyncrun.vim	/^	let s:async_congest = has('patch-8.0.100')? 1 : 0$/;"	v
+s:async_congest	plugin/asyncrun.vim	/^let s:async_congest = 0$/;"	v
+s:async_debug	plugin/asyncrun.vim	/^let s:async_debug = 0$/;"	v
+s:async_efm	plugin/asyncrun.vim	/^let s:async_efm = &errorformat$/;"	v
+s:async_head	plugin/asyncrun.vim	/^let s:async_head = 0$/;"	v
+s:async_info	plugin/asyncrun.vim	/^let s:async_info = { 'text':"", 'post':'', 'postsave':'' }$/;"	v
+s:async_nvim	plugin/asyncrun.vim	/^let s:async_nvim = has('nvim')? 1 : 0$/;"	v
+s:async_output	plugin/asyncrun.vim	/^let s:async_output = {}$/;"	v
+s:async_quick	plugin/asyncrun.vim	/^	let s:async_quick = (v:version >= 800 || has('patch-7.4.1997'))? 1 : 0$/;"	v
+s:async_quick	plugin/asyncrun.vim	/^	let s:async_quick = has('nvim-0.2.0')? 1 : 0$/;"	v
+s:async_quick	plugin/asyncrun.vim	/^let s:async_quick = 0$/;"	v
+s:async_scroll	plugin/asyncrun.vim	/^let s:async_scroll = 0$/;"	v
+s:async_start	plugin/asyncrun.vim	/^let s:async_start = 0$/;"	v
+s:async_state	plugin/asyncrun.vim	/^let s:async_state = 0$/;"	v
+s:async_tail	plugin/asyncrun.vim	/^let s:async_tail = 0$/;"	v
+s:asyncrun_support	plugin/asyncrun.vim	/^		let s:asyncrun_support = 1$/;"	v
+s:asyncrun_support	plugin/asyncrun.vim	/^	let s:asyncrun_support = 1$/;"	v
+s:asyncrun_support	plugin/asyncrun.vim	/^let s:asyncrun_support = 0$/;"	v
+s:asyncrun_windows	plugin/asyncrun.vim	/^	let s:asyncrun_windows = 1$/;"	v
+s:asyncrun_windows	plugin/asyncrun.vim	/^let s:asyncrun_windows = 0$/;"	v
+s:b	colors/solarized.vim	/^    let s:b           = ""$/;"	v
+s:b	colors/solarized.vim	/^    let s:b           = ",bold"$/;"	v
+s:back	colors/solarized.vim	/^        let s:back    = s:base03$/;"	v
+s:back	colors/solarized.vim	/^    let s:back        = "NONE"$/;"	v
+s:back	colors/solarized.vim	/^    let s:back        = s:back$/;"	v
+s:back	colors/solarized.vim	/^    let s:back        = s:base02$/;"	v
+s:back	colors/solarized.vim	/^    let s:back        = s:base03$/;"	v
+s:background	colors/seoul256.vim	/^let s:background  = &background$/;"	v
+s:backup	colors/seoul256-light.vim	/^      let s:backup = g:seoul256_background$/;"	v
+s:bang	autoload/plug.vim	/^function! s:bang(cmd, ...)$/;"	f
+s:bar	autoload/plug.vim	/^function! s:bar()$/;"	f
+s:base0	colors/solarized.vim	/^    let s:base0       = "#808080"$/;"	v
+s:base0	colors/solarized.vim	/^    let s:base0       = "#839496"$/;"	v
+s:base0	colors/solarized.vim	/^    let s:base0       = "12"$/;"	v
+s:base0	colors/solarized.vim	/^    let s:base0       = "244"$/;"	v
+s:base0	colors/solarized.vim	/^    let s:base0       = "LightBlue"     " 4*$/;"	v
+s:base0	colors/solarized.vim	/^    let s:base0       = s:base1$/;"	v
+s:base0	colors/solarized.vim	/^    let s:base0       = s:temp00$/;"	v
+s:base00	colors/solarized.vim	/^    let s:base00      = "#585858"$/;"	v
+s:base00	colors/solarized.vim	/^    let s:base00      = "#657b83"$/;"	v
+s:base00	colors/solarized.vim	/^    let s:base00      = "11"$/;"	v
+s:base00	colors/solarized.vim	/^    let s:base00      = "240"$/;"	v
+s:base00	colors/solarized.vim	/^    let s:base00      = "LightYellow"   " 3*$/;"	v
+s:base00	colors/solarized.vim	/^    let s:base00      = s:base0$/;"	v
+s:base01	colors/solarized.vim	/^    let s:base01      = "#4e4e4e"$/;"	v
+s:base01	colors/solarized.vim	/^    let s:base01      = "#586e75"$/;"	v
+s:base01	colors/solarized.vim	/^    let s:base01      = "10"$/;"	v
+s:base01	colors/solarized.vim	/^    let s:base01      = "239"$/;"	v
+s:base01	colors/solarized.vim	/^    let s:base01      = "LightGreen"    " 2*$/;"	v
+s:base01	colors/solarized.vim	/^    let s:base01      = s:base00$/;"	v
+s:base01	colors/solarized.vim	/^    let s:base01      = s:base1$/;"	v
+s:base02	colors/solarized.vim	/^    let s:base02      = "#073642"$/;"	v
+s:base02	colors/solarized.vim	/^    let s:base02      = "#262626"$/;"	v
+s:base02	colors/solarized.vim	/^    let s:base02      = "0"$/;"	v
+s:base02	colors/solarized.vim	/^    let s:base02      = "235"$/;"	v
+s:base02	colors/solarized.vim	/^    let s:base02      = "Black"         " 0$/;"	v
+s:base02	colors/solarized.vim	/^    let s:base02      = s:base2$/;"	v
+s:base03	colors/solarized.vim	/^    let s:base03      = "#002b36"$/;"	v
+s:base03	colors/solarized.vim	/^    let s:base03      = "#1c1c1c"$/;"	v
+s:base03	colors/solarized.vim	/^    let s:base03      = "234"$/;"	v
+s:base03	colors/solarized.vim	/^    let s:base03      = "8"$/;"	v
+s:base03	colors/solarized.vim	/^    let s:base03      = "DarkGray"      " 0*$/;"	v
+s:base03	colors/solarized.vim	/^    let s:base03      = s:base3$/;"	v
+s:base1	colors/solarized.vim	/^    let s:base1       = "#8a8a8a"$/;"	v
+s:base1	colors/solarized.vim	/^    let s:base1       = "#93a1a1"$/;"	v
+s:base1	colors/solarized.vim	/^    let s:base1       = "14"$/;"	v
+s:base1	colors/solarized.vim	/^    let s:base1       = "245"$/;"	v
+s:base1	colors/solarized.vim	/^    let s:base1       = "LightCyan"     " 6*$/;"	v
+s:base1	colors/solarized.vim	/^    let s:base1       = s:base2$/;"	v
+s:base1	colors/solarized.vim	/^    let s:base1       = s:temp01$/;"	v
+s:base2	colors/solarized.vim	/^    let s:base2       = "#d7d7af"$/;"	v
+s:base2	colors/solarized.vim	/^    let s:base2       = "#eee8d5"$/;"	v
+s:base2	colors/solarized.vim	/^    let s:base2       = "187"$/;"	v
+s:base2	colors/solarized.vim	/^    let s:base2       = "7"$/;"	v
+s:base2	colors/solarized.vim	/^    let s:base2       = "LightGray"     " 7$/;"	v
+s:base2	colors/solarized.vim	/^    let s:base2       = s:base3$/;"	v
+s:base2	colors/solarized.vim	/^    let s:base2       = s:temp02$/;"	v
+s:base3	colors/solarized.vim	/^    let s:base3       = "#fdf6e3"$/;"	v
+s:base3	colors/solarized.vim	/^    let s:base3       = "#ffffd7"$/;"	v
+s:base3	colors/solarized.vim	/^    let s:base3       = "15"$/;"	v
+s:base3	colors/solarized.vim	/^    let s:base3       = "230"$/;"	v
+s:base3	colors/solarized.vim	/^    let s:base3       = "White"         " 7*$/;"	v
+s:base3	colors/solarized.vim	/^    let s:base3       = s:temp03$/;"	v
+s:base_spec	autoload/plug.vim	/^let s:base_spec = { 'branch': 'master', 'frozen': 0 }$/;"	v
+s:bb	colors/solarized.vim	/^    let s:bb          = ""$/;"	v
+s:bb	colors/solarized.vim	/^    let s:bb          = ",bold"$/;"	v
+s:bg0	colors/gruvbox.vim	/^    let s:bg0  = s:gb.dark0_hard$/;"	v
+s:bg0	colors/gruvbox.vim	/^    let s:bg0  = s:gb.dark0_soft$/;"	v
+s:bg0	colors/gruvbox.vim	/^    let s:bg0  = s:gb.light0_hard$/;"	v
+s:bg0	colors/gruvbox.vim	/^    let s:bg0  = s:gb.light0_soft$/;"	v
+s:bg0	colors/gruvbox.vim	/^  let s:bg0  = s:gb.dark0$/;"	v
+s:bg0	colors/gruvbox.vim	/^  let s:bg0  = s:gb.light0$/;"	v
+s:bg0	colors/gruvbox.vim	/^  let s:bg0[1]    = 0$/;"	v
+s:bg1	colors/gruvbox.vim	/^  let s:bg1  = s:gb.dark1$/;"	v
+s:bg1	colors/gruvbox.vim	/^  let s:bg1  = s:gb.light1$/;"	v
+s:bg2	colors/gruvbox.vim	/^  let s:bg2  = s:gb.dark2$/;"	v
+s:bg2	colors/gruvbox.vim	/^  let s:bg2  = s:gb.light2$/;"	v
+s:bg3	colors/gruvbox.vim	/^  let s:bg3  = s:gb.dark3$/;"	v
+s:bg3	colors/gruvbox.vim	/^  let s:bg3  = s:gb.light3$/;"	v
+s:bg4	colors/gruvbox.vim	/^  let s:bg4  = s:gb.dark4$/;"	v
+s:bg4	colors/gruvbox.vim	/^  let s:bg4  = s:gb.light4$/;"	v
+s:blue	colors/gruvbox.vim	/^  let s:blue   = s:gb.bright_blue$/;"	v
+s:blue	colors/gruvbox.vim	/^  let s:blue   = s:gb.faded_blue$/;"	v
+s:blue	colors/gruvbox.vim	/^  let s:blue[1]   = 12$/;"	v
+s:blue	colors/solarized.vim	/^    let s:blue        = "#0087ff"$/;"	v
+s:blue	colors/solarized.vim	/^    let s:blue        = "#268bd2"$/;"	v
+s:blue	colors/solarized.vim	/^    let s:blue        = "33"$/;"	v
+s:blue	colors/solarized.vim	/^    let s:blue        = "4"$/;"	v
+s:blue	colors/solarized.vim	/^    let s:blue        = "DarkBlue"      " 4$/;"	v
+s:bold	colors/gruvbox.vim	/^  let s:bold = ''$/;"	v
+s:bold	colors/gruvbox.vim	/^let s:bold = 'bold,'$/;"	v
+s:bottom_popup	autoload/quickmenu.vim	/^function! s:bottom_popup(items, header)$/;"	f
+s:bottom_render	autoload/quickmenu.vim	/^function! s:bottom_render(items, header)$/;"	f
+s:bright	colors/solarized.vim	/^    let s:bright      = "* term=bold cterm=bold"$/;"	v
+s:c	colors/solarized.vim	/^    let s:c               = ",undercurl"$/;"	v
+s:c0	plugin/indent-object.vim	/^let s:c0 = -1$/;"	v
+s:c1	plugin/indent-object.vim	/^let s:c1 = -1$/;"	v
+s:chdir	plugin/asyncrun.vim	/^function! s:chdir(path)$/;"	f
+s:check_quickfix	plugin/asyncrun.vim	/^	function! s:check_quickfix()$/;"	f
+s:check_ruby	autoload/plug.vim	/^function! s:check_ruby()$/;"	f
+s:checkout	autoload/plug.vim	/^function! s:checkout(spec)$/;"	f
+s:chsh	autoload/plug.vim	/^function! s:chsh(swap)$/;"	f
+s:clean	autoload/plug.vim	/^function! s:clean(force)$/;"	f
+s:cmdmsg	autoload/quickmenu.vim	/^function! s:cmdmsg(content, highlight)$/;"	f
+s:col	syntax/quickmenu.vim	/^	let s:col = len(s:padding_left) + 4$/;"	v
+s:color_column	colors/gruvbox.vim	/^  let s:color_column = get(s:gb, g:gruvbox_color_column)$/;"	v
+s:color_column	colors/gruvbox.vim	/^let s:color_column = s:bg1$/;"	v
+s:colors_name	colors/seoul256.vim	/^let s:colors_name = get(g:, 'colors_name', '')$/;"	v
+s:colorscheme_list	colors/solarized.vim	/^let s:colorscheme_list=[$/;"	v
+s:colour	colors/papercol.vim	/^  fun! s:colour(r, g, b)$/;"	f
+s:compare_git_uri	autoload/plug.vim	/^function! s:compare_git_uri(a, b)$/;"	f
+s:convert_colors	colors/papercol.vim	/^fun! s:convert_colors()$/;"	f
+s:cpo_save	autoload/plug.vim	/^let s:cpo_save = &cpo$/;"	v
+s:create_color_variables	colors/papercol.vim	/^    fun! s:create_color_variables(color_name, rich_color, term_color)$/;"	f
+s:create_palette_color	colors/sublime.vim	/^fun! s:create_palette_color(color_name, color_data)$/;"	f
+s:cursor_options	plugin/unimpaired.vim	/^function! s:cursor_options() abort$/;"	f
+s:custom_bg	colors/seoul256-light.vim	/^let s:custom_bg = get(g:, 'seoul256_light_background', get(g:, 'seoul256_background', 253))$/;"	v
+s:cyan	colors/solarized.vim	/^    let s:cyan        = "#00afaf"$/;"	v
+s:cyan	colors/solarized.vim	/^    let s:cyan        = "#2aa198"$/;"	v
+s:cyan	colors/solarized.vim	/^    let s:cyan        = "37"$/;"	v
+s:cyan	colors/solarized.vim	/^    let s:cyan        = "6"$/;"	v
+s:cyan	colors/solarized.vim	/^    let s:cyan        = "DarkCyan"      " 6$/;"	v
+s:dark_bg	colors/seoul256.vim	/^  let s:dark_bg  = 237$/;"	v
+s:dark_bg	colors/seoul256.vim	/^  let s:dark_bg  = get(s:, 'seoul256_background', 237)$/;"	v
+s:dark_bg_2	colors/seoul256.vim	/^let s:dark_bg_2 = s:dark_bg > 233 ? s:dark_bg - 2 : 16$/;"	v
+s:dark_fg	colors/seoul256.vim	/^let s:dark_fg = 252$/;"	v
+s:defaults_list	colors/solarized.vim	/^let s:defaults_list=[$/;"	v
+s:define_commands	autoload/plug.vim	/^function! s:define_commands()$/;"	f
+s:delete	autoload/plug.vim	/^function! s:delete(range, force)$/;"	f
+s:delete_op	autoload/plug.vim	/^function! s:delete_op(type, ...)$/;"	f
+s:diff	autoload/plug.vim	/^function! s:diff()$/;"	f
+s:dirpath	autoload/plug.vim	/^  function! s:dirpath(path)$/;"	f
+s:do	autoload/plug.vim	/^function! s:do(pull, force, todo)$/;"	f
+s:doautocmd	autoload/plug.vim	/^function! s:doautocmd(...)$/;"	f
+s:dobufread	autoload/plug.vim	/^function! s:dobufread(names)$/;"	f
+s:entries	plugin/unimpaired.vim	/^function! s:entries(path) abort$/;"	f
+s:err	autoload/plug.vim	/^function! s:err(msg)$/;"	f
+s:errmsg	autoload/quickmenu.vim	/^function! s:errmsg(msg)$/;"	f
+s:esc	autoload/plug.vim	/^function! s:esc(path)$/;"	f
+s:escrtp	autoload/plug.vim	/^function! s:escrtp(path)$/;"	f
+s:execute	plugin/asyncrun.vim	/^function! s:execute(mode)$/;"	f
+s:expand_text	autoload/quickmenu.vim	/^function! s:expand_text(string) abort$/;"	f
+s:extract_name	autoload/plug.vim	/^function! s:extract_name(str, prefix, suffix)$/;"	f
+s:fg0	colors/gruvbox.vim	/^  let s:fg0 = s:gb.dark0$/;"	v
+s:fg0	colors/gruvbox.vim	/^  let s:fg0 = s:gb.light0$/;"	v
+s:fg1	colors/gruvbox.vim	/^  let s:fg1 = s:gb.dark1$/;"	v
+s:fg1	colors/gruvbox.vim	/^  let s:fg1 = s:gb.light1$/;"	v
+s:fg1	colors/gruvbox.vim	/^  let s:fg1[1]    = 15$/;"	v
+s:fg2	colors/gruvbox.vim	/^  let s:fg2 = s:gb.dark2$/;"	v
+s:fg2	colors/gruvbox.vim	/^  let s:fg2 = s:gb.light2$/;"	v
+s:fg3	colors/gruvbox.vim	/^  let s:fg3 = s:gb.dark3$/;"	v
+s:fg3	colors/gruvbox.vim	/^  let s:fg3 = s:gb.light3$/;"	v
+s:fg4	colors/gruvbox.vim	/^  let s:fg4 = s:gb.dark4$/;"	v
+s:fg4	colors/gruvbox.vim	/^  let s:fg4 = s:gb.light4$/;"	v
+s:fg4	colors/gruvbox.vim	/^  let s:fg4[1]    = 7$/;"	v
+s:fg4_256	colors/gruvbox.vim	/^  let s:fg4_256 = s:gb.dark4_256$/;"	v
+s:fg4_256	colors/gruvbox.vim	/^  let s:fg4_256 = s:gb.light4_256$/;"	v
+s:fg_pdef	colors/solarized.vim	/^let s:fg_pdef = s:fg_violet$/;"	v
+s:fg_phead	colors/solarized.vim	/^let s:fg_phead = s:fg_orange$/;"	v
+s:fg_ptable	colors/solarized.vim	/^let s:fg_ptable = s:fg_blue$/;"	v
+s:find_name	autoload/plug.vim	/^function! s:find_name(lnum)$/;"	f
+s:find_root	plugin/asyncrun.vim	/^function! s:find_root(path, markers)$/;"	f
+s:finish	autoload/plug.vim	/^function! s:finish(pull)$/;"	f
+s:finish_bindings	autoload/plug.vim	/^function! s:finish_bindings()$/;"	f
+s:first_rtp	autoload/plug.vim	/^let s:first_rtp = s:escrtp(get(s:split_rtp(), 0, ''))$/;"	v
+s:fnameescape	plugin/unimpaired.vim	/^function! s:fnameescape(file) abort$/;"	f
+s:format_git_log	autoload/plug.vim	/^function! s:format_git_log(line)$/;"	f
+s:format_message	autoload/plug.vim	/^function! s:format_message(bullet, name, message)$/;"	f
+s:gb	colors/gruvbox.vim	/^let s:gb = {}$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.aqua   = s:aqua$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bg0 = s:bg0$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bg1 = s:bg1$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bg2 = s:bg2$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bg3 = s:bg3$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bg4 = s:bg4$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.blue   = s:blue$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bright_aqua    = ['#8ec07c', 108]     " 142-192-124$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bright_blue    = ['#83a598', 109]     " 131-165-152$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bright_green   = ['#b8bb26', 142]     " 184-187-38$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bright_orange  = ['#fe8019', 208]     " 254-128-25$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bright_purple  = ['#d3869b', 175]     " 211-134-155$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bright_red     = ['#fb4934', 167]     " 251-73-52$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bright_yellow  = ['#fabd2f', 214]     " 250-189-47$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.dark0       = ['#282828', 235]     " 40-40-40$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.dark0_hard  = ['#1d2021', 234]     " 29-32-33$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.dark0_soft  = ['#32302f', 236]     " 50-48-47$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.dark1       = ['#3c3836', 237]     " 60-56-54$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.dark2       = ['#504945', 239]     " 80-73-69$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.dark3       = ['#665c54', 241]     " 102-92-84$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.dark4       = ['#7c6f64', 243]     " 124-111-100$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.dark4_256   = ['#7c6f64', 243]     " 124-111-100$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.faded_aqua     = ['#427b58', 66]      " 66-123-88$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.faded_blue     = ['#076678', 24]      " 7-102-120$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.faded_green    = ['#79740e', 100]     " 121-116-14$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.faded_orange   = ['#af3a03', 130]     " 175-58-3$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.faded_purple   = ['#8f3f71', 96]      " 143-63-113$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.faded_red      = ['#9d0006', 88]      " 157-0-6$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.faded_yellow   = ['#b57614', 136]     " 181-118-20$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.fg0 = s:fg0$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.fg1 = s:fg1$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.fg2 = s:fg2$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.fg3 = s:fg3$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.fg4 = s:fg4$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.fg4_256 = s:fg4_256$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.gray = s:gray$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.gray_244    = ['#928374', 244]     " 146-131-116$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.gray_245    = ['#928374', 245]     " 146-131-116$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.green  = s:green$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.light0      = ['#fbf1c7', 229]     " 253-244-193$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.light0_hard = ['#f9f5d7', 230]     " 249-245-215$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.light0_soft = ['#f2e5bc', 228]     " 242-229-188$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.light1      = ['#ebdbb2', 223]     " 235-219-178$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.light2      = ['#d5c4a1', 250]     " 213-196-161$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.light3      = ['#bdae93', 248]     " 189-174-147$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.light4      = ['#a89984', 246]     " 168-153-132$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.light4_256  = ['#a89984', 246]     " 168-153-132$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.neutral_aqua   = ['#689d6a', 72]      " 104-157-106$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.neutral_blue   = ['#458588', 66]      " 69-133-136$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.neutral_green  = ['#98971a', 106]     " 152-151-26$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.neutral_orange = ['#d65d0e', 166]     " 214-93-14$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.neutral_purple = ['#b16286', 132]     " 177-98-134$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.neutral_red    = ['#cc241d', 124]     " 204-36-29$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.neutral_yellow = ['#d79921', 172]     " 215-153-33$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.orange = s:orange$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.purple = s:purple$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.red    = s:red$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.yellow = s:yellow$/;"	v
+s:generate_language_option_variables	colors/papercol.vim	/^fun! s:generate_language_option_variables()$/;"	f
+s:generate_theme_option_variables	colors/papercol.vim	/^fun! s:generate_theme_option_variables()$/;"	f
+s:git_validate	autoload/plug.vim	/^function! s:git_validate(spec, check_branch)$/;"	f
+s:git_version_requirement	autoload/plug.vim	/^function! s:git_version_requirement(...)$/;"	f
+s:glob	autoload/plug.vim	/^function! s:glob(from, pattern)$/;"	f
+s:glob_dir	autoload/plug.vim	/^function! s:glob_dir(path)$/;"	f
+s:go	plugin/commentary.vim	/^function! s:go(...) abort$/;"	f
+s:gray	colors/gruvbox.vim	/^  let s:gray = s:gb.gray_244$/;"	v
+s:gray	colors/gruvbox.vim	/^  let s:gray = s:gb.gray_245$/;"	v
+s:gray	colors/gruvbox.vim	/^  let s:gray[1]   = 8$/;"	v
+s:green	colors/gruvbox.vim	/^  let s:green  = s:gb.bright_green$/;"	v
+s:green	colors/gruvbox.vim	/^  let s:green  = s:gb.faded_green$/;"	v
+s:green	colors/gruvbox.vim	/^  let s:green[1]  = 10$/;"	v
+s:green	colors/solarized.vim	/^    let s:green       = "#5f8700"$/;"	v
+s:green	colors/solarized.vim	/^    let s:green       = "#719e07" "experimental$/;"	v
+s:green	colors/solarized.vim	/^    let s:green       = "2"$/;"	v
+s:green	colors/solarized.vim	/^    let s:green       = "64"$/;"	v
+s:green	colors/solarized.vim	/^    let s:green       = "DarkGreen"     " 2$/;"	v
+s:grey_colour	colors/papercol.vim	/^  fun! s:grey_colour(n)$/;"	f
+s:grey_level	colors/papercol.vim	/^  fun! s:grey_level(n)$/;"	f
+s:grey_number	colors/papercol.vim	/^  fun! s:grey_number(x)$/;"	f
+s:guess_root	plugin/asyncrun.vim	/^    function! s:guess_root(filename, markers)$/;"	f
+s:gui	colors/seoul256.vim	/^let s:gui = has('gui_running')$/;"	v
+s:h	colors/sublime.vim	/^fun! s:h(group, style)$/;"	f
+s:hash_match	autoload/plug.vim	/^function! s:hash_match(a, b)$/;"	f
+s:hi	colors/seoul256.vim	/^function! s:hi(item, fg, bg)$/;"	f
+s:highlight	autoload/quickmenu.vim	/^function! s:highlight(standard, startify)$/;"	f
+s:hllink	syntax/quickmenu.vim	/^function! s:hllink(name, dest, alternative)$/;"	f
+s:hls_cursor	colors/gruvbox.vim	/^  let s:hls_cursor = get(s:gb, g:gruvbox_hls_cursor)$/;"	v
+s:hls_cursor	colors/gruvbox.vim	/^let s:hls_cursor = s:orange$/;"	v
+s:home	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^let s:home = fnamemodify(resolve(expand('<sfile>:p')), ':h:h')$/;"	kind:v	line:27
+s:home	init.vim	/^let s:home = fnamemodify(resolve(expand('<sfile>:p')), ':h')$/;"	v
+s:home	init/init-plugins.vim	/^let s:home = fnamemodify(resolve(expand('<sfile>:p')), ':h:h')$/;"	v
+s:i	colors/solarized.vim	/^    let s:i           = ""$/;"	v
+s:i	colors/solarized.vim	/^    let s:i           = ",italic"$/;"	v
+s:identify_color_mode	colors/papercol.vim	/^fun! s:identify_color_mode()$/;"	f
+s:infer_properties	autoload/plug.vim	/^function! s:infer_properties(name, repo)$/;"	f
+s:install	autoload/plug.vim	/^function! s:install(force, names)$/;"	f
+s:inverse	colors/gruvbox.vim	/^  let s:inverse = ''$/;"	v
+s:inverse	colors/gruvbox.vim	/^let s:inverse = 'inverse,'$/;"	v
+s:invert_selection	colors/gruvbox.vim	/^    let s:invert_selection = ''$/;"	v
+s:invert_selection	colors/gruvbox.vim	/^let s:invert_selection = s:inverse$/;"	v
+s:invert_signs	colors/gruvbox.vim	/^    let s:invert_signs = s:inverse$/;"	v
+s:invert_signs	colors/gruvbox.vim	/^let s:invert_signs = ''$/;"	v
+s:invert_tabline	colors/gruvbox.vim	/^    let s:invert_tabline = s:inverse$/;"	v
+s:invert_tabline	colors/gruvbox.vim	/^let s:invert_tabline = ''$/;"	v
+s:is_dark	colors/gruvbox.vim	/^let s:is_dark=(&background == 'dark')$/;"	v
+s:is_local_plug	autoload/plug.vim	/^  function! s:is_local_plug(repo)$/;"	f
+s:is_managed	autoload/plug.vim	/^function! s:is_managed(name)$/;"	f
+s:is_preview_window_open	autoload/plug.vim	/^function! s:is_preview_window_open()$/;"	f
+s:is_updated	autoload/plug.vim	/^function! s:is_updated(dir)$/;"	f
+s:is_win	autoload/plug.vim	/^let s:is_win = has('win32')$/;"	v
+s:italic	colors/gruvbox.vim	/^  let s:italic = ''$/;"	v
+s:italic	colors/gruvbox.vim	/^let s:italic = 'italic,'$/;"	v
+s:italicize_comments	colors/gruvbox.vim	/^    let s:italicize_comments = ''$/;"	v
+s:italicize_comments	colors/gruvbox.vim	/^let s:italicize_comments = s:italic$/;"	v
+s:italicize_strings	colors/gruvbox.vim	/^    let s:italicize_strings = s:italic$/;"	v
+s:italicize_strings	colors/gruvbox.vim	/^let s:italicize_strings = ''$/;"	v
+s:job_abort	autoload/plug.vim	/^function! s:job_abort()$/;"	f
+s:job_cb	autoload/plug.vim	/^function! s:job_cb(fn, job, ch, data)$/;"	f
+s:job_exit_cb	autoload/plug.vim	/^function! s:job_exit_cb(self, data) abort$/;"	f
+s:job_out_cb	autoload/plug.vim	/^function! s:job_out_cb(self, data) abort$/;"	f
+s:key_escape	init/init-config.vim	/^function! s:key_escape(name, code)$/;"	f
+s:l0	plugin/indent-object.vim	/^let s:l0 = -1$/;"	v
+s:l1	plugin/indent-object.vim	/^let s:l1 = -1$/;"	v
+s:last_non_empty_line	autoload/plug.vim	/^function! s:last_non_empty_line(lines)$/;"	f
+s:last_rtp	autoload/plug.vim	/^let s:last_rtp  = s:escrtp(get(s:split_rtp(), -1, ''))$/;"	v
+s:lastline	autoload/plug.vim	/^function! s:lastline(msg)$/;"	f
+s:lazy	autoload/plug.vim	/^function! s:lazy(plug, opt)$/;"	f
+s:lazycat_list	colors/solarized.vim	/^let s:lazycat_list=[$/;"	v
+s:legacy_option_map	plugin/unimpaired.vim	/^function! s:legacy_option_map(letter) abort$/;"	f
+s:light	colors/seoul256-light.vim	/^let s:light     = s:custom_bg >= 252 && s:custom_bg <= 256$/;"	v
+s:light_bg	colors/seoul256.vim	/^  let s:light_bg = 253$/;"	v
+s:light_bg	colors/seoul256.vim	/^  let s:light_bg = get(s:, 'seoul256_background', 253)$/;"	v
+s:light_bg_1	colors/seoul256.vim	/^let s:light_bg_1 = min([s:light_bg + 1, 256])$/;"	v
+s:light_bg_2	colors/seoul256.vim	/^let s:light_bg_2 = min([s:light_bg + 2, 256])$/;"	v
+s:light_fg	colors/seoul256.vim	/^let s:light_fg = 239$/;"	v
+s:light_var_found	colors/seoul256-light.vim	/^let s:light_var_found = exists('g:seoul256_light_background')$/;"	v
+s:lines	autoload/plug.vim	/^function! s:lines(msg)$/;"	f
+s:lintcfg	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	function s:lintcfg(name)$/;"	kind:f	line:385
+s:lintcfg	init/init-plugins.vim	/^	function s:lintcfg(name)$/;"	f
+s:load_256_to_GUI_converter	colors/papercol.vim	/^fun! s:load_256_to_GUI_converter()$/;"	f
+s:load_GUI_to_256_converter	colors/papercol.vim	/^fun! s:load_GUI_to_256_converter()$/;"	f
+s:load_plugin	autoload/plug.vim	/^function! s:load_plugin(spec)$/;"	f
+s:loaded	autoload/plug.vim	/^let s:loaded = get(s:, 'loaded', {})$/;"	v
+s:loaded	init.vim	/^	let s:loaded = 1$/;"	v
+s:loaded_names	autoload/plug.vim	/^function! s:loaded_names()$/;"	f
+s:lod	autoload/plug.vim	/^function! s:lod(names, types, ...)$/;"	f
+s:lod_cmd	autoload/plug.vim	/^function! s:lod_cmd(cmd, bang, l1, l2, args, names)$/;"	f
+s:lod_ft	autoload/plug.vim	/^function! s:lod_ft(pat, names)$/;"	f
+s:lod_map	autoload/plug.vim	/^function! s:lod_map(map, names, with_prefix, prefix)$/;"	f
+s:log	autoload/plug.vim	/^function! s:log(bullet, name, lines)$/;"	f
+s:log4	autoload/plug.vim	/^function! s:log4(name, msg)$/;"	f
+s:logpos	autoload/plug.vim	/^function! s:logpos(name)$/;"	f
+s:lpad	autoload/plug.vim	/^function! s:lpad(str, len)$/;"	f
+s:mac_gui	autoload/plug.vim	/^let s:mac_gui = has('gui_macvim') && has('gui_running')$/;"	v
+s:magenta	colors/solarized.vim	/^    let s:magenta     = "#af005f"$/;"	v
+s:magenta	colors/solarized.vim	/^    let s:magenta     = "#d33682"$/;"	v
+s:magenta	colors/solarized.vim	/^    let s:magenta     = "125"$/;"	v
+s:magenta	colors/solarized.vim	/^    let s:magenta     = "5"$/;"	v
+s:magenta	colors/solarized.vim	/^    let s:magenta     = "DarkMagenta"   " 5$/;"	v
+s:map	plugin/unimpaired.vim	/^function! s:map(...) abort$/;"	f
+s:maps	plugin/unimpaired.vim	/^function! s:maps() abort$/;"	f
+s:maps	plugin/unimpaired.vim	/^let s:maps = []$/;"	v
+s:master	colors/seoul256-light.vim	/^let s:master    = get(split(globpath(&rtp, 'colors\/seoul256.vim'), '\\n'), 0, '')$/;"	v
+s:me	autoload/plug.vim	/^let s:me = resolve(expand('<sfile>:p'))$/;"	v
+s:menu_expand	autoload/quickmenu.vim	/^function! s:menu_expand(item) abort$/;"	f
+s:metacode	init/init-config.vim	/^	function! s:metacode(key)$/;"	f
+s:mimic_colorize_gui	colors/paradox.vim	/^let s:mimic_colorize_gui = s:GetValue("mimic_colorize_gui")$/;"	v
+s:mimic_font_style	colors/paradox.vim	/^let s:mimic_font_style   = s:GetValue("mimic_font_style")$/;"	v
+s:mimic_paradox_alt	colors/paradox.vim	/^let s:mimic_paradox_alt  = s:GetValue("mimic_paradox_alt")$/;"	v
+s:n	colors/solarized.vim	/^    let s:n               = "NONE"$/;"	v
+s:names	autoload/plug.vim	/^function! s:names(...)$/;"	f
+s:new_window	autoload/plug.vim	/^function! s:new_window()$/;"	f
+s:none	colors/gruvbox.vim	/^let s:none = ['NONE', 'NONE']$/;"	v
+s:none	colors/solarized.vim	/^    let s:none            = "NONE"$/;"	v
+s:number_column	colors/gruvbox.vim	/^  let s:number_column = get(s:gb, g:gruvbox_number_column)$/;"	v
+s:number_column	colors/gruvbox.vim	/^let s:number_column = s:none$/;"	v
+s:nvim	autoload/plug.vim	/^let s:nvim = has('nvim-0.2') || (has('nvim') && exists('*jobwait') && !s:is_win)$/;"	v
+s:nvim_cb	autoload/plug.vim	/^function! s:nvim_cb(job_id, data, event) dict abort$/;"	f
+s:ob	colors/solarized.vim	/^    let s:ob              = ""$/;"	v
+s:option_map	plugin/unimpaired.vim	/^function! s:option_map(letter, option, mode) abort$/;"	f
+s:options_list	colors/solarized.vim	/^let s:options_list=[$/;"	v
+s:orange	colors/gruvbox.vim	/^  let s:orange = s:gb.bright_orange$/;"	v
+s:orange	colors/gruvbox.vim	/^  let s:orange = s:gb.faded_orange$/;"	v
+s:orange	colors/solarized.vim	/^    let s:orange      = "#cb4b16"$/;"	v
+s:orange	colors/solarized.vim	/^    let s:orange      = "#d75f00"$/;"	v
+s:orange	colors/solarized.vim	/^    let s:orange      = "166"$/;"	v
+s:orange	colors/solarized.vim	/^    let s:orange      = "9"$/;"	v
+s:orange	colors/solarized.vim	/^    let s:orange      = "LightRed"      " 1*$/;"	v
+s:ou	colors/solarized.vim	/^    let s:ou              = ""$/;"	v
+s:ou	colors/solarized.vim	/^    let s:ou          = ",underline"$/;"	v
+s:padding_left	syntax/quickmenu.vim	/^let s:padding_left = repeat(' ', get(g:, 'quickmenu_padding_left', 3))$/;"	v
+s:parse_options	autoload/plug.vim	/^function! s:parse_options(arg)$/;"	f
+s:path	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^function! s:path(path)$/;"	kind:f	line:29
+s:path	autoload/plug.vim	/^  function! s:path(path)$/;"	f
+s:path	init/init-plugins.vim	/^function! s:path(path)$/;"	f
+s:path_join	plugin/asyncrun.vim	/^function! s:path_join(home, name)$/;"	f
+s:plug_buf	autoload/plug.vim	/^let s:plug_buf = get(s:, 'plug_buf', -1)$/;"	v
+s:plug_src	autoload/plug.vim	/^let s:plug_src = 'https:\/\/github.com\/junegunn\/vim-plug.git'$/;"	v
+s:plug_tab	autoload/plug.vim	/^let s:plug_tab = get(s:, 'plug_tab', -1)$/;"	v
+s:plug_window_exists	autoload/plug.vim	/^function! s:plug_window_exists()$/;"	f
+s:prepare	autoload/plug.vim	/^function! s:prepare(...)$/;"	f
+s:preview_commit	autoload/plug.vim	/^function! s:preview_commit()$/;"	f
+s:progress_bar	autoload/plug.vim	/^function! s:progress_bar(line, bar, total)$/;"	f
+s:progress_opt	autoload/plug.vim	/^function! s:progress_opt(base)$/;"	f
+s:purple	colors/gruvbox.vim	/^  let s:purple = s:gb.bright_purple$/;"	v
+s:purple	colors/gruvbox.vim	/^  let s:purple = s:gb.faded_purple$/;"	v
+s:purple	colors/gruvbox.vim	/^  let s:purple[1] = 13$/;"	v
+s:putline	plugin/unimpaired.vim	/^function! s:putline(how, map) abort$/;"	f
+s:quickmenu_bid	autoload/quickmenu.vim	/^let s:quickmenu_bid = -1$/;"	v
+s:quickmenu_cursor	autoload/quickmenu.vim	/^let s:quickmenu_cursor = {}$/;"	v
+s:quickmenu_header	autoload/quickmenu.vim	/^let s:quickmenu_header = {}$/;"	v
+s:quickmenu_items	autoload/quickmenu.vim	/^let s:quickmenu_items = {}$/;"	v
+s:quickmenu_line	autoload/quickmenu.vim	/^let s:quickmenu_line = 0$/;"	v
+s:quickmenu_mid	autoload/quickmenu.vim	/^let s:quickmenu_mid = 0$/;"	v
+s:quickmenu_name	autoload/quickmenu.vim	/^let s:quickmenu_name = '[quickmenu]'$/;"	v
+s:quickmenu_version	autoload/quickmenu.vim	/^let s:quickmenu_version = 'QuickMenu 1.3.4'$/;"	v
+s:r	colors/solarized.vim	/^    let s:r               = ",reverse"$/;"	v
+s:reap	autoload/plug.vim	/^function! s:reap(name)$/;"	f
+s:red	colors/gruvbox.vim	/^  let s:red    = s:gb.bright_red$/;"	v
+s:red	colors/gruvbox.vim	/^  let s:red    = s:gb.faded_red$/;"	v
+s:red	colors/gruvbox.vim	/^  let s:red[1]    = 9$/;"	v
+s:red	colors/solarized.vim	/^    let s:red         = "#af0000"$/;"	v
+s:red	colors/solarized.vim	/^    let s:red         = "#dc322f"$/;"	v
+s:red	colors/solarized.vim	/^    let s:red         = "1"$/;"	v
+s:red	colors/solarized.vim	/^    let s:red         = "124"$/;"	v
+s:red	colors/solarized.vim	/^    let s:red         = "DarkRed"       " 1$/;"	v
+s:register_default_theme	colors/papercol.vim	/^fun! s:register_default_theme()$/;"	f
+s:regress_bar	autoload/plug.vim	/^function! s:regress_bar()$/;"	f
+s:reload_plugins	autoload/plug.vim	/^function! s:reload_plugins()$/;"	f
+s:remove_rtp	autoload/plug.vim	/^function! s:remove_rtp()$/;"	f
+s:remove_triggers	autoload/plug.vim	/^function! s:remove_triggers(name)$/;"	f
+s:reorg_rtp	autoload/plug.vim	/^function! s:reorg_rtp()$/;"	f
+s:retry	autoload/plug.vim	/^function! s:retry()$/;"	f
+s:revert	autoload/plug.vim	/^function! s:revert()$/;"	f
+s:rgb_colour	colors/papercol.vim	/^  fun! s:rgb_colour(x, y, z)$/;"	f
+s:rgb_level	colors/papercol.vim	/^  fun! s:rgb_level(n)$/;"	f
+s:rgb_map	colors/seoul256.vim	/^  let s:rgb_map =$/;"	v
+s:rgb_number	colors/papercol.vim	/^  fun! s:rgb_number(x)$/;"	f
+s:rm_rf	autoload/plug.vim	/^function! s:rm_rf(dir)$/;"	f
+s:rtp	autoload/plug.vim	/^  function! s:rtp(spec)$/;"	f
+s:run	plugin/asyncrun.vim	/^function! s:run(opts)$/;"	f
+s:s	colors/solarized.vim	/^    let s:s               = ",standout"$/;"	v
+s:section	autoload/plug.vim	/^function! s:section(flags)$/;"	f
+s:select_by_ft	autoload/quickmenu.vim	/^function! s:select_by_ft(mid, ft) abort$/;"	f
+s:seoul256_background	colors/seoul256.vim	/^  let s:seoul256_background = g:seoul256_background$/;"	v
+s:set_color_variables	colors/papercol.vim	/^fun! s:set_color_variables()$/;"	f
+s:set_cursor	autoload/quickmenu.vim	/^function! s:set_cursor() abort$/;"	f
+s:set_format_attributes	colors/papercol.vim	/^fun! s:set_format_attributes()$/;"	f
+s:set_overriding_colors	colors/papercol.vim	/^fun! s:set_overriding_colors()$/;"	f
+s:setup_dirvish	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^function! s:setup_dirvish()$/;"	kind:f	line:67
+s:setup_dirvish	init/init-plugins.vim	/^function! s:setup_dirvish()$/;"	f
+s:setup_keymaps	autoload/quickmenu.vim	/^function! s:setup_keymaps(items)$/;"	f
+s:setup_paste	plugin/unimpaired.vim	/^function! s:setup_paste() abort$/;"	f
+s:shellesc	autoload/plug.vim	/^function! s:shellesc(arg)$/;"	f
+s:shellesc_cmd	autoload/plug.vim	/^function! s:shellesc_cmd(arg)$/;"	f
+s:sign_column	colors/gruvbox.vim	/^    let s:sign_column = get(s:gb, g:gruvbox_sign_column)$/;"	v
+s:sign_column	colors/gruvbox.vim	/^  let s:sign_column = s:number_column$/;"	v
+s:sign_column	colors/gruvbox.vim	/^let s:sign_column = s:bg1$/;"	v
+s:slimit	autoload/quickmenu.vim	/^function! s:slimit(text, limit, col)$/;"	f
+s:snapshot	autoload/plug.vim	/^function! s:snapshot(force, ...) abort$/;"	f
+s:solarized_termtrans_default	colors/solarized.vim	/^    let s:solarized_termtrans_default = 0$/;"	v
+s:solarized_termtrans_default	colors/solarized.vim	/^    let s:solarized_termtrans_default = 1$/;"	v
+s:source	autoload/plug.vim	/^function! s:source(from, ...)$/;"	f
+s:sp_back	colors/solarized.vim	/^    let s:sp_back      = ""$/;"	v
+s:sp_base0	colors/solarized.vim	/^    let s:sp_base0     = ""$/;"	v
+s:sp_base00	colors/solarized.vim	/^    let s:sp_base00    = ""$/;"	v
+s:sp_base01	colors/solarized.vim	/^    let s:sp_base01    = ""$/;"	v
+s:sp_base02	colors/solarized.vim	/^    let s:sp_base02    = ""$/;"	v
+s:sp_base03	colors/solarized.vim	/^    let s:sp_base03    = ""$/;"	v
+s:sp_base1	colors/solarized.vim	/^    let s:sp_base1     = ""$/;"	v
+s:sp_base2	colors/solarized.vim	/^    let s:sp_base2     = ""$/;"	v
+s:sp_base3	colors/solarized.vim	/^    let s:sp_base3     = ""$/;"	v
+s:sp_blue	colors/solarized.vim	/^    let s:sp_blue      = ""$/;"	v
+s:sp_cyan	colors/solarized.vim	/^    let s:sp_cyan      = ""$/;"	v
+s:sp_green	colors/solarized.vim	/^    let s:sp_green     = ""$/;"	v
+s:sp_magenta	colors/solarized.vim	/^    let s:sp_magenta   = ""$/;"	v
+s:sp_none	colors/solarized.vim	/^    let s:sp_none      = ""$/;"	v
+s:sp_orange	colors/solarized.vim	/^    let s:sp_orange    = ""$/;"	v
+s:sp_red	colors/solarized.vim	/^    let s:sp_red       = ""$/;"	v
+s:sp_violet	colors/solarized.vim	/^    let s:sp_violet    = ""$/;"	v
+s:sp_yellow	colors/solarized.vim	/^    let s:sp_yellow    = ""$/;"	v
+s:spawn	autoload/plug.vim	/^function! s:spawn(name, cmd, opts)$/;"	f
+s:split_rtp	autoload/plug.vim	/^function! s:split_rtp()$/;"	f
+s:status	autoload/plug.vim	/^function! s:status()$/;"	f
+s:status_load	autoload/plug.vim	/^function! s:status_load(lnum)$/;"	f
+s:status_update	autoload/plug.vim	/^function! s:status_update() range$/;"	f
+s:statusbump	plugin/unimpaired.vim	/^function! s:statusbump() abort$/;"	f
+s:string_decode	plugin/unimpaired.vim	/^function! s:string_decode(str) abort$/;"	f
+s:string_encode	plugin/unimpaired.vim	/^function! s:string_encode(str) abort$/;"	f
+s:strip_white_space	plugin/commentary.vim	/^function! s:strip_white_space(l,r,line) abort$/;"	f
+s:style	colors/seoul256.vim	/^    let s:style = &background$/;"	v
+s:style	colors/seoul256.vim	/^    let s:style = 'dark'$/;"	v
+s:style	colors/seoul256.vim	/^    let s:style = 'light'$/;"	v
+s:style_idx	colors/seoul256.vim	/^let s:style_idx = s:style == 'light'$/;"	v
+s:surroundings	plugin/commentary.vim	/^function! s:surroundings() abort$/;"	f
+s:switch_in	autoload/plug.vim	/^function! s:switch_in()$/;"	f
+s:switch_out	autoload/plug.vim	/^function! s:switch_out(...)$/;"	f
+s:syntax	autoload/plug.vim	/^function! s:syntax()$/;"	f
+s:system	autoload/plug.vim	/^function! s:system(cmd, ...)$/;"	f
+s:system_chomp	autoload/plug.vim	/^function! s:system_chomp(...)$/;"	f
+s:t_none	colors/solarized.vim	/^    let s:t_none          = "NONE"$/;"	v
+s:temp00	colors/solarized.vim	/^    let s:temp00      = s:base00$/;"	v
+s:temp01	colors/solarized.vim	/^    let s:temp01      = s:base01$/;"	v
+s:temp02	colors/solarized.vim	/^    let s:temp02      = s:base02$/;"	v
+s:temp03	colors/solarized.vim	/^    let s:temp03      = s:base03$/;"	v
+s:terminal_italic	colors/solarized.vim	/^            let s:terminal_italic=1$/;"	v
+s:terminal_italic	colors/solarized.vim	/^    let s:terminal_italic=0 " terminals will be guilty until proven compatible$/;"	v
+s:terminal_italic	colors/solarized.vim	/^    let s:terminal_italic=1 " TODO: could refactor to not require this at all$/;"	v
+s:terms_italic	colors/solarized.vim	/^let s:terms_italic=[$/;"	v
+s:terms_noitalic	colors/solarized.vim	/^let s:terms_noitalic=[$/;"	v
+s:textobject	plugin/commentary.vim	/^function! s:textobject(inner) abort$/;"	f
+s:theme_has_hint	colors/papercol.vim	/^fun! s:theme_has_hint(hint)$/;"	f
+s:themes	colors/papercol.vim	/^let s:themes = {}$/;"	v
+s:tick	autoload/plug.vim	/^function! s:tick()$/;"	f
+s:to_256	colors/papercol.vim	/^  fun! s:to_256(rgb)$/;"	f
+s:to_a	autoload/plug.vim	/^function! s:to_a(v)$/;"	f
+s:to_s	autoload/plug.vim	/^function! s:to_s(v)$/;"	f
+s:toggle	plugin/unimpaired.vim	/^function! s:toggle(op) abort$/;"	f
+s:triggers	autoload/plug.vim	/^let s:triggers = get(s:, 'triggers', {})$/;"	v
+s:trim	autoload/plug.vim	/^function! s:trim(str)$/;"	f
+s:u	colors/solarized.vim	/^    let s:u           = ""$/;"	v
+s:u	colors/solarized.vim	/^    let s:u           = ",underline"$/;"	v
+s:undercurl	colors/gruvbox.vim	/^  let s:undercurl = ''$/;"	v
+s:undercurl	colors/gruvbox.vim	/^let s:undercurl = 'undercurl,'$/;"	v
+s:underline	colors/gruvbox.vim	/^  let s:underline = ''$/;"	v
+s:underline	colors/gruvbox.vim	/^let s:underline = 'underline,'$/;"	v
+s:update	autoload/plug.vim	/^function! s:update(force, names)$/;"	f
+s:update_finish	autoload/plug.vim	/^function! s:update_finish()$/;"	f
+s:update_impl	autoload/plug.vim	/^function! s:update_impl(pull, force, args) abort$/;"	f
+s:update_python	autoload/plug.vim	/^function! s:update_python()$/;"	f
+s:update_ruby	autoload/plug.vim	/^function! s:update_ruby()$/;"	f
+s:update_vim	autoload/plug.vim	/^function! s:update_vim()$/;"	f
+s:upgrade	autoload/plug.vim	/^function! s:upgrade()$/;"	f
+s:upgrade_specs	autoload/plug.vim	/^function! s:upgrade_specs()$/;"	f
+s:url_decode	plugin/unimpaired.vim	/^function! s:url_decode(str) abort$/;"	f
+s:url_encode	plugin/unimpaired.vim	/^function! s:url_encode(str) abort$/;"	f
+s:var_found	colors/seoul256-light.vim	/^let s:var_found = exists('g:seoul256_background')$/;"	v
+s:version	colors/papercol.vim	/^let s:version = '0.9.x'$/;"	v
+s:version_requirement	autoload/plug.vim	/^function! s:version_requirement(val, min)$/;"	f
+s:vert_split	colors/gruvbox.vim	/^  let s:vert_split = get(s:gb, g:gruvbox_vert_split)$/;"	v
+s:vert_split	colors/gruvbox.vim	/^let s:vert_split = s:bg2$/;"	v
+s:vim8	autoload/plug.vim	/^let s:vim8 = has('patch-8.0.0039') && exists('*job_start')$/;"	v
+s:vim_bg	colors/gruvbox.vim	/^let s:vim_bg = ['bg', 'bg']$/;"	v
+s:vim_fg	colors/gruvbox.vim	/^let s:vim_fg = ['fg', 'fg']$/;"	v
+s:violet	colors/solarized.vim	/^    let s:violet      = "#5f5faf"$/;"	v
+s:violet	colors/solarized.vim	/^    let s:violet      = "#6c71c4"$/;"	v
+s:violet	colors/solarized.vim	/^    let s:violet      = "13"$/;"	v
+s:violet	colors/solarized.vim	/^    let s:violet      = "61"$/;"	v
+s:violet	colors/solarized.vim	/^    let s:violet      = "LightMagenta"  " 5*$/;"	v
+s:vmode	colors/solarized.vim	/^    let s:vmode       = "cterm"$/;"	v
+s:vmode	colors/solarized.vim	/^    let s:vmode       = "gui"$/;"	v
+s:warn	autoload/plug.vim	/^function! s:warn(cmd, msg)$/;"	f
+s:window_close	autoload/quickmenu.vim	/^function! s:window_close()$/;"	f
+s:window_exist	autoload/quickmenu.vim	/^function! s:window_exist()$/;"	f
+s:window_open	autoload/quickmenu.vim	/^function! s:window_open(size)$/;"	f
+s:window_render	autoload/quickmenu.vim	/^function! s:window_render(items, mid) abort$/;"	f
+s:with_cd	autoload/plug.vim	/^function! s:with_cd(cmd, dir)$/;"	f
+s:xml_decode	plugin/unimpaired.vim	/^function! s:xml_decode(str) abort$/;"	f
+s:xml_encode	plugin/unimpaired.vim	/^function! s:xml_encode(str) abort$/;"	f
+s:xml_entity_decode	plugin/unimpaired.vim	/^function! s:xml_entity_decode(str) abort$/;"	f
+s:yellow	colors/gruvbox.vim	/^  let s:yellow = s:gb.bright_yellow$/;"	v
+s:yellow	colors/gruvbox.vim	/^  let s:yellow = s:gb.faded_yellow$/;"	v
+s:yellow	colors/gruvbox.vim	/^  let s:yellow[1] = 11$/;"	v
+s:yellow	colors/solarized.vim	/^    let s:yellow      = "#af8700"$/;"	v
+s:yellow	colors/solarized.vim	/^    let s:yellow      = "#b58900"$/;"	v
+s:yellow	colors/solarized.vim	/^    let s:yellow      = "136"$/;"	v
+s:yellow	colors/solarized.vim	/^    let s:yellow      = "3"$/;"	v
+s:yellow	colors/solarized.vim	/^    let s:yellow      = "DarkYellow"    " 3$/;"	v
+statements	tools/conf/pylint.conf	/^max-statements=50$/;"	k	section:DESIGN
+stmt	tools/conf/pylint.conf	/^single-line-if-stmt=no$/;"	k	section:FORMAT
+string	tools/conf/pylint.conf	/^indent-string='    '$/;"	k	section:FORMAT
+unimpaired	plugin/unimpaired.vim	/^augroup unimpaired$/;"	a
+unimpaired_paste	plugin/unimpaired.vim	/^  augroup unimpaired_paste$/;"	a
+whitelist	tools/conf/pylint.conf	/^extension-pkg-whitelist=$/;"	k	section:MASTER
+words	tools/conf/pylint.conf	/^spelling-ignore-words=$/;"	k	section:SPELLING
+words	tools/conf/pylint.conf	/^spelling-store-unknown-words=no$/;"	k	section:SPELLING
+~	/home/xjy/.vim/vim-init/init/init-plugins.vim	/^	noremap <silent><buffer> ~ :Dirvish ~<cr>$/;"	kind:m	line:84
+~	init/init-plugins.vim	/^	noremap <silent><buffer> ~ :Dirvish ~<cr>$/;"	m

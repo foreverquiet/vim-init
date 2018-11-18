@@ -233,11 +233,17 @@ let g:asyncrun_open = 6
 " 任务结束时候响铃提醒
 let g:asyncrun_bell = 1
 
-" 设置 F10 打开/关闭 Quickfix 窗口
-nnoremap <F10> :call asyncrun#quickfix_toggle(6)<cr>
+" 设置 <leader> + q 打开/关闭 Quickfix 窗口
+nnoremap <leader>q :call asyncrun#quickfix_toggle(6)<cr>
 
 " F9 编译 C/C++ 文件
 nnoremap <silent> <F9> :AsyncRun gcc -Wall -O2 "$(VIM_FILEPATH)" -o "$(VIM_FILEDIR)/$(VIM_FILENOEXT)" <cr>
+
+" alt + r 异步运行当前python文件, 结果输出再quickfix上
+nnoremap <silent> <m-r> :AsyncRun python %<CR>
+
+" alt + t 异步运行当前python文件, 可输入参数， 结果输出再quickfix上
+nnoremap <silent> <m-t> :AsyncRun python %<CR>
 
 " F5 运行文件
 nnoremap <silent> <F5> :call ExecuteFile()<cr>

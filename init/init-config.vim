@@ -98,9 +98,9 @@ set writebackup
 
 " 备份文件地址，统一管理
 if has('win32')
-	set backupdir=~/.vim/vimbak
-else
 	set backupdir=e:/vim/vimbak
+else
+	set backupdir=~/.vim/vimbak
 endif
 	
 
