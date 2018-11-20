@@ -125,6 +125,9 @@ if index(g:plugin_group, 'basic') >= 0
 	" Git 支持
 	Plug 'tpope/vim-fugitive'
 
+	" unicode 检测插件，防止编码异常解决起来麻烦
+	Plug 'mbbill/fencview'
+
 	" 使用 ALT+E 来选择窗口
 	nmap <m-e> <Plug>(choosewin)
 
@@ -385,7 +388,7 @@ if index(g:plugin_group, 'ale') >= 0
 	let g:ale_linters = {
 				\ 'c': ['gcc', 'cppcheck'], 
 				\ 'cpp': ['gcc', 'cppcheck'], 
-				\ 'python': ['flake8', 'pylint'], 
+				\ 'python': ['flake8'], 
 				\ 'lua': ['luac'], 
 				\ 'go': ['go build', 'gofmt'],
 				\ 'java': ['javac'],
