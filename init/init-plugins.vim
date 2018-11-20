@@ -19,6 +19,7 @@ if !exists('g:plugin_group')
 	let g:plugin_group += ['leaderf']
 	let g:plugin_group += ['YouCompleteMe']
 	let g:plugin_group += ['vimwiki']
+	let g:plugin_group += ['debugger']
 endif
 
 
@@ -185,10 +186,18 @@ if index(g:plugin_group, 'enhanced') >= 0
 
 	" 提供 gist 接口
 	Plug 'lambdalisue/vim-gista', { 'on': 'Gista' }
+
+	" 使用Ag进行文本内查找
+	Plug 'rking/ag.vim'
 	
 	" ALT_+/- 用于按分隔符扩大缩小 v 选区
 	map <m-=> <Plug>(expand_region_expand)
 	map <m--> <Plug>(expand_region_shrink)
+
+	" ag使用vim正则模式进行查找
+	let g:ag_prg="ag --vimgrep"
+	" ag从顶层项目开始搜索，而不是当前路径
+	let g:ag_working_path_mode="r"
 endif
 
 
@@ -662,6 +671,39 @@ if index(g:plugin_group, 'vimwiki') >= 0
 	Plug 'vimwiki/vimwiki'
 
 	let g:vimwiki_list = [{'path' : '~/wiki/', 'path_html' : '~/wiki/html/'}]
+endif
+
+"---------------------------------------------------------------------
+" debugger : 进行多种语言的调试
+"---------------------------------------------------------------------
+if index(g:plugin_group, 'debugger') >= 0
+	Plug 'idanarye/vim-vebugger'
+    
+	Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+
+	" F5 启动开始调试python3
+	nnoremap <silent> <F5> :VBGstartPDB3 % 
+
+	" ALT + F5 停止调试
+	nnoremap <silent> <m-F5> :VBGkill<CR>
+	
+	" F6 继续执行
+	nnoremap <silent> <F6> :VBGcontinue<CR>
+
+	" F9 设置断点
+	nnoremap <silent> <F9> :VBGtoggleBreakpointThisLine<CR>
+
+	" F10 逐过程调试，不执行函数调用
+	nnoremap <silent> <F10> :VBGstepOver<CR>
+	
+	" F11 步进，进入函数调用，逐条执行
+	nnoremap <silent> <F11> :VBGstepIn<CR>
+	
+	" ALT + F11 跳出调用函数
+	nnoremap <silent> <m-F11> :VBGstepOut<CR>
+
+	" <leader> + p 查看变量
+	nnoremap <silent> <leader>p :VBGeval
 endif
 
 "----------------------------------------------------------------------
