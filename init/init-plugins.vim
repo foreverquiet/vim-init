@@ -247,6 +247,7 @@ if index(g:plugin_group, 'tags') >= 0
 	let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
 	let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
 	let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
+	let g:gutentags_ctags_extra_args += ['--javascript-kinds=+px']
 
 	" 使用 universal-ctags 的话需要下面这行，请反注释
 	let g:gutentags_ctags_extra_args += ['--output-format=e-ctags']
