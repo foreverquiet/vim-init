@@ -62,8 +62,9 @@ color molokai
 " 设置字体
 if has('win32')
 	set guifont=Consolas:h13
+else 
+    set guifont=monaco\ 13
 endif
-set guifont=monaco\ 13
 
 "----------------------------------------------------------------------
 " 状态栏设置
