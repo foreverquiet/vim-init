@@ -57,6 +57,11 @@ Plug 'justinmk/vim-dirvish'
 " 表格对齐，使用命令 Tabularize
 Plug 'godlygeek/tabular', { 'on': 'Tabularize' }
 
+" 表格对齐, 使用命令gaip
+Plug 'junegunn/vim-easy-align'
+vmap <Enter> <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
+
 " Diff 增强，支持 histogram / patience 等更科学的 diff 算法
 Plug 'chrisbra/vim-diff-enhanced'
 
@@ -216,7 +221,11 @@ if index(g:plugin_group, 'tags') >= 0
 	Plug 'skywind3000/gutentags_plus'
 
     let $GTAGSLABEL = 'native-pygments'
-    let $GTAGSCONF =  '/usr/local/share/gtags/gtags.conf'
+	if has('win32')
+		let $GTAGSCONF = 'E:/vim/tools/gtags/share/gtags/gtags.conf'
+	else
+		let $GTAGSCONF =  '/usr/local/share/gtags/gtags.conf'
+	endif
 
 	" 设定项目目录标志：除了 .git/.svn 外，还有 .root 文件
 	let g:gutentags_project_root = ['.root']
@@ -454,6 +463,7 @@ endif
 "----------------------------------------------------------------------
 if index(g:plugin_group, 'tagbar') >= 0
 	Plug 'majutsushi/tagbar'
+	noremap <F3> :LeaderfMru<cr>
 endif
 
 "----------------------------------------------------------------------
@@ -473,8 +483,8 @@ if index(g:plugin_group, 'leaderf') >= 0
 		" CTRL+n 打开最近使用的文件 MRU，进行模糊匹配
 		noremap <c-n> :LeaderfMru<cr>
 
-		" ALT+p 打开函数列表，按 i 进入模糊匹配，ESC 退出
-		noremap <m-p> :LeaderfFunction!<cr>
+		" ALT+m 打开函数列表，按 i 进入模糊匹配，ESC 退出
+		noremap <m-m> :LeaderfFunction!<cr>
 
 		" ALT+SHIFT+p 打开 tag 列表，i 进入模糊匹配，ESC退出
 		noremap <m-P> :LeaderfBufTag!<cr>
@@ -483,7 +493,7 @@ if index(g:plugin_group, 'leaderf') >= 0
 		noremap <m-n> :LeaderfBuffer<cr>
 
 		" 全局 tags 模糊匹配
-		noremap <m-m> :LeaderfTag<cr>
+		noremap <m-p> :LeaderfTag<cr>
 
 		" 最大历史文件保存 2048 个
 		let g:Lf_MruMaxFiles = 2048
