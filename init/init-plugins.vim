@@ -20,6 +20,7 @@ if !exists('g:plugin_group')
 	let g:plugin_group += ['YouCompleteMe']
 	let g:plugin_group += ['vimwiki']
 	let g:plugin_group += ['debugger']
+	let g:plugin_group += ['grammer']
 endif
 
 
@@ -65,6 +66,8 @@ nmap ga <Plug>(EasyAlign)
 " Diff 增强，支持 histogram / patience 等更科学的 diff 算法
 Plug 'chrisbra/vim-diff-enhanced'
 
+" 多光标输入
+Plug 'terryma/vim-multiple-cursors'
 
 "----------------------------------------------------------------------
 " Dirvish 设置：自动排序并隐藏文件，同时定位到相关文件
@@ -130,6 +133,9 @@ if index(g:plugin_group, 'basic') >= 0
 
 	" Git 支持
 	Plug 'tpope/vim-fugitive'
+
+	" Git 浏览器
+	Plug 'junegunn/gv.vim'
 
 	" unicode 检测插件，防止编码异常解决起来麻烦
 	Plug 'mbbill/fencview'
@@ -250,6 +256,9 @@ if index(g:plugin_group, 'tags') >= 0
 	if executable('gtags') && executable('gtags-cscope')
 		let g:gutentags_modules += ['gtags_cscope']
 	endif
+
+	" 临时打开调试
+	" let g:gutentags_trace = 1
 
 	" 设置 ctags 的参数
 	let g:gutentags_ctags_extra_args = []
