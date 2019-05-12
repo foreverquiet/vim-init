@@ -224,7 +224,10 @@ elseif has('nvim')
 	tnoremap <m-q> <c-\><c-n>
 endif
 
-
+nmap <m-down>  :resize +1<CR>
+nmap <m-up>    :resize -1<CR>
+nmap <m-left>  :vertical resize -1<CR>
+nmap <m-right> :vertical resize +1<CR>
 
 "----------------------------------------------------------------------
 " 编译运行 C/C++ 项目
@@ -236,6 +239,13 @@ let g:asyncrun_open = 6
 
 " 任务结束时候响铃提醒
 let g:asyncrun_bell = 1
+
+" 
+if has('win32')
+	let g:asyncrun_encs = 'gb2312'
+else
+	let g:asyncrun_encs = 'utf8'
+endif
 
 " 设置 <leader> + q 打开/关闭 Quickfix 窗口
 nnoremap <leader>q :call asyncrun#quickfix_toggle(6)<cr>
@@ -338,5 +348,18 @@ else
 				\ --include='*.js' --include='*.vim'
 				\ '<root>' <cr>
 endif
+
+
+vmap <leader>jsb :'<,'>!js-beautify -i<CR>
+autocmd FileType javascript noremap <buffer>  <leader>jsb :call JsBeautify()<CR>
+autocmd FileType html noremap <buffer> <leader>htmlb :call HtmlBeautify()<CR>
+autocmd FileType css noremap <buffer> <leader>cssb :call CSSBeautify()<CR>
+
+"-----------------------------------------------------------------------
+" Plugin 详细设置
+"-----------------------------------------------------------------------
+"----------vim-easy-align, 表格对齐--------------
+vmap <Enter> <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 
 

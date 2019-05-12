@@ -19,6 +19,7 @@ if !exists('g:plugin_group')
 	let g:plugin_group += ['vimwiki']
 	let g:plugin_group += ['debugger']
 	let g:plugin_group += ['grammer']
+	let g:plugin_group += ['fun']
 endif
 
 
@@ -58,8 +59,6 @@ Plug 'godlygeek/tabular', { 'on': 'Tabularize' }
 
 " 表格对齐, 使用命令gaip
 Plug 'junegunn/vim-easy-align'
-vmap <Enter> <Plug>(EasyAlign)
-nmap ga <Plug>(EasyAlign)
 
 " Diff 增强，支持 histogram / patience 等更科学的 diff 算法
 Plug 'chrisbra/vim-diff-enhanced'
@@ -68,6 +67,8 @@ Plug 'chrisbra/vim-diff-enhanced'
 Plug 'terryma/vim-multiple-cursors'
 
 Plug 'tell-k/vim-autopep8'
+
+Plug 'maksimr/vim-jsbeautify'
 
 "----------------------------------------------------------------------
 " Dirvish 设置：自动排序并隐藏文件，同时定位到相关文件
@@ -364,6 +365,7 @@ if index(g:plugin_group, 'nerdtree') >= 0
 	let g:NERDTreeDirArrows = 1
 	let g:NERDTreeHijackNetrw = 0
 	noremap <space>nn :NERDTree<cr>
+	noremap <space>nq :NERDTreeClose<cr>
 	noremap <space>no :NERDTreeFocus<cr>
 	noremap <space>nm :NERDTreeMirror<cr>
 	noremap <space>nt :NERDTreeToggle<cr>
@@ -724,6 +726,19 @@ if index(g:plugin_group, 'debugger') >= 0
 
 	" <leader> + p 查看变量
 	nnoremap <silent> <leader>p :VBGeval
+endif
+
+if index(g:plugin_group, 'fun') >= 0
+	Plug 'iandingx/leetcode.vim'
+
+	nnoremap <leader>ll :LeetCodeList<cr>
+    nnoremap <leader>lt :LeetCodeTest<cr>
+    nnoremap <leader>ls :LeetCodeSubmit<cr>
+	nnoremap <leader>li :LeetCodeSignIn<cr>
+
+	let g:leetcode_solution_filetype = 'python3'
+	let g:leetcode_username = 'alwaysquiet'
+	let g:leetcode_password = 'xjy67915641'
 endif
 
 "----------------------------------------------------------------------
