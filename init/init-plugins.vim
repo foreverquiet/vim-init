@@ -242,7 +242,7 @@ if index(g:plugin_group, 'tags') >= 0
 	endif
 
 	" 设定项目目录标志：除了 .git/.svn 外，还有 .root 文件
-	let g:gutentags_project_root = ['.root']
+	let g:gutentags_project_root = ['.root', '.svn', '.git']
 	let g:gutentags_ctags_tagfile = '.tags'
 
 	" 默认生成的数据文件集中到 ~/.cache/tags 避免污染项目目录，好清理
