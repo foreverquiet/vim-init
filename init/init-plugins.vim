@@ -138,8 +138,15 @@ if index(g:plugin_group, 'basic') >= 0
 	" Git 浏览器
 	Plug 'junegunn/gv.vim'
 
+	" SVN 支持
+	Plug 'juneedahamed/vc.vim'
+
 	" unicode 检测插件，防止编码异常解决起来麻烦
 	Plug 'mbbill/fencview'
+
+	let g:fencview_autodetect = 1
+
+	let g:fencview_auto_patterns = '*.log'
 
 	" 使用 ALT+E 来选择窗口
 	nmap <m-e> <Plug>(choosewin)
@@ -324,6 +331,9 @@ if index(g:plugin_group, 'filetypes') >= 0
 
 	" python 语法文件增强
 	Plug 'vim-python/python-syntax', { 'for': ['python'] }
+
+	" python 文档
+	Plug 'fs111/pydoc.vim'
 
 	" rust 语法增强
 	Plug 'rust-lang/rust.vim', { 'for': 'rust' }
@@ -740,6 +750,7 @@ if index(g:plugin_group, 'fun') >= 0
 	let g:leetcode_username = 'alwaysquiet'
 	let g:leetcode_password = 'xjy67915641'
 endif
+
 
 "----------------------------------------------------------------------
 " 结束插件安装

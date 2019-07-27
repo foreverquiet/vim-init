@@ -229,6 +229,12 @@ nmap <m-up>    :resize -1<CR>
 nmap <m-left>  :vertical resize -1<CR>
 nmap <m-right> :vertical resize +1<CR>
 
+" 命令行快速粘贴
+" 命令行粘贴当前寄存器中内容
+cnoremap <m-v>     <c-r>0
+" 命令行粘贴从其他界面拷贝的内容
+cnoremap <m-p>     <c-r>+
+
 "----------------------------------------------------------------------
 " 编译运行 C/C++ 项目
 " 详细见：http://www.skywind.me/blog/archives/2084
@@ -242,7 +248,7 @@ let g:asyncrun_bell = 1
 
 " 
 if has('win32')
-	let g:asyncrun_encs = 'gb2312'
+	let g:asyncrun_encs = 'cp936'
 else
 	let g:asyncrun_encs = 'utf8'
 endif
@@ -257,7 +263,7 @@ nnoremap <leader>q :call asyncrun#quickfix_toggle(6)<cr>
 nnoremap <silent> <m-r> :AsyncRun python %<CR>
 
 " alt + t 异步运行当前python文件, 可输入参数， 结果输出再quickfix上
-nnoremap <silent> <m-t> :AsyncRun python %<CR>
+nnoremap <m-t> :AsyncRun python %
 
 " F5 运行文件
 " nnoremap <silent> <F5> :call ExecuteFile()<cr>
