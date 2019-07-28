@@ -246,6 +246,8 @@ let g:asyncrun_open = 6
 " 任务结束时候响铃提醒
 let g:asyncrun_bell = 1
 
+" 去除空格行
+let g:asyncrun_trim = 1
 " 
 if has('win32')
 	let g:asyncrun_encs = 'cp936'
@@ -334,26 +336,41 @@ endfunc
 
 
 "----------------------------------------------------------------------
-" F2 在项目目录下 Grep 光标下单词，默认 C/C++/Py/Js ，扩展名自己扩充
+" F3 在项目目录下 Grep 光标下单词，默认 C/C++/Py/Js ，扩展名自己扩充
 " 支持 rg/grep/findstr ，其他类型可以自己扩充
 " 不是在当前目录 grep，而是会去到当前文件所属的项目目录 project root
 " 下面进行 grep，这样能方便的对相关项目进行搜索
 "----------------------------------------------------------------------
-if executable('rg')
-	noremap <silent><F2> :AsyncRun! -cwd=<root> rg -n --no-heading 
+if executable('ag')
+	noremap <silent><F3> :AsyncRun! -cwd=<root> ag -i --vimgrep
+				\ "<C-R><C-W>" "<root>" <cr>
+elseif executable('rg')
+	noremap <silent><F3> :AsyncRun! -cwd=<root> rg -n --no-heading 
 				\ --color never -g *.h -g *.c* -g *.py -g *.js -g *.vim 
 				\ <C-R><C-W> "<root>" <cr>
 elseif has('win32') || has('win64')
-	noremap <silent><F2> :AsyncRun! -cwd=<root> findstr /n /s /C:"<C-R><C-W>" 
+	noremap <silent><F3> :AsyncRun! -cwd=<root> findstr /n /s /C:"<C-R><C-W>" 
 				\ "\%CD\%\*.h" "\%CD\%\*.c*" "\%CD\%\*.py" "\%CD\%\*.js"
 				\ "\%CD\%\*.vim"
 				\ <cr>
 else
-	noremap <silent><F2> :AsyncRun! -cwd=<root> grep -n -s -R <C-R><C-W> 
+	noremap <silent><F3> :AsyncRun! -cwd=<root> grep -n -s -R <C-R><C-W> 
 				\ --include='*.h' --include='*.c*' --include='*.py' 
 				\ --include='*.js' --include='*.vim'
 				\ '<root>' <cr>
 endif
+
+"noremap <silent><F2> :AsyncRun! -cwd=<root> ag -i --vimgrep
+""				\  <Insert> "<root>" 
+
+nmap <F2> :call AsyncFindKey() <CR>
+
+function! AsyncFindKey()
+	let key=input('要查找的关键字:')
+	if executable('ag')
+		exec 'AsyncRun! -cwd=<root> ag -i --vimgrep "' . key . '" "<root>"' 
+	endif
+endfunc
 
 
 vmap <leader>jsb :'<,'>!js-beautify -i<CR>
@@ -367,5 +384,4 @@ autocmd FileType css noremap <buffer> <leader>cssb :call CSSBeautify()<CR>
 "----------vim-easy-align, 表格对齐--------------
 vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
-
 

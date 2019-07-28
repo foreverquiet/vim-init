@@ -194,9 +194,9 @@ if index(g:plugin_group, 'enhanced') >= 0
 	" 给不同语言提供字典补全，插入模式下 c-x c-k 触发
 	Plug 'asins/vim-dict'
 
-	" 使用 :FlyGrep 命令进行实时 grep
-	Plug 'wsdjeg/FlyGrep.vim'
-
+	" 使用 :FlyGrep 命令进行实时 grep 目前无法使用, 可能需要安装依赖
+	" Plug 'wsdjeg/FlyGrep.vim'
+	
 	" 使用 :CtrlSF 命令进行模仿 sublime 的 grep
 	Plug 'dyng/ctrlsf.vim'
 
@@ -484,7 +484,6 @@ endif
 "----------------------------------------------------------------------
 if index(g:plugin_group, 'tagbar') >= 0
 	Plug 'majutsushi/tagbar'
-	noremap <F3> :LeaderfMru<cr>
 endif
 
 "----------------------------------------------------------------------
@@ -501,8 +500,8 @@ if index(g:plugin_group, 'leaderf') >= 0
 		" ALT+n 打开 buffer 模糊匹配
 		let g:Lf_ShortcutB = '<m-n>'
 
-		" CTRL+n 打开最近使用的文件 MRU，进行模糊匹配
-		noremap <c-n> :LeaderfMru<cr>
+		" ALT+u(sed) 打开最近使用的文件 MRU，进行模糊匹配
+		noremap <m-u> :LeaderfMru<cr>
 
 		" ALT+m 打开函数列表，按 i 进入模糊匹配，ESC 退出
 		noremap <m-m> :LeaderfFunction!<cr>
@@ -510,8 +509,8 @@ if index(g:plugin_group, 'leaderf') >= 0
 		" ALT+SHIFT+p 打开 tag 列表，i 进入模糊匹配，ESC退出
 		noremap <m-P> :LeaderfBufTag!<cr>
 
-		" ALT+n 打开 buffer 列表进行模糊匹配
-		noremap <m-n> :LeaderfBuffer<cr>
+		" ALT+f(ile) 打开 buffer 列表进行模糊匹配
+		noremap <m-f> :LeaderfBuffer<cr>
 
 		" 全局 tags 模糊匹配
 		noremap <m-p> :LeaderfTag<cr>
@@ -750,7 +749,6 @@ if index(g:plugin_group, 'fun') >= 0
 	let g:leetcode_username = 'alwaysquiet'
 	let g:leetcode_password = 'xjy67915641'
 endif
-
 
 "----------------------------------------------------------------------
 " 结束插件安装
