@@ -363,15 +363,18 @@ endif
 "noremap <silent><F2> :AsyncRun! -cwd=<root> ag -i --vimgrep
 ""				\  <Insert> "<root>" 
 
-nmap <F2> :call AsyncFindKey() <CR>
-
 function! AsyncFindKey()
-	let key=input('要查找的关键字:')
+	let key=input('要查找的关键字-> ')
+	if key == ''
+		return 
+	endif
+
 	if executable('ag')
 		exec 'AsyncRun! -cwd=<root> ag -i --vimgrep "' . key . '" "<root>"' 
 	endif
 endfunc
 
+nmap <F2> :call AsyncFindKey() <CR>
 
 vmap <leader>jsb :'<,'>!js-beautify -i<CR>
 autocmd FileType javascript noremap <buffer>  <leader>jsb :call JsBeautify()<CR>
